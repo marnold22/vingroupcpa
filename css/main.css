@@ -8,7 +8,7 @@
 }
 
 /* MAIN HERO */
-.masthead {
+.herobanner {
   height: 100vh;
   min-height: 500px;
   background-size: cover;
@@ -16,32 +16,32 @@
   background-repeat: no-repeat;
   color: white;
 }
-.masthead-home {
+.herobanner-home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
 }
-.masthead-services {
+.herobanner-services {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i2.jpg");
 }
-.masthead-events {
+.herobanner-events {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i3.jpg");
 }
-.masthead-about {
+.herobanner-about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
 }
-.masthead-contact {
+.herobanner-contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
 }
-.masthead h1 {
+.herobanner h1 {
   font-size: 6rem;
 }
-.masthead p {
+.herobanner p {
   font-size: 1.5rem;
 }
-.masthead-btn {
+.herobanner-btn {
   font-size: 1.2rem;
   border-radius: 300px;
 }
-header div div div a.masthead:hover {
+header div div div a.herobanner:hover {
   color: #346272;
 }
 
