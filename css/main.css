@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   font-family: 'Poppins';
 }
 
@@ -12,17 +10,41 @@ body {
     padding-top: 56px;
 }
 
-.jumbotron {
-    background-color: #346272;
-    color: white;
-}
-.btn-primary {
-    background-color: #c60063;
-    border-color: #c60063;
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
-.btn-secondary {
-    background-color: transparent;
-    border-color: #c60063;
-    color: #c60063;
+.masthead h1 {
+  font-size: 6rem;
+}
+
+.masthead p {
+  font-size: 1.5rem;
+}
+
+.hero-btn {
+  font-size: 1.2rem;
+  border-radius: 300px;
+}
+
+header div div div a.hero-btn:hover {
+  color: #346272;
+}
+
+
+
+
+
+
+
+
+footer {
+  background-color: #346272;
+  color: white;
 }
