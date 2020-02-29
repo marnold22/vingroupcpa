@@ -2,47 +2,48 @@
   font-family: 'Poppins';
 }
 
+/* COLORS */
 .bg-cpagreen {
   background-color: #346272;
 }
 
-body {
-    padding-top: 56px;
-}
-
+/* MAIN HERO */
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
 }
-
+.masthead-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
+}
+.masthead-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i2.jpg");
+}
+.masthead-events {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i3.jpg");
+}
+.masthead-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
+}
+.masthead-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
+}
 .masthead h1 {
   font-size: 6rem;
 }
-
 .masthead p {
   font-size: 1.5rem;
 }
-
-.hero-btn {
+.masthead-btn {
   font-size: 1.2rem;
   border-radius: 300px;
 }
-
-header div div div a.hero-btn:hover {
+header div div div a.masthead:hover {
   color: #346272;
 }
-
-
-
-
-
-
-
 
 footer {
   background-color: #346272;
