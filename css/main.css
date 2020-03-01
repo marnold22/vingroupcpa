@@ -34,7 +34,9 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
 }
 .herobanner-contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/gmap.PNG");
+  color: #000;
+  height: 95vh;
 }
 .herobanner h1 {
   font-size: 6rem;
@@ -46,13 +48,20 @@
   font-size: 1.2rem;
   border-radius: 300px;
 }
+.herobanner-cbtn {
+  font-size: 2rem;
+  border-radius: 500px;
+}
 header div div div a.herobanner:hover {
   color: #346272;
 }
-
 section {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.modal-hf {
+  background-color: #346272;
+  color: white;
 }
 
 

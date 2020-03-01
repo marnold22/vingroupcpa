@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <title>Vingroupcpa</title>
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -25,8 +27,8 @@
         <img src="assets/logo.jpg" width="30" height="30" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -54,9 +56,93 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
-          <h1>The Vin Group</h1>
-          <p class="lead">Tax and finance advisory for the individual, small businesses, and non-profits</p>
-          <a href="#" class="btn btn-outline-light herobanner-btn">Get Started</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-light herobanner-cbtn" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-hf">
+            <h5 class="modal-title" id="modalTitle">Contact Us!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <label for="fName">First Name*</label>
+                    <input type="text" class="form-control" id="fNameInput" placeholder="First name">
+                  </div>
+                  <div class="col">
+                    <label for="lName">Last Name*</label>
+                    <input type="text" class="form-control" id="lNameInput" placeholder="Last name">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="emailInput">Email address*</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="checkboxList">I am interested in help with:*</label>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="accounting">
+                      <label class="form-check-label" for="accounting">accounting</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="payroll">
+                      <label class="form-check-label" for="payroll">Pay Roll</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="taxprep">
+                      <label class="form-check-label" for="taxprep">Tax Prep</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="consulting">
+                      <label class="form-check-label" for="consulting">Consulting</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="nonprof-chruch">
+                      <label class="form-check-label" for="nonprof-church">Non-Profit / Church</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="investment">
+                      <label class="form-check-label" for="investment">Investment</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="retirement">
+                      <label class="form-check-label" for="retirement">Retirement</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="seminars">
+                      <label class="form-check-label" for="seminars">Seminars</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Name of Business</label>
+                <input type="text" class="form-control" id="businessInput" placeholder="Name of Business">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Additional Message</label>
+                <textarea class="form-control" id="messageInput" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer modal-hf">
+          </div>
         </div>
       </div>
     </div>
@@ -69,9 +155,17 @@
     </div>
   </footer>
 
+
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="js/main.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      $('#contactModal').modal('show');
+    });
+  </script>
 </body>
+
 </html>
