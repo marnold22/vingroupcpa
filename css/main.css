@@ -2,6 +2,11 @@
   font-family: 'Poppins';
 }
 
+.content {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 /* COLORS */
 .bg-cpagreen {
   background-color: #346272;
@@ -45,19 +50,9 @@ header div div div a.herobanner:hover {
   color: #346272;
 }
 
-/* section {
-  height: 100vh;
-} */
-
-
-hr#one {
-  width: 50%;
-  margin: 1.5em auto;
-}
-
-.content {
-  padding-left: 4rem;
-  padding-right: 4rem;
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 
