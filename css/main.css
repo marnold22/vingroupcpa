@@ -126,6 +126,12 @@ section {
 .payment-padding {
   padding-top: 15%;
 }
+.cpagreen {
+  color: #346272;
+}
+.seminar-link {
+  font-size: 0.8rem;
+}
 
 /* RESPONSIVE CSS */
 @media (min-width: 40em) {
