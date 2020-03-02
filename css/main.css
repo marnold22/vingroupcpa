@@ -90,14 +90,20 @@ section {
 .about-padding {
   padding-top: 40%;
 }
-.pricing-padding{
-  padding-top: 20%;
-}
-.payment-padding {
-  padding-top: 30%;
-}
 
-.btn-about {
+/* SERVICES */
+.services .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.services h2 {
+  font-weight: normal;
+}
+.services .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.btn-services {
   border: 2px solid black;
   border-color: #346272;
   border-radius: 500px;
@@ -108,9 +114,12 @@ section {
   cursor: pointer;
   margin-bottom: 1rem;
 }
-.btn-about:hover {
+.btn-services:hover {
   background-color: #346272;
   color: white;
+}
+.payment-padding {
+  padding-top: 15%;
 }
 
 /* RESPONSIVE CSS */
