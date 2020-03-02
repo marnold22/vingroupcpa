@@ -51,6 +51,7 @@
 .herobanner-cbtn {
   font-size: 2rem;
   border-radius: 500px;
+  border-width: medium;
 }
 header div div div a.herobanner:hover {
   color: #346272;
