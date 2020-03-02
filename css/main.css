@@ -6,6 +6,10 @@
   padding-left: 4rem;
   padding-right: 4rem;
 }
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
 
 /* COLORS */
 .bg-cpagreen {
@@ -113,6 +117,7 @@ section {
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 .btn-services:hover {
   background-color: #346272;
