@@ -66,6 +66,68 @@ section {
 }
 
 
+/* ABOUT US */
+.about .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.about h2 {
+  font-weight: normal;
+}
+.about .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  color: #346272;
+}
+.about-padding {
+  padding-top: 40%;
+}
+.pricing-padding{
+  padding-top: 20%;
+}
+.payment-padding {
+  padding-top: 30%;
+}
+
+.btn-about {
+  border: 2px solid black;
+  border-color: #346272;
+  border-radius: 500px;
+  background-color: white;
+  color: #346272;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.btn-about:hover {
+  background-color: #346272;
+  color: white;
+}
+
+/* RESPONSIVE CSS */
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+
+
 /* FOOTER */
 footer {
   background-color: #346272;
