@@ -1,13 +1,17 @@
+
+/* ---------------------------------------------------------------------- GLOBAL STUFF ---------------------------------------------------------------------- */
 * {
   font-family: 'Poppins';
 }
 
+/* Added padding to fix fluid-container */
 .content {
   padding-left: 4rem;
   padding-right: 4rem;
 }
-a:hover, a:visited, a:link, a:active
-{
+
+/* Fixes all links */
+a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
 
@@ -18,8 +22,22 @@ a:hover, a:visited, a:link, a:active
 .cpagreen {
   color: #346272;
 }
+.white {
+  color: white;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  color: #346272;
+}
 
-/* MAIN HERO */
+
+
+/* ---------------------------------------------------------------------- HERO BANNER ---------------------------------------------------------------------- */
 .herobanner {
   height: 100vh;
   min-height: 500px;
@@ -27,23 +45,6 @@ a:hover, a:visited, a:link, a:active
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-}
-.herobanner-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
-}
-.herobanner-services {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i2.jpg");
-}
-.herobanner-events {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i3.jpg");
-}
-.herobanner-about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i5.jpg");
-}
-.herobanner-contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/gmap.PNG");
-  color: #000;
-  height: 95vh;
 }
 .herobanner h1 {
   font-size: 6rem;
@@ -55,21 +56,12 @@ a:hover, a:visited, a:link, a:active
   font-size: 1.2rem;
   border-radius: 300px;
 }
-.herobanner-cbtn {
-  font-size: 2rem;
-  border-radius: 500px;
-  border-width: medium;
-}
-header div div div a.herobanner:hover {
-  color: #346272;
-}
-section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.modal-hf {
-  background-color: #346272;
-  color: white;
+
+
+
+/* ---------------------------------------------------------------------- HOME PAGE ----------------------------------------------------------------------*/
+.herobanner-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
 }
 .arrow {
   font-size: 1rem;
@@ -77,24 +69,33 @@ section {
 .service-card {
   min-height: 400px;
 }
-
-#content-desktop {display: block;}
-#content-mobile {display: none;}
-
-@media screen and (max-width: 600px) {
-  #content-desktop {display: none;}
-  #content-mobile {display: block;}
+.home .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
-
+.home h2 {
+  font-weight: normal;
+}
+.home .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
 .design {
   height: 50vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  background-image:  url("../assets/design.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/design.png");
 }
-
+.blank {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #346272;
+  background-color: white;
+}
 .contact {
   height: 50vh;
   background-size: cover;
@@ -103,35 +104,32 @@ section {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/gmap.PNG");
 }
-
-
-
-/* ABOUT US */
-.about .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+/* Icon padding for font awesome */
+.ipad {
+  padding: 1rem;
 }
-.about h2 {
-  font-weight: normal;
+/* FOOTER */
+footer {
+  background-color: #346272;
+  color: white;
 }
-.about .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+footer div div div a {
+  color: inherit;
 }
-.featurette-divider {
-  margin: 5rem 0;
+/* Set up for displaying mobile services section on home page */
+#content-desktop {
+  display: block;
 }
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-  color: #346272;
-}
-.about-padding {
-  padding-top: 40%;
+#content-mobile {
+  display: none;
 }
 
-/* SERVICES */
+
+
+/* ---------------------------------------------------------------------- SERVICES PAGE ----------------------------------------------------------------------*/
+.herobanner-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i2.jpg");
+}
 .services .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -159,9 +157,6 @@ section {
   background-color: #346272;
   color: white;
 }
-
-
-
 .btn-services-inverse {
   border: 2px solid black;
   border-color: #346272;
@@ -178,34 +173,16 @@ section {
   background-color: white;
   color: #346272;
 }
-
-
-
-.payment-padding {
-  padding-top: 15%;
-}
 .seminar-link {
   font-size: 0.8rem;
 }
 
-/* RESPONSIVE CSS */
-@media (min-width: 40em) {
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-
-.contact-heading {
-  color: white;
-}
 
 
-/* EVENTS */
+/* ---------------------------------------------------------------------- EVENTS PAGE ---------------------------------------------------------------------- */
+.herobanner-events {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i3.jpg");
+}
 .event-padding {
   padding-top: 33%;
 }
@@ -215,8 +192,72 @@ section {
 
 
 
-/* FOOTER */
-footer {
+/* ---------------------------------------------------------------------- ABOUT US PAGE ---------------------------------------------------------------------- */
+.herobanner-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i5.jpg");
+}
+.about .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.about h2 {
+  font-weight: normal;
+}
+.about .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.about-padding {
+  padding-top: 40%;
+}
+
+
+
+/* ---------------------------------------------------------------------- CONTACT PAGE ---------------------------------------------------------------------- */
+/* Modal header & Footer Green */
+.herobanner-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/gmap.PNG");
+  color: #000;
+  height: 90vh;
+}
+.herobanner-cbtn {
+  font-size: 2rem;
+  border-radius: 500px;
+  border-width: medium;
+}
+.modal-hf {
   background-color: #346272;
   color: white;
+}
+
+
+
+/* ---------------------------------------------------------------------- MEDIA QUIERIES ---------------------------------------------------------------------- */
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #content-desktop {display: none;}
+  #content-mobile {display: block;}
+}
+
+
+@media screen and (max-width: 600px) {
+  .design, .blank, .contact {
+      height: 100%;
+  }
+  .testimonial-text {
+    padding-top: 2rem;
+  }
 }
