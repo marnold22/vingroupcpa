@@ -8,6 +8,8 @@
 .content {
   padding-left: 4rem;
   padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Fixes all links */
@@ -15,16 +17,7 @@ a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
 
-/* COLORS */
-.bg-cpagreen {
-  background-color: #346272;
-}
-.cpagreen {
-  color: #346272;
-}
-.white {
-  color: white;
-}
+/* featurette objects */
 .featurette-divider {
   margin: 5rem 0;
 }
@@ -33,6 +26,19 @@ a:hover, a:visited, a:link, a:active {
   line-height: 1;
   letter-spacing: -.05rem;
   color: #346272;
+}
+.featurette-quote {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  color: #346272;
+}
+.featurette-quoter {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  color: #346272;
+  font-size: 1.3rem;
 }
 
 
@@ -232,16 +238,29 @@ footer div div div a {
 
 
 
+/* ---------------------------------------------------------------------- COLORS ----------------------------------------------------------------------*/
+.bg-cpagreen {
+  background-color: #346272;
+}
+.cpagreen {
+  color: #346272;
+}
+.white {
+  color: #fff;
+}
+
+
+
 /* ---------------------------------------------------------------------- MEDIA QUIERIES ---------------------------------------------------------------------- */
 @media (min-width: 40em) {
-  .featurette-heading {
+  .featurette-heading, .featurette-quote {
     font-size: 50px;
   }
 }
 
 
 @media (min-width: 62em) {
-  .featurette-heading {
+  .featurette-heading, .featurette-quote {
     margin-top: 7rem;
   }
 }
@@ -252,12 +271,55 @@ footer div div div a {
   #content-mobile {display: block;}
 }
 
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .design, .blank, .contact {
       height: 100%;
   }
-  .testimonial-text {
-    padding-top: 2rem;
+  .content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .featurette-quote {
+    font-size: 2rem;
+  }
+  .mobile {
+    font-size: 0.75rem;
+  }
+  .btn-services-inverse {
+    font-size: 0.75rem;
+  }
+  .service-card {
+    min-height: 480px;
+  }
+  .featurette {
+    padding-top: 4rem;
+  }
+  .featurette-divider {
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .herobanner h1 {
+    font-size: 4rem;
+  }
+  .design, .blank, .contact {
+      height: 100%;
+  }
+  .featurette-heading {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+  .featurette-quote {
+    font-size: 1.3rem;
+  }
+  .featurette-quoter {
+    font-size: 0.75rem;
+  }
+  .service-card {
+    min-height: 100%;
+  }
+  .featurette-divider {
+    margin: 1rem 0;
   }
 }
