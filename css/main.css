@@ -81,6 +81,16 @@ section {
 }
 
 
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 600px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+
 /* ABOUT US */
 .about .col-lg-4 {
   margin-bottom: 1.5rem;
