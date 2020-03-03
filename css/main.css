@@ -144,6 +144,28 @@ section {
   background-color: #346272;
   color: white;
 }
+
+
+
+.btn-services-inverse {
+  border: 2px solid black;
+  border-color: #346272;
+  border-radius: 500px;
+  background-color: #346272;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+.btn-services-inverse:hover {
+  background-color: white;
+  color: #346272;
+}
+
+
+
 .payment-padding {
   padding-top: 15%;
 }
