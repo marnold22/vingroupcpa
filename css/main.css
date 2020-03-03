@@ -72,6 +72,14 @@ section {
   color: white;
 }
 
+.arrow {
+  font-size: 1rem;
+}
+
+.service-card {
+  min-height: 400px;
+}
+
 
 /* ABOUT US */
 .about .col-lg-4 {

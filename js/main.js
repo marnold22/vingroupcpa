@@ -1,6 +1,6 @@
 $("#home-lm").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#services").offset().top
+        scrollTop: $("#home-page").offset().top
     }, 1000);
 });
 $("#services-lm").click(function() {
