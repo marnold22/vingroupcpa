@@ -124,7 +124,7 @@ footer div div div a {
 }
 /* Set up for displaying mobile services section on home page */
 #content-desktop {
-  display: block;
+  /* display: block; */
 }
 #content-mobile {
   display: none;
@@ -265,7 +265,11 @@ footer div div div a {
   }
 }
 
-
+@media screen and (max-width: 800px) {
+  #content-desktop {display: none;}
+  #content-mobile {display: none;}
+  #content-tablet {display: block;}
+}
 @media screen and (max-width: 600px) {
   #content-desktop {display: none;}
   #content-mobile {display: block;}
@@ -300,6 +304,9 @@ footer div div div a {
   .herobanner-contact{
     height: 100vh;
   }
+  .about-padding {
+    padding-top: 10%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -327,5 +334,8 @@ footer div div div a {
   }
   .herobanner-contact{
     height: 100vh;
+  }
+  .about-padding {
+    padding-top: 10%;
   }
 }
