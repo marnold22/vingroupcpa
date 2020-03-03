@@ -123,10 +123,10 @@ footer div div div a {
   color: inherit;
 }
 /* Set up for displaying mobile services section on home page */
-#content-desktop {
-  /* display: block; */
+#index-desktop {
+  display: block;
 }
-#content-mobile {
+#index-mobile {
   display: none;
 }
 
@@ -216,6 +216,9 @@ footer div div div a {
 .about-padding {
   padding-top: 40%;
 }
+#about-desktop {display: flex;}
+#about-tablet {display: none;}
+#about-mobile {display: none;}
 
 
 
@@ -266,14 +269,14 @@ footer div div div a {
 }
 
 @media screen and (max-width: 800px) {
-  #content-desktop {display: none;}
-  #content-mobile {display: none;}
-  #content-tablet {display: block;}
+  #index-desktop {display: none;}
+  #index-mobile {display: block;}
+
+  #about-desktop {display: none;}
+  #about-tablet {display: flex;}
+  #about-mobile {display: none;}
 }
-@media screen and (max-width: 600px) {
-  #content-desktop {display: none;}
-  #content-mobile {display: block;}
-}
+
 
 @media screen and (max-width: 800px) {
   .design, .blank, .contact {
@@ -307,6 +310,15 @@ footer div div div a {
   .about-padding {
     padding-top: 10%;
   }
+}
+
+@media screen and (max-width: 600px) {
+  #index-desktop {display: none;}
+  #index-mobile {display: block;}
+
+  #about-desktop {display: none;}
+  #about-tablet {display: none;}
+  #about-mobile {display: flex;}
 }
 
 @media screen and (max-width: 600px) {
