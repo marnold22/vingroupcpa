@@ -224,7 +224,7 @@ footer div div div a {
 .herobanner-contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/gmap.PNG");
   color: #000;
-  height: 90vh;
+  height: 92vh;
 }
 .herobanner-cbtn {
   font-size: 2rem;
@@ -297,6 +297,9 @@ footer div div div a {
   .featurette-divider {
     margin: 3rem 0;
   }
+  .herobanner-contact{
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -321,5 +324,8 @@ footer div div div a {
   }
   .featurette-divider {
     margin: 1rem 0;
+  }
+  .herobanner-contact{
+    height: 100vh;
   }
 }
