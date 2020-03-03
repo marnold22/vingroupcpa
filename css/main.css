@@ -15,6 +15,9 @@ a:hover, a:visited, a:link, a:active
 .bg-cpagreen {
   background-color: #346272;
 }
+.cpagreen {
+  color: #346272;
+}
 
 /* MAIN HERO */
 .herobanner {
@@ -126,9 +129,6 @@ section {
 .payment-padding {
   padding-top: 15%;
 }
-.cpagreen {
-  color: #346272;
-}
 .seminar-link {
   font-size: 0.8rem;
 }
@@ -145,6 +145,15 @@ section {
   }
 }
 
+
+
+/* EVENTS */
+.event-padding {
+  padding-top: 33%;
+}
+.btn-div-gap {
+  padding-top: 5%;
+}
 
 
 
