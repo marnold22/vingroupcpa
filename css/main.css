@@ -110,6 +110,9 @@ a:hover, a:visited, a:link, a:active {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/gmap.PNG");
 }
+.quote-padding {
+  padding-top: 4rem;
+}
 /* Icon padding for font awesome */
 .ipad {
   padding: 1rem;
@@ -325,6 +328,9 @@ footer div div div a {
     padding-top: 5%;
     padding-bottom: 5%;
   }
+  .quote-padding {
+    padding-top: 0rem;
+  }
 
 }
 
@@ -376,5 +382,8 @@ footer div div div a {
   }
   .event-btn {
     padding-bottom: 1rem;
+  }
+  .quote-padding {
+    padding-top: 0rem;
   }
 }
