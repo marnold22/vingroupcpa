@@ -113,6 +113,9 @@ a:hover, a:visited, a:link, a:active {
 .quote-padding {
   padding-top: 4rem;
 }
+.quote-padding-2 {
+  padding-top: 1rem;
+}
 /* Icon padding for font awesome */
 .ipad {
   padding: 1rem;
@@ -331,6 +334,9 @@ footer div div div a {
   .quote-padding {
     padding-top: 0rem;
   }
+  .quote-padding-2 {
+    padding-top: 0rem;
+  }
 
 }
 
@@ -384,6 +390,9 @@ footer div div div a {
     padding-bottom: 1rem;
   }
   .quote-padding {
+    padding-top: 0rem;
+  }
+  .quote-padding-2 {
     padding-top: 0rem;
   }
 }
