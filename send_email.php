@@ -92,7 +92,22 @@
     //Create email headers
     $headers = 'From: '.$emailVerified."\r\n".'Reply-To: '.$emailVerified."\r\n".'X-Mailer: PHP/'. phpversion();
     //Send Mail
-    @mail($email_to, $email_subject, $email_message, $headers) or die("Error Sending Email!");
-    echo "Thank you for your message!";
-  }
+    $mailStatus = mail($email_to, $email_subject, $email_message, $headers);
+
+    if ($mailStatus) { ?>
+      <script language="javascript" type="text/javascript">
+        alert('Thank you for the message. We will contact you shortly.');
+        window.location.href = 'index.html';
+      </script>
+      <?php
+    }
+    else { ?>
+        <script language="javascript" type="text/javascript">
+          alert('Message failed. Please, send an email to gordon@template-help.com');
+          window.location.href = 'index.html';
+        </script>
+        <?php
+    }
+    ?>
+<?php }
 ?>
