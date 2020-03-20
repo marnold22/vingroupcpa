@@ -341,7 +341,7 @@ footer div div div a {
 }
 
 /*  ---------- Tablet ----------*/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px), screen and (max-height: 991px) {
   #index-desktop {display: none;}
   #index-tablet {display: block;}
   #index-mobile {display: none;}
@@ -355,7 +355,7 @@ footer div div div a {
   #events-mobile {display: none;}
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px), screen and (max-height: 991px) {
   .design, .blank, .contact {
       height: 100%;
   }
@@ -404,7 +404,7 @@ footer div div div a {
 }
 
 /*  ---------- Mobile ----------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), screen and (max-height: 600px) {
   #index-desktop {display: none;}
   #index-tablet {display: none;}
   #index-mobile {display: block;}
@@ -418,7 +418,7 @@ footer div div div a {
   #events-mobile {display: flex;}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), screen and (max-height: 600px) {
   .herobanner h1 {
     font-size: 4rem;
   }
