@@ -194,7 +194,7 @@ footer div div div a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i3.jpg");
 }
 .event-padding {
-  padding-top: 16%;
+  padding-top: 24%;
 }
 .event-btn {
   padding-top: 1rem;
@@ -264,12 +264,12 @@ footer div div div a {
 
 
 /* ---------------------------------------------------------------------- MEDIA QUIERIES ---------------------------------------------------------------------- */
+/*  ---------- Global ----------*/
 @media (min-width: 40em) {
   .featurette-heading, .featurette-quote {
     font-size: 40px;
   }
 }
-
 
 @media (min-width: 62em) {
   .featurette-heading, .featurette-quote {
@@ -277,7 +277,8 @@ footer div div div a {
   }
 }
 
-@media screen and (max-width: 800px) {
+/*  ---------- < 1920x1080 ----------*/
+@media (max-width:1199px) and (min-width:992px) {
   #index-desktop {display: none;}
   #index-tablet {display: block;}
   #index-mobile {display: none;}
@@ -291,8 +292,70 @@ footer div div div a {
   #events-mobile {display: none;}
 }
 
+@media (max-width:1199px) and (min-width:992px) {
+  .design, .blank, .contact {
+      height: 100%;
+  }
+  .content {
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+  }
+  .featurette-quote {
+    font-size: 2rem;
+  }
+  .mobile {
+    font-size: 0.75rem;
+  }
+  .btn-services-inverse {
+    font-size: 0.75rem;
+  }
+  .btn-services {
+    font-size: 0.75rem;
+  }
+  .service-card {
+    min-height: 480px;
+  }
+  .featurette {
+    padding-top: 4rem;
+  }
+  .featurette-divider {
+    margin: 3rem 0;
+  }
+  .herobanner-contact{
+    height: 100vh;
+  }
+  .about-padding {
+    padding-top: 10%;
+  }
+  .event-padding {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .quote-padding {
+    padding-top: 0rem;
+  }
+  .quote-padding-2 {
+    padding-top: 0rem;
+  }
 
-@media screen and (max-width: 800px) {
+}
+
+/*  ---------- Tablet ----------*/
+@media screen and (max-width: 991px) {
+  #index-desktop {display: none;}
+  #index-tablet {display: block;}
+  #index-mobile {display: none;}
+
+  #about-desktop {display: none;}
+  #about-tablet {display: flex;}
+  #about-mobile {display: none;}
+
+  #events-desktop {display: none;}
+  #events-tablet {display: flex;}
+  #events-mobile {display: none;}
+}
+
+@media screen and (max-width: 991px) {
   .design, .blank, .contact {
       height: 100%;
   }
@@ -340,6 +403,7 @@ footer div div div a {
 
 }
 
+/*  ---------- Mobile ----------*/
 @media screen and (max-width: 600px) {
   #index-desktop {display: none;}
   #index-tablet {display: none;}
