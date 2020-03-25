@@ -1,7 +1,7 @@
 <?php
 
   //Initialize Email Variables
-  $email_to = "cpa@vingroup.com";
+  $email_to = "michaelarnold615@gmail.com";
   $email_subject = "Request More Information From Website";
 
   //Initializing Error Variables To Null.
@@ -13,7 +13,7 @@
 
   //This checks to see if form was 'Submitted'
   if(isset($_POST['submit'])) {
-    
+
     //First Name Sanitize
     if($_POST['fname'] != "") {
       $fnameSanitized = filter_var($_POST['fname'], FILTER_SANITIZE_STRING);
@@ -74,7 +74,7 @@
         $messageError = "Please enter your name.";
       }
     }
-    
+
     // Loop through all checkboxes
     if(!empty($_POST['check_list'])) {
       foreach($_POST['check_list'] as $selected)
