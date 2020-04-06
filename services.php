@@ -1,59 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- Favicon Links -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
-  <title>Vingroupcpa</title>
-</head>
+<!-- Head -->
+<?php include("modules/head.php") ?>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top bg-cpagreen">
-    <div class="container">
-      <a class="navbar-brand" href="index.php">
-        <img src="assets/logo.jpg" width="30" height="30" alt="">
-      </a>
-      <a class="navbar-toggler" type="a" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </a>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="services.php">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events.php">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.php">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://voffice.dillners.com/securelogin.asp?acct=23627" target="_blank">Client Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php include("modules/navbar.php") ?>
 
   <!-- Hero Banner -->
   <header class="herobanner herobanner-services">
@@ -571,22 +525,10 @@
 
 
   <!-- Footer -->
-  <footer class="py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p class="">Copyright &copy; Wayne E. Vinson 2020</p>
-          <a href="https://www.linkedin.com/in/wayne-e-vinson-70426513" target="_blank"><i class="fa fa-linkedin-square fa-2x epad footer-icon" aria-hidden="true"></i></a>
-          <a href="https://www.facebook.com/VinGroupCPA" target="_blank"><i class="fa fa-facebook-official fa-2x epad footer-icon" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include("modules/footer.php") ?>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="js/main.js" charset="utf-8"></script>
+  <!-- Scripts -->
+  <?php include("modules/scripts.php") ?>
 </body>
 
 </html>
