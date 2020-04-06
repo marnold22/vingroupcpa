@@ -25,7 +25,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top bg-cpagreen">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.php">
         <img src="assets/logo.jpg" width="30" height="30" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,19 +34,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="services.php">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
+            <a class="nav-link" href="events.php">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.php">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://voffice.dillners.com/securelogin.asp?acct=23627" target="_blank">Client Login</a>
@@ -93,7 +93,7 @@
                           reporting issues.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#accounting" class="btn-services-inverse">See accounting &raquo;</a>
+                        <a href="services.php#accounting" class="btn-services-inverse">See accounting &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -105,7 +105,7 @@
                           of payroll options to fit your personal payroll needs.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#payroll" class="btn-services-inverse">See payroll &raquo;</a>
+                        <a href="services.php#payroll" class="btn-services-inverse">See payroll &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -117,7 +117,7 @@
                           more</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#tax-prep" class="btn-services-inverse">See tax prep &raquo;</a>
+                        <a href="services.php#tax-prep" class="btn-services-inverse">See tax prep &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -133,7 +133,7 @@
                           issues.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#consulting" class="btn-services-inverse">See consulting &raquo;</a>
+                        <a href="services.php#consulting" class="btn-services-inverse">See consulting &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -145,7 +145,7 @@
                           in financial matters, and works effectively with churches, boards, volunteer staff, and ministers to implement sound financial systems and reporting mechanisms.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#church-np" class="btn-services-inverse">See church & non-profit &raquo;</a>
+                        <a href="services.php#church-np" class="btn-services-inverse">See church & non-profit &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -157,7 +157,7 @@
                           comprehensive approach to financial planning because we can see our clients’ entire financial picture as we advise them about future planning.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
+                        <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -173,7 +173,7 @@
                           QuickBooks®. Wayne is available to do a seminar in your area should you want to pull one together for yours and other churches.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#seminars" class="btn-services-inverse">See seminars &raquo;</a>
+                        <a href="services.php#seminars" class="btn-services-inverse">See seminars &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -184,7 +184,7 @@
                         <p class="card-text">For any of our services please check out our pricings here, or for custom service based pricing please call our office.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#pricing" class="btn-services-inverse">See pricing &raquo;</a>
+                        <a href="services.php#pricing" class="btn-services-inverse">See pricing &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -195,7 +195,7 @@
                         <p class="card-text">The Vin Group provides various payment options for your convenience. These options range from online payments, automatic bank withdrawl, and credit card options.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#payment-options" class="btn-services-inverse">See payment options &raquo;</a>
+                        <a href="services.php#payment-options" class="btn-services-inverse">See payment options &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -239,7 +239,7 @@
                           reporting issues.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#accounting" class="btn-services-inverse">See accounting &raquo;</a>
+                        <a href="services.php#accounting" class="btn-services-inverse">See accounting &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -251,7 +251,7 @@
                           of payroll options to fit your personal payroll needs.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#payroll" class="btn-services-inverse">See payroll &raquo;</a>
+                        <a href="services.php#payroll" class="btn-services-inverse">See payroll &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -267,7 +267,7 @@
                           more</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#tax-prep" class="btn-services-inverse">See tax prep &raquo;</a>
+                        <a href="services.php#tax-prep" class="btn-services-inverse">See tax prep &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -279,7 +279,7 @@
                           issues.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#consulting" class="btn-services-inverse">See consulting &raquo;</a>
+                        <a href="services.php#consulting" class="btn-services-inverse">See consulting &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -295,7 +295,7 @@
                           in financial matters, and works effectively with churches, boards, volunteer staff, and ministers to implement sound financial systems and reporting mechanisms.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#church-np" class="btn-services-inverse">See church & non-profit &raquo;</a>
+                        <a href="services.php#church-np" class="btn-services-inverse">See church & non-profit &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -307,7 +307,7 @@
                           comprehensive approach to financial planning because we can see our clients’ entire financial picture as we advise them about future planning.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
+                        <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -323,7 +323,7 @@
                           QuickBooks®. Wayne is available to do a seminar in your area should you want to pull one together for yours and other churches.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#seminars" class="btn-services-inverse">See seminars &raquo;</a>
+                        <a href="services.php#seminars" class="btn-services-inverse">See seminars &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -334,7 +334,7 @@
                         <p class="card-text">For any of our services please check out our pricings here, or for custom service based pricing please call our office.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#pricing" class="btn-services-inverse">See pricing &raquo;</a>
+                        <a href="services.php#pricing" class="btn-services-inverse">See pricing &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -349,7 +349,7 @@
                         <p class="card-text">The Vin Group provides various payment options for your convenience. These options range from online payments, automatic bank withdrawl, and credit card options.</p>
                       </div>
                       <div class="card-footer py-4 text-center">
-                        <a href="services.html#payment-options" class="btn-services-inverse">See payment options &raquo;</a>
+                        <a href="services.php#payment-options" class="btn-services-inverse">See payment options &raquo;</a>
                       </div>
                     </div>
                   </div>
@@ -387,7 +387,7 @@
                 issues.</p>
             </div>
             <div class="card-footer py-4 text-center">
-              <a href="services.html#accounting" class="btn-services-inverse">See accounting &raquo;</a>
+              <a href="services.php#accounting" class="btn-services-inverse">See accounting &raquo;</a>
             </div>
           </div>
         </div>
@@ -399,7 +399,7 @@
                 options to fit your personal payroll needs.</p>
             </div>
             <div class="card-footer py-4 text-center">
-              <a href="services.html#payroll" class="btn-services-inverse">See payroll &raquo;</a>
+              <a href="services.php#payroll" class="btn-services-inverse">See payroll &raquo;</a>
             </div>
           </div>
         </div>
@@ -410,7 +410,7 @@
               <p class="card-text">Tax work is a large part of Vin Group. They understand the tax laws and assist a variety of clients with an emphasis in ministerial and non-profit. Render unto Caesar what is Caesar's... and not a penny more</p>
             </div>
             <div class="card-footer py-4 text-center">
-              <a href="services.html#tax-prep" class="btn-services-inverse">See tax prep &raquo;</a>
+              <a href="services.php#tax-prep" class="btn-services-inverse">See tax prep &raquo;</a>
             </div>
           </div>
         </div>
@@ -422,7 +422,7 @@
               </p>
             </div>
             <div class="card-footer py-4 text-center">
-              <a href="services.html#consulting" class="btn-services-inverse">See consulting &raquo;</a>
+              <a href="services.php#consulting" class="btn-services-inverse">See consulting &raquo;</a>
             </div>
           </div>
         </div>
@@ -434,7 +434,7 @@
                 financial matters, and works effectively with churches, boards, volunteer staff, and ministers to implement sound financial systems and reporting mechanisms.</p>
             </div>
             <div class="card-footer py-4 text-center">
-              <a href="services.html#church-np" class="btn-services-inverse">See church & non-profit &raquo;</a>
+              <a href="services.php#church-np" class="btn-services-inverse">See church & non-profit &raquo;</a>
             </div>
           </div>
         </div>
@@ -446,7 +446,7 @@
                 approach to financial planning because we can see our clients’ entire financial picture as we advise them about future planning.</p>
             </div>
             <div class="card-footer py-4 text-center">
-              <a href="services.html#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
+              <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
             </div>
           </div>
         </div>
@@ -458,7 +458,7 @@
                 is available to do a seminar in your area should you want to pull one together for yours and other churches.</p>
             </div>
             <div class="card-footer py-4 text-center">
-              <a href="services.html#seminars" class="btn-services-inverse">See seminars &raquo;</a>
+              <a href="services.php#seminars" class="btn-services-inverse">See seminars &raquo;</a>
             </div>
           </div>
         </div>
@@ -469,7 +469,7 @@
               <p class="card-text">For any of our services please check out our pricings here, or for custom service based pricing please call our office.</p>
             </div>
             <div class="card-footer py-4 text-center">
-              <a href="services.html#pricing" class="btn-services-inverse">See pricing &raquo;</a>
+              <a href="services.php#pricing" class="btn-services-inverse">See pricing &raquo;</a>
             </div>
           </div>
         </div>
@@ -480,7 +480,7 @@
               <p class="card-text">The Vin Group provides various payment options for your convenience. These options range from online payments, automatic bank withdrawl, and credit card options.</p>
             </div>
             <div class="card-footer py-4 text-center">
-              <a href="services.html#payment-options" class="btn-services-inverse">See payment options &raquo;</a>
+              <a href="services.php#payment-options" class="btn-services-inverse">See payment options &raquo;</a>
             </div>
           </div>
         </div>
