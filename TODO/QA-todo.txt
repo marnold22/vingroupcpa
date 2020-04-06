@@ -1,4 +1,4 @@
-1. Fix gaps in bulleted lists on mobile side
-2. Double check wording "We lik ethe small to medium size business"
-3. Try a different tab styling for mobile device on Accounting>Seminars>Topics
-    - Could put title in tab and make tabs just roman numerals
+1. Double check wording "We lik ethe small to medium size business"
+2. Finish contact us mailer
+3. Need paypal account link - to add online banking (button)
+4. Still missing accounting policy - need to upload pdf file
