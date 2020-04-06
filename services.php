@@ -64,7 +64,7 @@
         <p class="lead">Our firm provides:</p>
         <div class="row">
           <div class="col-md-6">
-            <ul>
+            <ul class="top-row-mobile">
               <li>Compilation</li>
               <li>Review</li>
               <li>Preparation</li>
@@ -166,7 +166,7 @@
         <p class="lead">Summary of Services:</p>
         <div class="row">
           <div class="col-md-6">
-            <ul>
+            <ul class="top-row-mobile">
               <li>Tax preparation</li>
               <li>Tax planning</li>
               <li>Audit Representation with IRS</li>
@@ -195,7 +195,7 @@
         <p class="lead"></p>
         <div class="row">
           <div class="col-md-6">
-            <ul>
+            <ul class="top-row-mobile">
               <li>Financial Analysis</li>
               <li>Personal & Business Planning</li>
               <li>Employee Benefits</li>
@@ -240,7 +240,7 @@
         <p class="lead">Services Include:</p>
         <div class="row">
           <div class="col-md-7">
-            <ul>
+            <ul class="top-row-mobile">
               <li>Minister Compensation Package</li>
               <li>Accounting: Set-up and Training</li>
               <li>Quickbooks Pro Advisor</li>
@@ -277,7 +277,7 @@
         <p class="lead">Services Include:</p>
         <div class="row">
           <div class="col-md-6">
-            <ul>
+            <ul class="top-row-mobile">
               <li>Financial Coaching & Planning</li>
               <li>Retirement Planning</li>
               <li>Investments</li>
@@ -342,7 +342,7 @@
               <p><b class="cpagreen">Samples:</b></p>
               <div class="row">
                 <div class="col-md-6">
-                  <ul>
+                  <ul class="top-row-mobile">
                     <li>Form W-2</li>
                     <li>Form 1099</li>
                     <li>Form 8809 - Extension for Certain Forms</li>
@@ -451,7 +451,7 @@
               <p><b class="cpagreen">Budget</b></p>
               <div class="row">
                 <div class="col-md-6">
-                  <ul>
+                  <ul class="top-row-mobile">
                     <li>Setting up</li>
                     <li>Reporting</li>
                     <li>QuickBooks (Current Version)</li>
@@ -470,7 +470,7 @@
               <p><b class="cpagreen">Samples:</b></p>
               <div class="row">
                 <div class="col-md-6">
-                  <ul>
+                  <ul class="top-row-mobile">
                     <li>Contribution receipt current</li>
                     <li>Contribution receipt year end</li>
                     <li>Statement of position - Excel</li>
@@ -501,7 +501,7 @@
         <p class="lead">Pricings Include:</p>
         <div class="row">
           <div class="col-md-6">
-            <ul>
+            <ul class="top-row-mobile">
               <li>CPA Hourly Rate - <b class="cpagreen">$175/hour</b></li>
               <li>Financial Statements for Businesses - <b class="cpagreen">Hourly and bid</b></li>
               <li>Tax Prep - <b class="cpagreen">Ammount by the form</b></li>

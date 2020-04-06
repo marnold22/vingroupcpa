@@ -438,6 +438,9 @@ footer div div div a {
   .service-card {
     min-height: 100%;
   }
+  .top-row-mobile{
+    margin-bottom: 0;
+  }
   .featurette-divider {
     margin: 1rem 0;
   }
