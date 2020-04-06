@@ -303,7 +303,7 @@
         <p class="lead">Wayne has developed a highly successful seminar entitled "Getting the House in Order." The seminar equips treasurers and ministers in efficient money saving stewardship, with specific training in QuickBooks®. Wayne is
           available to do a seminar in your area should you want to pull one together for yours and other churches. Please contact us for more information on available seminars.</p>
       </div>
-      <div class="col-md-12">
+      <div id="services-desktop" class="col-md-12">
         <h3 class="cpagreen">Topics Include:</h3>
         <ul class="nav nav-tabs" id="seminarTab" role="tablist">
           <li class="nav-item">
@@ -488,6 +488,407 @@
           </div>
         </div>
       </div>
+
+      <div id="services-tablet" class="col-md-12">
+        <h3 class="cpagreen">Topics Include:</h3>
+        <ul class="nav nav-tabs" id="seminarTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active seminar-link cpagreen" id="tablet-I-tab" data-toggle="tab" href="#tablet-I" role="tab" aria-controls="I" aria-selected="true">I. Tax Issues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link seminar-link cpagreen" id="tablet-II-tab" data-toggle="tab" href="#tablet-II" role="tab" aria-controls="II" aria-selected="false">II. Federal and State Tax Issues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link seminar-link cpagreen" id="tablet-III-tab" data-toggle="tab" href="#tablet-III" role="tab" aria-controls="III" aria-selected="false">III. Accounting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link seminar-link cpagreen" id="tablet-IV-tab" data-toggle="tab" href="#tablet-IV" role="tab" aria-controls="IV" aria-selected="false">IV. Quickbooks®</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="seminarTabContent">
+          <!-- Tab 1 -->
+          <div class="tab-pane fade show active" id="tablet-I" role="tabpanel" aria-labelledby="tablet-I-tab">
+            <br>
+            <div class="col-md-12">
+              <p><h4 class="cpagreen"><b>I. Tax Issues for the Minister & Religious Worker</b></h4></p>
+            </div>
+            <br>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Income Tax</b> - General Clergy</p>
+              <p><b class="cpagreen">Definitions what is income</b> - taxable, non-taxable; employees, independent contractors, housing allowance, social security.</p>
+              <p><b class="cpagreen">Form W-2 in Detail</b> - What goes where, due dates.</p>
+              <p><b class="cpagreen">Employee Business Expenses</b> - Accountable reimbursement plan;</p>
+              <p><b class="cpagreen">Automobile Deductions</b> - Standard mileage rates, cars provided by the church</p>
+              <p><b class="cpagreen">Travel Away From Home</b> - What's included in deductible expenses, U.S. travel, foreign travel, spouse's expenses</p>
+              <p><b class="cpagreen">Per Diem Allowances</b> - Who gets what deductions, definition</p>
+              <p><b class="cpagreen">Transaction Chart</b> - How to handle various transactions</p>
+              <p><b class="cpagreen">Lease Value Table</b> - IRS safe harbor</p>
+              <p><b class="cpagreen">Independent Contractor 20 Factors</b> - IRS analysis</p>
+              <p><b class="cpagreen">Housing Allowance</b> - Request For</p>
+              <p><b class="cpagreen">Housing Allowance</b> - Guest Minister</p>
+              <p><b class="cpagreen">Housing Allowance</b> - Sample Wording Minutes</p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Samples:</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="top-row-mobile">
+                    <li>Form W-2</li>
+                    <li>Form 1099</li>
+                    <li>Form 8809 - Extension for Certain Forms</li>
+                    <li>Form 4361</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Determination Letter from IRS</li>
+                    <li>Accountable Reimbursement Plan</li>
+                    <li>Self-employment Tax Computation</li>
+                    <li>Minister EE</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab 2 -->
+          <div class="tab-pane fade" id="tablet-II" role="tabpanel" aria-labelledby="tablet-II-tab">
+            <br>
+            <div class="col-md-12">
+              <p><h4 class="cpagreen"><b>II. Federal and State Tax Issues for the Church</b></h4></p>
+            </div>
+            <br>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Unrelated Business Income Tax: What, Who, When</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Definitions</li>
+                    <li>3 criteria for taxation</li>
+                    <li>Exceptions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Compliance and Tax Computation</b></p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Non-Cash</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Contributions - required documentation & reporting</li>
+                    <li>New Developments</li>
+                    <li>Final Regulations, Sample Tax Exempt Letter</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Handouts - State Tax Issues</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Taxes: Exempt and Non-exempt</li>
+                    <li>Sales and Use Tax</li>
+                    <li>Property Tax</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab 3 -->
+          <div class="tab-pane fade" id="tablet-III" role="tabpanel" aria-labelledby="tablet-III-tab">
+            <br>
+            <div class="col-md-12">
+              <p><h4 class="cpagreen"><b>III. Accounting for Non-Profits</b></h4></p>
+            </div>
+            <br>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Accounting</b> - Objectives, assets, liabilities, what's left over</p>
+              <p><b class="cpagreen">Financial Statements</b> - Three basic reports, how to read them</p>
+              <p><b class="cpagreen">Bookkeeping</b> - Let's look at those pesky debts and credits, definitions, "T" accounting and their usage</p>
+              <p><b class="cpagreen">Fixed Assets</b> - What's included in total cost, depreciation, recording of, how to compile and value</p>
+              <p><b class="cpagreen">Management Reports</b> - Budget, comparison reports, trend</p>
+              <p><b class="cpagreen">Accounting Software</b> - How to decide what is right?</p>
+              <p><b class="cpagreen">Internal Control</b> - Definition, safeguarding of assets</p>
+              <p><b class="cpagreen">The Board . . . So You've Been Asked</b> - What is required as a member of the board</p>
+              <p><b class="cpagreen">What your CPA wants to see</b> - Getting ready for visit</p>
+              <p><b class="cpagreen">Records Retention Schedule</b> - What to keep and how long</p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">ECFA - Donors Bill of Rights</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Evangelical Council on Financial Accountability</li>
+                    <li>ECFA - Seven Standards</li>
+                    <li>ECFA - Contact Info</li>
+                    <li>ECFA - Application</li>
+                    <li>Good exercise in financial accountability</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab 4 -->
+          <div class="tab-pane fade" id="tablet-IV" role="tabpanel" aria-labelledby="tablet-IV-tab">
+            <br>
+            <div class="col-md-12">
+              <p><h4 class="cpagreen"><b>IV. Quickbooks® for Non-Profits</b></h4></p>
+            </div>
+            <br>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Designing the System</b> - Management objectives, type of organization</p>
+              <p><b class="cpagreen">Setting Up the Books</b> - 10 step process, entering opening balances</p>
+              <p><b class="cpagreen">Journal Entries</b> - Adjusting accounts</p>
+              <p><b class="cpagreen">Tracking Departments/Funds</b></p>
+              <p><b class="cpagreen">Receiving Money</b> - A way to track donor records and issue year-end giving receipts</p>
+              <p><b class="cpagreen">Creating Financial Statements</b></p>
+              <p><b class="cpagreen">Users and Passwords</b> - Security features</p>
+              <p><b class="cpagreen">Audit Trail</b> - Tape recorder of transactions, even deleted info</p>
+              <p><b class="cpagreen">Payroll</b> - handling licensed ministers and other employees</p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Budget</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="top-row-mobile">
+                    <li>Setting up</li>
+                    <li>Reporting</li>
+                    <li>QuickBooks (Current Version)</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Features</li>
+                    <li>Changes</li>
+                    <li>Upgrading decision</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Samples:</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="top-row-mobile">
+                    <li>Contribution receipt current</li>
+                    <li>Contribution receipt year end</li>
+                    <li>Statement of position - Excel</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Statement of activities - Excel</li>
+                    <li>Statement of position - QB stacked</li>
+                    <li>Statement of activities - QB stacked</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="services-mobile" class="col-md-12">
+        <h3 class="cpagreen">Topics Include:</h3>
+        <ul class="nav nav-tabs" id="seminarTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active seminar-link cpagreen" id="mobile-I-tab" data-toggle="tab" href="#mobile-I" role="tab" aria-controls="I" aria-selected="true">I.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link seminar-link cpagreen" id="mobile-II-tab" data-toggle="tab" href="#mobile-II" role="tab" aria-controls="II" aria-selected="false">II.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link seminar-link cpagreen" id="mobile-III-tab" data-toggle="tab" href="#mobile-III" role="tab" aria-controls="III" aria-selected="false">III.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link seminar-link cpagreen" id="mobile-IV-tab" data-toggle="tab" href="#mobile-IV" role="tab" aria-controls="IV" aria-selected="false">IV.</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="seminarTabContent">
+          <!-- Tab 1 -->
+          <div class="tab-pane fade show active" id="mobile-I" role="tabpanel" aria-labelledby="mobile-I-tab">
+            <br>
+            <div class="col-md-12">
+              <p><h4 class="cpagreen"><b>I. Tax Issues for the Minister & Religious Worker</b></h4></p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Income Tax</b> - General Clergy</p>
+              <p><b class="cpagreen">Definitions what is income</b> - taxable, non-taxable; employees, independent contractors, housing allowance, social security.</p>
+              <p><b class="cpagreen">Form W-2 in Detail</b> - What goes where, due dates.</p>
+              <p><b class="cpagreen">Employee Business Expenses</b> - Accountable reimbursement plan;</p>
+              <p><b class="cpagreen">Automobile Deductions</b> - Standard mileage rates, cars provided by the church</p>
+              <p><b class="cpagreen">Travel Away From Home</b> - What's included in deductible expenses, U.S. travel, foreign travel, spouse's expenses</p>
+              <p><b class="cpagreen">Per Diem Allowances</b> - Who gets what deductions, definition</p>
+              <p><b class="cpagreen">Transaction Chart</b> - How to handle various transactions</p>
+              <p><b class="cpagreen">Lease Value Table</b> - IRS safe harbor</p>
+              <p><b class="cpagreen">Independent Contractor 20 Factors</b> - IRS analysis</p>
+              <p><b class="cpagreen">Housing Allowance</b> - Request For</p>
+              <p><b class="cpagreen">Housing Allowance</b> - Guest Minister</p>
+              <p><b class="cpagreen">Housing Allowance</b> - Sample Wording Minutes</p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Samples:</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="top-row-mobile">
+                    <li>Form W-2</li>
+                    <li>Form 1099</li>
+                    <li>Form 8809 - Extension for Certain Forms</li>
+                    <li>Form 4361</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Determination Letter from IRS</li>
+                    <li>Accountable Reimbursement Plan</li>
+                    <li>Self-employment Tax Computation</li>
+                    <li>Minister EE</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab 2 -->
+          <div class="tab-pane fade" id="mobile-II" role="tabpanel" aria-labelledby="mobile-II-tab">
+            <br>
+            <div class="col-md-12">
+              <p><h4 class="cpagreen"><b>II. Federal and State Tax Issues for the Church</b></h4></p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Unrelated Business Income Tax: What, Who, When</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Definitions</li>
+                    <li>3 criteria for taxation</li>
+                    <li>Exceptions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Compliance and Tax Computation</b></p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Non-Cash</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Contributions - required documentation & reporting</li>
+                    <li>New Developments</li>
+                    <li>Final Regulations, Sample Tax Exempt Letter</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Handouts - State Tax Issues</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Taxes: Exempt and Non-exempt</li>
+                    <li>Sales and Use Tax</li>
+                    <li>Property Tax</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab 3 -->
+          <div class="tab-pane fade" id="mobile-III" role="tabpanel" aria-labelledby="mobile-III-tab">
+            <br>
+            <div class="col-md-12">
+              <p><h4 class="cpagreen"><b>III. Accounting for Non-Profits</b></h4></p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Accounting</b> - Objectives, assets, liabilities, what's left over</p>
+              <p><b class="cpagreen">Financial Statements</b> - Three basic reports, how to read them</p>
+              <p><b class="cpagreen">Bookkeeping</b> - Let's look at those pesky debts and credits, definitions, "T" accounting and their usage</p>
+              <p><b class="cpagreen">Fixed Assets</b> - What's included in total cost, depreciation, recording of, how to compile and value</p>
+              <p><b class="cpagreen">Management Reports</b> - Budget, comparison reports, trend</p>
+              <p><b class="cpagreen">Accounting Software</b> - How to decide what is right?</p>
+              <p><b class="cpagreen">Internal Control</b> - Definition, safeguarding of assets</p>
+              <p><b class="cpagreen">The Board . . . So You've Been Asked</b> - What is required as a member of the board</p>
+              <p><b class="cpagreen">What your CPA wants to see</b> - Getting ready for visit</p>
+              <p><b class="cpagreen">Records Retention Schedule</b> - What to keep and how long</p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">ECFA - Donors Bill of Rights</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Evangelical Council on Financial Accountability</li>
+                    <li>ECFA - Seven Standards</li>
+                    <li>ECFA - Contact Info</li>
+                    <li>ECFA - Application</li>
+                    <li>Good exercise in financial accountability</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tab 4 -->
+          <div class="tab-pane fade" id="mobile-IV" role="tabpanel" aria-labelledby="mobile-IV-tab">
+            <br>
+            <div class="col-md-12">
+              <p><h4 class="cpagreen"><b>IV. Quickbooks® for Non-Profits</b></h4></p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Designing the System</b> - Management objectives, type of organization</p>
+              <p><b class="cpagreen">Setting Up the Books</b> - 10 step process, entering opening balances</p>
+              <p><b class="cpagreen">Journal Entries</b> - Adjusting accounts</p>
+              <p><b class="cpagreen">Tracking Departments/Funds</b></p>
+              <p><b class="cpagreen">Receiving Money</b> - A way to track donor records and issue year-end giving receipts</p>
+              <p><b class="cpagreen">Creating Financial Statements</b></p>
+              <p><b class="cpagreen">Users and Passwords</b> - Security features</p>
+              <p><b class="cpagreen">Audit Trail</b> - Tape recorder of transactions, even deleted info</p>
+              <p><b class="cpagreen">Payroll</b> - handling licensed ministers and other employees</p>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Budget</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="top-row-mobile">
+                    <li>Setting up</li>
+                    <li>Reporting</li>
+                    <li>QuickBooks (Current Version)</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Features</li>
+                    <li>Changes</li>
+                    <li>Upgrading decision</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p><b class="cpagreen">Samples:</b></p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="top-row-mobile">
+                    <li>Contribution receipt current</li>
+                    <li>Contribution receipt year end</li>
+                    <li>Statement of position - Excel</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Statement of activities - Excel</li>
+                    <li>Statement of position - QB stacked</li>
+                    <li>Statement of activities - QB stacked</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <hr class="featurette-divider">

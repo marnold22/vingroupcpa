@@ -186,7 +186,9 @@ footer div div div a {
 .seminar-link {
   font-size: 0.8rem;
 }
-
+#services-desktop {display: block;}
+#services-tablet {display: none;}
+#services-mobile {display: none;}
 
 
 /* ---------------------------------------------------------------------- EVENTS PAGE ---------------------------------------------------------------------- */
@@ -283,6 +285,10 @@ footer div div div a {
   #index-tablet {display: block;}
   #index-mobile {display: none;}
 
+  #services-desktop {display: block;}
+  #services-tablet {display: none;}
+  #services-mobile {display: none;}
+
   #about-desktop {display: none;}
   #about-tablet {display: flex;}
   #about-mobile {display: none;}
@@ -346,6 +352,10 @@ footer div div div a {
   #index-tablet {display: block;}
   #index-mobile {display: none;}
 
+  #services-desktop {display: none;}
+  #services-tablet {display: block;}
+  #services-mobile {display: none;}
+
   #about-desktop {display: none;}
   #about-tablet {display: flex;}
   #about-mobile {display: none;}
@@ -408,6 +418,10 @@ footer div div div a {
   #index-desktop {display: none;}
   #index-tablet {display: none;}
   #index-mobile {display: block;}
+
+  #services-desktop {display: none;}
+  #services-tablet {display: none;}
+  #services-mobile {display: block;}
 
   #about-desktop {display: none;}
   #about-tablet {display: none;}
