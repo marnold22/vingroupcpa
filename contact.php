@@ -3,9 +3,6 @@
 
 <!-- Head -->
 <?php include("modules/head.php") ?>
-<?php
-  error_reporting(E_ALL);
-?>
 
 <body>
 
