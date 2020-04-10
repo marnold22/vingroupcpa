@@ -1,3 +1,4 @@
 INFO/
 vendor/
 composer.lock
+info.php
