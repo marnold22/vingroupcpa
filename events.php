@@ -73,7 +73,8 @@
         <div class="row">
           <div class="col event-btn">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
-            <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services" target="_blank" role="button" aria-disabled="true">Register</a>
+            <a href="#" class="btn-services-disbaled">Register</a>
+            <!-- <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services-disbaled" target="_blank" >Register</a> -->
           </div>
         </div>
       </div>
@@ -153,7 +154,8 @@
         <div class="row">
           <div class="col text-center event-btn">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
-            <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services" target="_blank" role="button" aria-disabled="true">Register</a>
+            <a href="#" class="btn-services-disbaled">Register</a>
+            <!-- <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services-disbaled" target="_blank" >Register</a> -->
           </div>
         </div>
       </div>
@@ -234,7 +236,8 @@
         <div class="row">
           <div class="col event-btn text-center">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
-            <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services" target="_blank" role="button" aria-disabled="true">Register</a>
+            <a href="#" class="btn-services-disbaled">Register</a>
+            <!-- <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services-disbaled" target="_blank" >Register</a> -->
           </div>
         </div>
       </div>

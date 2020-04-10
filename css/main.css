@@ -162,6 +162,21 @@ footer div div div a {
   margin-bottom: 1rem;
   margin-right: 1rem;
 }
+.btn-services-disbaled {
+  border: 2px solid black;
+  border-color: #346272;
+  border-radius: 500px;
+  background-color: white;
+  color: #346272;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  opacity: 0.35;
+  pointer-events:none;
+  cursor: not-allowed;
+}
 .btn-services:hover {
   background-color: #346272;
   color: white;
