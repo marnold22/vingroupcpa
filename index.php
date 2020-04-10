@@ -51,6 +51,7 @@
         </div>
       </div>
     </div>
+    <?php include("modules/covid19-modal.php") ?>
   </header>
 
   <div id="home-page" class="container home"></div>
@@ -554,6 +555,11 @@
 
   <!-- Scripts -->
   <?php include("modules/scripts.php") ?>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      $('#covid19Modal').modal('show');
+    });
+  </script>
 </body>
 
 </html>

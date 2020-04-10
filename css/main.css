@@ -128,6 +128,26 @@ footer {
 footer div div div a {
   color: inherit;
 }
+#covid-19 {
+  color: #346272;
+  font-size: 1rem;
+}
+.btn-c19 {
+  border: 2px solid black;
+  border-color: #346272;
+  border-radius: 200px;
+  background-color: white;
+  color: #346272;
+  padding: 7px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+.btn-c19:hover {
+  background-color: #346272;
+  color: white;
+}
 /* Set up for displaying mobile services section on home page */
 #index-desktop {display: block;}
 #index-tablet {display: none;}
@@ -497,5 +517,11 @@ footer div div div a {
   }
   .quote-padding-2 {
     padding-top: 0rem;
+  }
+  .btn-c19 {
+    padding: 3.5px 7px;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+    margin-right: 0.25rem;
   }
 }
