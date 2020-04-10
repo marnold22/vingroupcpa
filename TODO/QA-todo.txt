@@ -2,3 +2,4 @@
 2. Finish contact us mailer
 3. Need paypal account link - to add online banking (button)
 4. Still missing accounting policy - need to upload pdf file
+5. Install the DigitalOcean Metrics Agent for the dashboard
