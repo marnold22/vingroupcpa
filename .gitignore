@@ -1,1 +1,3 @@
 INFO/
+vendor/
+composer.lock
