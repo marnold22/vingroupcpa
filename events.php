@@ -62,7 +62,7 @@
       <div class="col-md-5">
         <div class="event-padding">
           <div class="card shadow">
-            <img class="img-fluid" src="assets/events/event-1.jpg" alt="">
+            <img class="img-fluid" src="assets/events/event-1-postponed.png" alt="">
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
         <div class="row">
           <div class="col event-btn">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
-            <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services" target="_blank">Register</a>
+            <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services" target="_blank" disabled>Register</a>
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@
       <div class="col-12">
         <div class="event-padding">
           <div class="card shadow">
-            <img class="img-fluid" src="assets/events/event-1.jpg" alt="">
+            <img class="img-fluid" src="assets/events/event-1-postponed.png" alt="">
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@
         <div class="row">
           <div class="col text-center event-btn">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
-            <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services" target="_blank">Register</a>
+            <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services" target="_blank" disabled>Register</a>
           </div>
         </div>
       </div>
@@ -223,7 +223,7 @@
       <div class="col-md-5">
         <div class="event-padding">
           <div class="card shadow">
-            <img class="img-fluid" src="assets/events/event-1.jpg" alt="">
+            <img class="img-fluid" src="assets/events/event-1-postponed.png" alt="">
           </div>
         </div>
       </div>
@@ -234,7 +234,7 @@
         <div class="row">
           <div class="col event-btn text-center">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
-            <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services" target="_blank">Register</a>
+            <a href="https://www.eventbrite.com/e/refreshing-tax-seminar-for-churches-pastors-and-ministries-registration-89644744845" class="btn-services" target="_blank" disabled>Register</a>
           </div>
         </div>
       </div>
