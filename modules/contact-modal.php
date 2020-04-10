@@ -1,3 +1,5 @@
+<?php include('process_form.php'); ?>
+
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
@@ -8,7 +10,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form name="contact-form" method="POST" action="#">
+            <form name="contact-form" method="POST" action="<?= $_SERVER['PHP_SELF']; ?>">
               <div class="row">
                 <div class="col">
                   <div class="location">
@@ -32,21 +34,26 @@
                 <div class="row">
                   <div class="col">
                     <label for="fName">First Name*</label>
-                    <input type="text" class="form-control" name="fname" id="fNameInput" placeholder="First name">
+                    <input type="text" class="form-control" name="fname" id="fNameInput" placeholder="First name" value="<?= $fname ?>">
+                    <span class="error"><?= $fname_error ?></span>
                   </div>
                   <div class="col">
                     <label for="lName">Last Name*</label>
-                    <input type="text" class="form-control" name="lname" id="lNameInput" placeholder="Last name">
+                    <input type="text" class="form-control" name="lname" id="lNameInput" placeholder="Last name" value="<?= $lname ?>">
+                    <span class="error"><?= $lname_error ?></span>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="emailInput">Email address*</label>
-                <input type="email" class="form-control" name="email" id="emailInput" placeholder="name@example.com">
+                <input type="email" class="form-control" name="email" id="emailInput" placeholder="name@example.com" value="<?= $email ?>">
+                <span class="error"><?= $email_error ?></span>
               </div>
 
               <div class="form-group">
                 <label for="checkboxList">I am interested in help with:*</label>
+                <br>
+                <span class="error"><?= $checklist_error ?></span>
                 <div class="row">
                   <div class="col">
                     <div class="form-check">
@@ -88,11 +95,13 @@
               </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Name of Business</label>
-                <input type="text" class="form-control" name="bname" id="businessInput" placeholder="Name of Business">
+                <input type="text" class="form-control" name="bname" id="businessInput" placeholder="Name of Business" value="<?= $business ?>">
+                <span class="error"><?= $business_error ?></span>
               </div>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Additional Message</label>
-                <textarea class="form-control" name="message" id="messageInput" rows="3"></textarea>
+                <textarea class="form-control" name="message" id="messageInput" rows="3" value="<?= $message ?>"></textarea>
+                <span class="error"><?= $message_error ?></span>
               </div>
               <div class="text-center">
                 <button type="submit" name="submit" class="btn-services">Submit</button>
@@ -104,3 +113,10 @@
         </div>
       </div>
     </div>
+
+<!-- Prevent resubmissoin of form on page refresh -->
+<script>
+  if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
+  }
+</script>

@@ -249,6 +249,13 @@ footer div div div a {
   background-color: #346272;
   color: white;
 }
+.error {
+  color: red;
+}
+.success {
+  color: #346272;
+  font-weight: bold;
+}
 
 
 
