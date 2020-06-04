@@ -132,6 +132,11 @@ footer div div div a {
   color: #346272;
   font-size: 1rem;
 }
+.covid-modal {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 .btn-c19 {
   border: 2px solid black;
   border-color: #346272;
