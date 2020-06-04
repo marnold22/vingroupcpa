@@ -83,7 +83,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <p class="lead">Our accoutning policy us detailed in this document:</p>
+            <p class="lead">Our accounting policy is detailed in this document:</p>
             <div class="btn-group">
               <a href="assets/pdf/accounting_policy.pdf" class="btn-services" target="_blank">Accounting Policy</a>
             </div>
@@ -139,7 +139,7 @@
 
     <div id="tax-prep" class="row featurette">
       <div class="col-md-12">
-        <h2 class="featurette-heading">Tax Prep. <span class="text-muted"></span></h2>
+        <h2 class="featurette-heading">Tax Preparation. <span class="text-muted"></span></h2>
         <p class="lead">Tax work is a large part of Vin Group. They understand the tax laws and assist a variety of clients with an emphasis in ministerial and non-profit. Render unto Caesar what is Caesar's... and not a penny more</p>
       </div>
       <div class="col-md-12">
@@ -167,8 +167,8 @@
         <div class="row">
           <div class="col-md-6">
             <ul class="top-row-mobile">
-              <li>Tax preparation</li>
-              <li>Tax planning</li>
+              <li>Tax Preparation</li>
+              <li>Tax Planning</li>
               <li>Audit Representation with IRS</li>
               <li>Compliance</li>
             </ul>
@@ -280,13 +280,11 @@
             <ul class="top-row-mobile">
               <li>Financial Coaching & Planning</li>
               <li>Retirement Planning</li>
-              <li>Investments</li>
-              <li>Life Insurance</li>
+              <li>Risk Analysis</li>
             </ul>
           </div>
           <div class="col-md-6">
             <ul>
-              <li>Risk Analysis</li>
               <li>Cash Flow Analysis and Consultation</li>
               <li>Estate Planning</li>
             </ul>
@@ -325,15 +323,15 @@
             <br>
             <div class="col-md-12">
               <p><b class="cpagreen">Income Tax</b> - General Clergy</p>
-              <p><b class="cpagreen">Definitions what is income</b> - taxable, non-taxable; employees, independent contractors, housing allowance, social security.</p>
-              <p><b class="cpagreen">Form W-2 in Detail</b> - What goes where, due dates.</p>
-              <p><b class="cpagreen">Employee Business Expenses</b> - Accountable reimbursement plan;</p>
+              <p><b class="cpagreen">Definitions – What is Income</b> - Taxable, non-taxable; employees, independent contractors, housing allowance, social security</p>
+              <p><b class="cpagreen">Form W-2 in Detail</b> - What goes where, due dates</p>
+              <p><b class="cpagreen">Employee Business Expenses</b> - Accountable reimbursement plan</p>
               <p><b class="cpagreen">Automobile Deductions</b> - Standard mileage rates, cars provided by the church</p>
               <p><b class="cpagreen">Travel Away From Home</b> - What's included in deductible expenses, U.S. travel, foreign travel, spouse's expenses</p>
               <p><b class="cpagreen">Per Diem Allowances</b> - Who gets what deductions, definition</p>
               <p><b class="cpagreen">Transaction Chart</b> - How to handle various transactions</p>
               <p><b class="cpagreen">Lease Value Table</b> - IRS safe harbor</p>
-              <p><b class="cpagreen">Independent Contractor 20 Factors</b> - IRS analysis</p>
+              <p><b class="cpagreen">Independent Contractor - 20 Factors</b> - IRS analysis</p>
               <p><b class="cpagreen">Housing Allowance</b> - Request For</p>
               <p><b class="cpagreen">Housing Allowance</b> - Guest Minister</p>
               <p><b class="cpagreen">Housing Allowance</b> - Sample Wording Minutes</p>
@@ -353,8 +351,7 @@
                   <ul>
                     <li>Determination Letter from IRS</li>
                     <li>Accountable Reimbursement Plan</li>
-                    <li>Self-employment Tax Computation</li>
-                    <li>Minister EE</li>
+                    <li>Self-employment Tax Computation</li>                   
                   </ul>
                 </div>
               </div>
@@ -515,15 +512,15 @@
             <br>
             <div class="col-md-12">
               <p><b class="cpagreen">Income Tax</b> - General Clergy</p>
-              <p><b class="cpagreen">Definitions what is income</b> - taxable, non-taxable; employees, independent contractors, housing allowance, social security.</p>
-              <p><b class="cpagreen">Form W-2 in Detail</b> - What goes where, due dates.</p>
-              <p><b class="cpagreen">Employee Business Expenses</b> - Accountable reimbursement plan;</p>
+              <p><b class="cpagreen">Definitions – What is Income</b> - Taxable, non-taxable; employees, independent contractors, housing allowance, social security</p>
+              <p><b class="cpagreen">Form W-2 in Detail</b> - What goes where, due dates</p>
+              <p><b class="cpagreen">Employee Business Expenses</b> - Accountable reimbursement plan</p>
               <p><b class="cpagreen">Automobile Deductions</b> - Standard mileage rates, cars provided by the church</p>
               <p><b class="cpagreen">Travel Away From Home</b> - What's included in deductible expenses, U.S. travel, foreign travel, spouse's expenses</p>
               <p><b class="cpagreen">Per Diem Allowances</b> - Who gets what deductions, definition</p>
               <p><b class="cpagreen">Transaction Chart</b> - How to handle various transactions</p>
               <p><b class="cpagreen">Lease Value Table</b> - IRS safe harbor</p>
-              <p><b class="cpagreen">Independent Contractor 20 Factors</b> - IRS analysis</p>
+              <p><b class="cpagreen">Independent Contractor - 20 Factors</b> - IRS analysis</p>
               <p><b class="cpagreen">Housing Allowance</b> - Request For</p>
               <p><b class="cpagreen">Housing Allowance</b> - Guest Minister</p>
               <p><b class="cpagreen">Housing Allowance</b> - Sample Wording Minutes</p>
@@ -544,7 +541,6 @@
                     <li>Determination Letter from IRS</li>
                     <li>Accountable Reimbursement Plan</li>
                     <li>Self-employment Tax Computation</li>
-                    <li>Minister EE</li>
                   </ul>
                 </div>
               </div>
@@ -716,15 +712,15 @@
             </div>
             <div class="col-md-12">
               <p><b class="cpagreen">Income Tax</b> - General Clergy</p>
-              <p><b class="cpagreen">Definitions what is income</b> - taxable, non-taxable; employees, independent contractors, housing allowance, social security.</p>
-              <p><b class="cpagreen">Form W-2 in Detail</b> - What goes where, due dates.</p>
-              <p><b class="cpagreen">Employee Business Expenses</b> - Accountable reimbursement plan;</p>
+              <p><b class="cpagreen">Definitions – What is Income</b> - Taxable, non-taxable; employees, independent contractors, housing allowance, social security</p>
+              <p><b class="cpagreen">Form W-2 in Detail</b> - What goes where, due dates</p>
+              <p><b class="cpagreen">Employee Business Expenses</b> - Accountable reimbursement plan</p>
               <p><b class="cpagreen">Automobile Deductions</b> - Standard mileage rates, cars provided by the church</p>
               <p><b class="cpagreen">Travel Away From Home</b> - What's included in deductible expenses, U.S. travel, foreign travel, spouse's expenses</p>
               <p><b class="cpagreen">Per Diem Allowances</b> - Who gets what deductions, definition</p>
               <p><b class="cpagreen">Transaction Chart</b> - How to handle various transactions</p>
               <p><b class="cpagreen">Lease Value Table</b> - IRS safe harbor</p>
-              <p><b class="cpagreen">Independent Contractor 20 Factors</b> - IRS analysis</p>
+              <p><b class="cpagreen">Independent Contractor - 20 Factors</b> - IRS analysis</p>
               <p><b class="cpagreen">Housing Allowance</b> - Request For</p>
               <p><b class="cpagreen">Housing Allowance</b> - Guest Minister</p>
               <p><b class="cpagreen">Housing Allowance</b> - Sample Wording Minutes</p>
@@ -744,8 +740,7 @@
                   <ul>
                     <li>Determination Letter from IRS</li>
                     <li>Accountable Reimbursement Plan</li>
-                    <li>Self-employment Tax Computation</li>
-                    <li>Minister EE</li>
+                    <li>Self-employment Tax Computation</li>              
                   </ul>
                 </div>
               </div>
@@ -905,7 +900,7 @@
             <ul class="top-row-mobile">
               <li>CPA Hourly Rate - <b class="cpagreen">$175/hour</b></li>
               <li>Financial Statements for Businesses - <b class="cpagreen">Hourly and bid</b></li>
-              <li>Tax Prep - <b class="cpagreen">Ammount by the form</b></li>
+              <li>Tax Prep - <b class="cpagreen">Amount by the form</b></li>
             </ul>
           </div>
           <div class="col-md-6">
