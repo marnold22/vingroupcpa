@@ -197,17 +197,6 @@
                 <div class="card border-0 shadow">
                   <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
                   <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Jon</h5>
-                    <div class="card-text text-black-50">CPA</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
                     <h5 class="card-title mb-0">Rebecca</h5>
                     <div class="card-text text-black-50">CPA</div>
                   </div>
