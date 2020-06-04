@@ -14,7 +14,7 @@
               <div class="row">
                 <div class="col">
                   <div class="location">
-                    We are located at: <br> 2132 W. NW Blvd Spokane WA, 99205
+                    We are located at: <br> 2132 W. Northwest Blvd <br> Spokane WA, 99205
                   </div>
                 </div>
                 <div class="col">
@@ -62,11 +62,11 @@
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="payroll" id="payroll">
-                      <label class="form-check-label" for="payroll">Pay Roll</label>
+                      <label class="form-check-label" for="payroll">Payroll</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="taxprep" id="taxprep">
-                      <label class="form-check-label" for="taxprep">Tax Prep</label>
+                      <label class="form-check-label" for="taxprep">Tax Preparation</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="consulting" id="consulting">
@@ -77,10 +77,6 @@
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="nonprof-chruch" id="nonprof-chruch">
                       <label class="form-check-label" for="nonprof-church">Non-Profit / Church</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="check_list[]" value="investment" id="investment">
-                      <label class="form-check-label" for="investment">Investment</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="retirement" id="retirement">
