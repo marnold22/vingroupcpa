@@ -62,14 +62,14 @@
       <div class="col-md-5">
         <div class="event-padding">
           <div class="card shadow">
-            <img class="img-fluid" src="assets/events/event-1-postponed.png" alt="">
+            <img class="img-fluid" src="assets/events/event-1.jpg" alt="">
           </div>
         </div>
       </div>
       <div class="col-md-7">
         <h2 class="featurette-heading">Refreshing Tax Seminar for Churches, Pastors & Ministries. <span class="text-muted"></span></h2>
-        <p class="lead">Thu, May 21, 2020 8:30-4:30</p>
-        <p class="lead">Fri, May 22, 2020 8:30-12:00</p>
+        <p class="lead">Thu, June 17, 2021 8:30-4:30</p>
+        <p class="lead">Fri, June 18, 2021 8:30-12:00</p>
         <div class="row">
           <div class="col event-btn">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
@@ -144,13 +144,13 @@
       <div class="col-12">
         <div class="event-padding">
           <div class="card shadow">
-            <img class="img-fluid" src="assets/events/event-1-postponed.png" alt="">
+            <img class="img-fluid" src="assets/events/event-1.jpg" alt="">
           </div>
         </div>
       </div>
       <div class="col-12">
         <h2 class="featurette-heading text-center">Refreshing Tax Seminar for Churches, Pastors & Ministries. <span class="text-muted"></span></h2>
-        <p class="lead text-center">Thu, May 21, 2020 8:30-4:30 & Fri, May 22, 2020 8:30-12:00</p>
+        <p class="lead text-center">Thu, June 17, 2021 8:30-4:30 & Fri, June 18, 2021 8:30-12:00</p>
         <div class="row">
           <div class="col text-center event-btn">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
@@ -225,14 +225,14 @@
       <div class="col-md-5">
         <div class="event-padding">
           <div class="card shadow">
-            <img class="img-fluid" src="assets/events/event-1-postponed.png" alt="">
+            <img class="img-fluid" src="assets/events/event-1.jpg" alt="">
           </div>
         </div>
       </div>
       <div class="col-md-7">
         <h2 class="featurette-heading text-center">Refreshing Tax Seminar for Churches, Pastors & Ministries. <span class="text-muted"></span></h2>
-        <p class="lead text-center">Thu, May 21, 2020 8:30-4:30</p>
-        <p class="lead text-center">Fri, May 22, 2020 8:30-12:00</p>
+        <p class="lead text-center">Thu, June 17, 2021 8:30-4:30</p>
+        <p class="lead text-center">Fri, June 18, 2021 8:30-12:00</p>
         <div class="row">
           <div class="col event-btn text-center">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
