@@ -2,3 +2,4 @@ INFO/
 vendor/
 composer.lock
 .env
+SQL-SCRIPTS/
