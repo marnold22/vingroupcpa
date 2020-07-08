@@ -73,16 +73,25 @@
 
                             <!-- START LOOP -->
                             <!-- Loop through this for all DB records in news table -->
-                            <tr>
-                                <td class="overflow">1</td>
-                                <td class="overflow">Example News Post</td>
-                                <td class="overflow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                                <td class="overflow">image/path/goes/here.jpg</td>
-                                <td class="overflow">
-                                    <a href="#editNewsModal" class="edit" data-toggle="modal"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                    <a href="#deleteNewsModal" class="delete" data-toggle="modal"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                                </td>
-                            </tr>
+                            <?php
+                                // Select all fields from news table
+                                $query = "SELECT * FROM news;";
+
+                                // Store data in table_display
+                                $table_display = mysqli_query($query, $connect);
+
+                                foreach($table_display as $row) { ?>
+
+                                <tr>
+                                    <td class="overflow"> <?= $row['id']; ?> </td>
+                                    <td class="overflow"> <?= $row['title']; ?> </td>
+                                    <td class="overflow"> <?= $row['content']; ?> </td>
+                                    <td class="overflow"> <?= $row['image']; ?> </td>
+                                    <td class="overflow"><a href="#editNewsModal" class="edit" data-toggle="modal"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#deleteNewsModal" class="delete" data-toggle="modal"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                                </tr>
+
+                              <?php } ?>
+
                             <!-- END LOOP -->
 
                         </tbody>
