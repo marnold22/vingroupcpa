@@ -18,3 +18,11 @@ $("#about-lm").click(function() {
         scrollTop: $("#about-page").offset().top
     }, 1000);
 });
+
+
+// Admin Pages
+$("#news-lm").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#news-page").offset().top
+    }, 1000);
+});
