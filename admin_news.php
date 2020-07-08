@@ -46,7 +46,7 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-outline-light herobanner-cbtn" data-toggle="modal" data-target="#adminNewsModal">Create Article</button>
+                        <button type="button" class="btn btn-outline-light herobanner-cbtn" data-toggle="modal" data-target="#adminNewsModal">Create News Posting</button>
                     </div>
                 </div>
                 <!-- Article Creation Modal -->

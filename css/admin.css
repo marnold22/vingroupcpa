@@ -45,7 +45,7 @@
 
 /* ---------------------------------------------------------------------- ADMIN NEWS PAGE ---------------------------------------------------------------------- */
 .herobanner-admin-news {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/inews.jpg");
     color: #000;
     height: 100vh;
 }
