@@ -23,10 +23,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="admin.php">Admin Home</a>
+                    <a class="nav-link" href="admin.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="admin_news.php">News</a>
+                    <a class="nav-link active" href="admin_news.php">News</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin_reset_password.php">Password Reset</a>
