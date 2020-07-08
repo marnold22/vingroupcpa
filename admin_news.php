@@ -72,14 +72,14 @@
                         <tbody>
 
                             <!-- START LOOP -->
-                            <!-- Loop through this for all DB records in news table -->
                             <?php
                                 // Select all fields from news table
                                 $query = "SELECT * FROM news;";
 
-                                // Store data in table_display
+                                // Execute query
                                 $table_display = mysqli_query($query, $connect);
 
+                                // Iterate through data and display in table format
                                 foreach($table_display as $row) { ?>
 
                                 <tr>
@@ -91,7 +91,6 @@
                                 </tr>
 
                               <?php } ?>
-
                             <!-- END LOOP -->
 
                         </tbody>
