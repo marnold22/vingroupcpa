@@ -48,6 +48,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <div class="col-12 text-center">
                     <h1>Welcome</h1>
                     <h1><?php echo htmlspecialchars($_SESSION["username"]); ?></h1>
+                    <br>
+                    <a href="admin_news.php" class="btn btn-outline-light herobanner-btn">Go to Newsfeed</a>
                 </div>
             </div>
         </div>
