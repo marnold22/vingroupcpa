@@ -86,9 +86,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="admin.php">Admin Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="admin_reset_password.php">Password Reset</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin_logout.php">Logout</a>
