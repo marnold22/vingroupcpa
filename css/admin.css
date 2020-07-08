@@ -54,6 +54,7 @@
     font-size: 3rem;
 }
 .admin-news {
+	min-height: 100vh;
     background-color: #f6f6f6;
 }
 .table-responsive {
@@ -153,4 +154,10 @@ table.table .avatar {
 	border-radius: 50%;
 	vertical-align: middle;
 	margin-right: 10px;
+}
+table.table .overflow {
+	max-width: 500px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
