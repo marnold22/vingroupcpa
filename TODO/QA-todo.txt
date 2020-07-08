@@ -1,5 +1,11 @@
-1. Double check wording "We lik ethe small to medium size business"
-2. Finish contact us mailer
-3. Need paypal account link - to add online banking (button)
-4. Still missing accounting policy - need to upload pdf file
-5. Install the DigitalOcean Metrics Agent for the dashboard
+** Frontend
+1. Need paypal account link - to add online banking (button)
+2. Still missing accounting policy - need to upload pdf file
+3. Need staff photos
+
+** Backend
+1. Install the DigitalOcean Metrics Agent for the dashboard
+2. Create articles table in database
+3. Create articles page on admin dashboard
+4. Create form to make article posts
+5. CRUD for articles
