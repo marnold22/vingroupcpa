@@ -41,17 +41,16 @@
 
     <body>
         <!-- Hero Banner -->
-        <header class="herobanner herobanner-admin-home">
+        <header class="herobanner herobanner-admin-news">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-outline-light herobanner-cbtn" data-toggle="modal" data-target="#adminNewsModal">Create Article</button>
-                        
-                        <!-- Article Creation Modal -->
-                        <?php include("modules/admin-news-modal.php") ?>
                     </div>
                 </div>
+                <!-- Article Creation Modal -->
+                <?php include("modules/admin-news-modal.php") ?>
             </div>
         </header>
 
