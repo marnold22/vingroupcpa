@@ -1,5 +1,10 @@
 <?php
+    // Include config file
+    require_once 'db_connect.php';
 
+    // Define variables and initialize with empty values
+    $title = $content = $img = "";
+    $title_err = $content_err = $img_err = "";
 ?>
 
 
