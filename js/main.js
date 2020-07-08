@@ -1,3 +1,4 @@
+// Frontend Pages
 $("#home-lm").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#home-page").offset().top
@@ -13,16 +14,20 @@ $("#events-lm").click(function() {
         scrollTop: $("#events-page").offset().top
     }, 1000);
 });
+$("#news-lm").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#news-page").offset().top
+    }, 1000);
+});
 $("#about-lm").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#about-page").offset().top
     }, 1000);
 });
 
-
 // Admin Pages
-$("#news-lm").click(function() {
+$("#adminnews-lm").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#news-page").offset().top
+        scrollTop: $("#adminnews-page").offset().top
     }, 1000);
 });
