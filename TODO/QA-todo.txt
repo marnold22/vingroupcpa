@@ -9,3 +9,11 @@
 3. Create articles page on admin dashboard
 4. Create form to make article posts
 5. CRUD for articles
+
+News:
+ID (auto increments) - PRIMARY KEY
+Title  
+Content
+Pic
+date created
+date modified
