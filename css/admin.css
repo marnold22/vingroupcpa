@@ -32,15 +32,6 @@
     color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
 /* ---------------------------------------------------------------------- ADMIN HOME PAGE ---------------------------------------------------------------------- */
 .herobanner-admin-home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i1.jpg");
@@ -48,6 +39,17 @@
     height: 100vh;
 }
 .herobanner-admin-home h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+/* ---------------------------------------------------------------------- ADMIN NEWS PAGE ---------------------------------------------------------------------- */
+.herobanner-admin-news {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i4.jpg");
+    color: #000;
+    height: 100vh;
+}
+.herobanner-admin-news h1 {
     color: #fff;
     font-size: 3rem;
 }
