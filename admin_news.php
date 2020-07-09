@@ -53,7 +53,6 @@ require_once 'db_connect.php';
                             <div class="col-sm-6">
                                 <a href="#addNewsModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
                                 <a href="#deleteNewsModal" class="btn btn-danger" data-toggle="modal"><i class="fa fa-minus" aria-hidden="true"></i><span> Delete News Post</span></a>
-                                <a href='#editNewsModal' class='btn btn-warning' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i><span> Edit News Post</span></a>
                             </div>
                         </div>
                     </div>
@@ -64,6 +63,7 @@ require_once 'db_connect.php';
                                 <th>Title</th>
                                 <th>Content</th>
                                 <th>Img</th>
+                                <th>TOOLS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -80,6 +80,7 @@ require_once 'db_connect.php';
                                         echo "<td class='overflow'>" . $row['title'] . "</td>";
                                         echo "<td class='overflow'>" . $row['content'] . "</td>";
                                         echo "<td class='overflow'>" . $row['image'] . "</td>";
+                                        echo "<td class='overflow'><a href='#editNewsModal-". $row['id'] ."' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a></td>";
                                         echo "</tr>";
                                     }
                                     // Free result set
@@ -99,7 +100,6 @@ require_once 'db_connect.php';
             </div>
         </div>
     </div>
-
 
     <!-- ******************** ALL MODALS ******************** -->
 
@@ -139,37 +139,63 @@ require_once 'db_connect.php';
     </div>
 
 
-    <!-- Edit Modal HTML -->
-    <div id="editNewsModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form action="_news_edit.php" method="POST">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Edit News Post</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label>Title</label>
-                            <input name="stitle" type="text" class="form-control" required>
+
+
+    <!-- Need to loop through db news posts and generate modal for each post -->
+    <?php
+        $sql = "SELECT * FROM news";
+        if ($result = mysqli_query($connect, $sql)) {
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_array($result)) { ?>
+
+
+                    <!-- START EDIT MODAL HTML -->
+                    <div id="editNewsModal-<?= $row['id']; ?>" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form action="_news_update.php?id=<?= $row['id'];?>" method="POST">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Edit News Post</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>Title</label>
+                                            <input name="stitle" type="text" class="form-control" placeholder="<?= $row['title'];?>" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Image</label>
+                                            <input name="simage" type="file" class="form-control-file">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Content</label>
+                                            <textarea name="scontent" class="form-control" placeholder="<?= $row['content'];?>" rows="5" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                        <input type="submit" class="btn btn-info" value="Save">
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>Image</label>
-                            <input name="simage" type="file" class="form-control-file">
-                        </div>
-                        <div class="form-group">
-                            <label>Content</label>
-                            <textarea name="scontent" class="form-control" placeholder="Content Body Here..." rows="5" required></textarea>
-                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <input type="submit" class="btn btn-info" value="Save">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+                    <!-- END EDIT MODAL HTML -->
+
+    <!-- Closing brackets -->
+    <?php
+                }
+                // Free result set
+                mysqli_free_result($result);
+            }
+        }
+    ?>
+
+
+
+
+
+
 
 
     <!-- Delete Modal HTML -->
