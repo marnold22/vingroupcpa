@@ -55,7 +55,7 @@
             //Prepair SQL Insert Statement
             $sql = "INSERT INTO news (title, image, content) VALUES ('$title', '$image', '$content')";
             if(mysqli_query($connect, $sql)) {
-                // Redirect to login page
+                // Redirect to admin_news page
                 header("location: admin_news.php");
             } else {
                 echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
