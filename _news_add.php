@@ -58,7 +58,7 @@
                 // Redirect to admin_news page
                 header("location: admin_news.php");
             } else {
-                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                echo "ERROR: Could not able to execute $sql. " . mysqli_error($connect);
             }
 
             // Close connection
