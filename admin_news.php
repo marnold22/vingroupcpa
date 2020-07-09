@@ -53,6 +53,7 @@ require_once 'db_connect.php';
                             <div class="col-sm-6">
                                 <a href="#addNewsModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
                                 <a href="#deleteNewsModal" class="btn btn-danger" data-toggle="modal"><i class="fa fa-minus" aria-hidden="true"></i><span> Delete News Post</span></a>
+                                <a href='#editNewsModal' class='btn btn-warning' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i><span> Edit News Post</span></a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +64,6 @@ require_once 'db_connect.php';
                                 <th>Title</th>
                                 <th>Content</th>
                                 <th>Img</th>
-                                <th>TOOLS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -80,7 +80,6 @@ require_once 'db_connect.php';
                                         echo "<td class='overflow'>" . $row['title'] . "</td>";
                                         echo "<td class='overflow'>" . $row['content'] . "</td>";
                                         echo "<td class='overflow'>" . $row['image'] . "</td>";
-                                        echo "<td class='overflow'><a href='#editNewsModal' class='edit' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a></td>";
                                         echo "</tr>";
                                     }
                                     // Free result set
