@@ -1,10 +1,6 @@
 <?php
-    // Include config file
-    require_once 'db_connect.php';
-
-    // Define variables and initialize with empty values
-    $title = $content = $img = "";
-    $title_err = $content_err = $img_err = "";
+// Include config file
+require_once 'db_connect.php';
 ?>
 
 
@@ -55,7 +51,7 @@
                                 <h2>Manage <b>News Posts</b></h2>
                             </div>
                             <div class="col-sm-6">
-                                <a href="#addNewsModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span>   Add News Post</span></a>
+                                <a href="#addNewsModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
                             </div>
                         </div>
                     </div>
@@ -73,24 +69,28 @@
 
                             <!-- START LOOP -->
                             <?php
-                                // Select all fields from news table
-                                $query = "SELECT * FROM news;";
-
-                                // Execute query
-                                $table_display = mysqli_query($query, $connect);
-
-                                // Iterate through data and display in table format
-                                foreach($table_display as $row) { ?>
-
-                                <tr>
-                                    <td class="overflow"> <?= $row['id']; ?> </td>
-                                    <td class="overflow"> <?= $row['title']; ?> </td>
-                                    <td class="overflow"> <?= $row['content']; ?> </td>
-                                    <td class="overflow"> <?= $row['image']; ?> </td>
-                                    <td class="overflow"><a href="#editNewsModal" class="edit" data-toggle="modal"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#deleteNewsModal" class="delete" data-toggle="modal"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-                                </tr>
-
-                              <?php } ?>
+                            // Attempt select query execution
+                            $sql = "SELECT * FROM news";
+                            if ($result = mysqli_query($connect, $sql)) {
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_array($result)) {
+                                        echo "<tr>";
+                                        echo "<td class='overflow'>" . $row['id'] . "</td>";
+                                        echo "<td class='overflow'>" . $row['title'] . "</td>";
+                                        echo "<td class='overflow'>" . $row['content'] . "</td>";
+                                        echo "<td class='overflow'>" . $row['image'] . "</td>";
+                                        echo "<td class='overflow'><a href='#editNewsModal' class='edit' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a><a href='#deleteNewsModal' class='delete' data-toggle='modal'><i class='fa fa-trash-o' aria-hidden='true'></i></a></td>";
+                                        echo "</tr>";
+                                    }
+                                    // Free result set
+                                    mysqli_free_result($result);
+                                } else {
+                                    echo "No records matching your query were found.";
+                                }
+                            } else {
+                                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                            }
+                            ?>
                             <!-- END LOOP -->
 
                         </tbody>
@@ -107,7 +107,7 @@
     <div id="addNewsModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form>
+                <form action="_news_add.php" method="POST">
                     <div class="modal-header">
                         <h4 class="modal-title">Create News Post</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -115,15 +115,18 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label>Title</label>
-                            <input type="text" class="form-control" required>
+                            <input name="ctitle" type="text" class="form-control" required>
+                            <span class="help-block"><?php echo $title_err; ?></span>
                         </div>
                         <div class="form-group">
-                            <label>Media</label>
-                            <input type="file" class="form-control-file">
+                            <label>Image</label>
+                            <input name="cimage" type="file" class="form-control-file">
+                            <span class="help-block"><?php echo $image_err; ?></span>
                         </div>
                         <div class="form-group">
                             <label>Content</label>
-                            <textarea class="form-control" placeholder="Content Body Here..." rows="5" required></textarea>
+                            <textarea name="ccontent" class="form-control" placeholder="Content Body Here..." rows="5" required></textarea>
+                            <span class="help-block"><?php echo $content_err; ?></span>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -140,7 +143,7 @@
     <div id="editNewsModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form>
+                <form action="_news_edit.php" method="POST">
                     <div class="modal-header">
                         <h4 class="modal-title">Edit News Post</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -148,15 +151,15 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label>Title</label>
-                            <input type="text" class="form-control" required>
+                            <input name="stitle" type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Media</label>
-                            <input type="file" class="form-control-file">
+                            <label>Image</label>
+                            <input name="simage" type="file" class="form-control-file">
                         </div>
                         <div class="form-group">
                             <label>Content</label>
-                            <textarea class="form-control" placeholder="Content Body Here..." rows="5" required></textarea>
+                            <textarea name="scontent" class="form-control" placeholder="Content Body Here..." rows="5" required></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
