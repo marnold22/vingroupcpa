@@ -1,3 +1,8 @@
+<?php 
+    // Include config file
+    require_once 'db_connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,105 +66,61 @@
             <h2 class="featurette-heading">News Postings<span class="text-muted"></span></h2>
         </div>
 
+        <!-- START LOOP -->
+        <?php
+        // Attempt select query execution
+        $sql = "SELECT * FROM news";
+        if ($result = mysqli_query($connect, $sql)) {
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_array($result)) { 
+                $counter = 0; ?>
 
-
-
-        <!-- LOOP START HERE -->
-        <!-- Loop through all news articles in database and instert into this HTML template -->
-        <!-- NOTE - Make sure to chance collapseEvent-X to whatever iteration the loop is on -->
-
-        <div class="row featurette">
-            <div class="col-md-4">
-                <div class="event-padding">
-                    <div class="card shadow">
-                        <img class="img-fluid" src="assets/news/news-default.jpg" alt="">
+                <!-- NOTE - Make sure to chance collapseEvent-X to whatever iteration the loop is on -->
+                <div class="row featurette">
+                    <div class="col-md-4">
+                        <div class="event-padding">
+                            <div class="card shadow">
+                                <img class="img-fluid" src="<?=$row['image']; ?>" alt="">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <h2 class="featurette-heading">TITLE HERE<span class="text-muted"></span></h2>
-                <div class="row">
-                    <div class="col event-btn">
-                        <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
+                    <div class="col-md-8">
+                        <h2 class="featurette-heading"><?= $row['title']; ?><span class="text-muted"></span></h2>
+                        <div class="row">
+                            <div class="col event-btn">
+                                <a class="btn-services" data-toggle="collapse" href="#collapseEvent-<?=$row['id']; ?>" role="button" aria-expanded="false" aria-controls="collapseEvent-<?=$row['id']; ?>>">Learn More</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Start of the Dropdown -->
-            <div class="col-md-12">
-                <div class="collapse btn-div-gap" id="collapseEvent-1">
-                    <div class="card card-body">
-                        <p>CONTENT HERE</p>
+                    <!-- Start of the Dropdown -->
+                    <div class="col-md-12">
+                        <div class="collapse btn-div-gap" id="collapseEvent-<?=$row['id']; ?>">
+                            <div class="card card-body">
+                                <p><?= $row['content']; ?></p>
+                            </div>
+                        </div>
                     </div>
+                    <hr class="featurette-divider">
                 </div>
-            </div>
-            <hr class="featurette-divider">
-        </div>
 
-        <div class="row featurette">
-            <div class="col-md-4">
-                <div class="event-padding">
-                    <div class="card shadow">
-                        <img class="img-fluid" src="assets/news/news-default.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <h2 class="featurette-heading">TITLE HERE<span class="text-muted"></span></h2>
-                <div class="row">
-                    <div class="col event-btn">
-                        <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Start of the Dropdown -->
-            <div class="col-md-12">
-                <div class="collapse btn-div-gap" id="collapseEvent-1">
-                    <div class="card card-body">
-                        <p>CONTENT HERE</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="featurette-divider">
-        </div>
-        <div class="row featurette">
-            <div class="col-md-4">
-                <div class="event-padding">
-                    <div class="card shadow">
-                        <img class="img-fluid" src="assets/news/news-default.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <h2 class="featurette-heading">TITLE HERE<span class="text-muted"></span></h2>
-                <div class="row">
-                    <div class="col event-btn">
-                        <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Start of the Dropdown -->
-            <div class="col-md-12">
-                <div class="collapse btn-div-gap" id="collapseEvent-1">
-                    <div class="card card-body">
-                        <p>CONTENT HERE</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="featurette-divider">
-        </div>
+                
+                <!-- LOOP END HERE -->
+                <?php $counter = $counter+1;}
 
 
-        <!-- LOOP END HERE -->
-
-
-
-
+                // Free result set
+                mysqli_free_result($result);
+            } else {
+                echo "No records matching your query were found.";
+            }
+        } else {
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+        }
+        ?>
+        <!-- END LOOP -->
 
     </div>
-
     <!-- Footer -->
     <?php include("modules/footer.php") ?>
 
