@@ -41,6 +41,7 @@ require_once 'db_connect.php';
 </nav>
 
 <body>
+    <!-- News Table -->
     <div id="adminnews-page" class="admin-news">
         <div class="container-xl">
             <div class="table-responsive">
@@ -52,7 +53,6 @@ require_once 'db_connect.php';
                             </div>
                             <div class="col-sm-6">
                                 <a href="#addNewsModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
-                                <a href="#deleteNewsModal" class="btn btn-danger" data-toggle="modal"><i class="fa fa-minus" aria-hidden="true"></i><span> Delete News Post</span></a>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,6 @@ require_once 'db_connect.php';
                             </tr>
                         </thead>
                         <tbody>
-
                             <!-- START LOOP -->
                             <?php
                             // Attempt select query execution
@@ -80,7 +79,9 @@ require_once 'db_connect.php';
                                         echo "<td class='overflow'>" . $row['title'] . "</td>";
                                         echo "<td class='overflow'>" . $row['content'] . "</td>";
                                         echo "<td class='overflow'>" . $row['image'] . "</td>";
-                                        echo "<td class='overflow'><a href='#editNewsModal-". $row['id'] ."' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a></td>";
+                                        echo "<td class='overflow'>
+                                            <a href='#editNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a>
+                                            <a href='#deleteNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-trash' aria-hidden='true'></i></a></td>";
                                         echo "</tr>";
                                     }
                                     // Free result set
@@ -93,17 +94,19 @@ require_once 'db_connect.php';
                             }
                             ?>
                             <!-- END LOOP -->
-
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End of Table -->
 
-    <!-- ******************** ALL MODALS ******************** -->
 
-    <!-- Add Modal HTML -->
+    <!-- ******************** START ALL MODALS ******************** -->
+
+
+    <!-- ADD MODAL -->
     <div id="addNewsModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -139,114 +142,96 @@ require_once 'db_connect.php';
     </div>
 
 
-
-
-    <!-- Need to loop through db news posts and generate modal for each post -->
+    <!-- EDIT MODAL -->
+    <!-- Need to loop through db news posts and generate unique modal for each post -->
     <?php
-        $sql = "SELECT * FROM news";
-        if ($result = mysqli_query($connect, $sql)) {
-            if (mysqli_num_rows($result) > 0) {
-                while ($row = mysqli_fetch_array($result)) { ?>
+    $sql = "SELECT * FROM news";
+    if ($result = mysqli_query($connect, $sql)) {
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_array($result)) { ?>
 
-
-                    <!-- START EDIT MODAL HTML -->
-                    <div id="editNewsModal-<?= $row['id']; ?>" class="modal fade">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <form action="_news_update.php?id=<?= $row['id'];?>" method="POST">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Edit News Post</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div id="editNewsModal-<?= $row['id']; ?>" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form action="_news_update.php?id=<?= $row['id']; ?>" method="POST">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Edit News Post</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label>Title</label>
+                                        <input name="stitle" type="text" class="form-control" placeholder="<?= $row['title']; ?>" required>
                                     </div>
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <label>Title</label>
-                                            <input name="stitle" type="text" class="form-control" placeholder="<?= $row['title'];?>" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Image</label>
-                                            <input name="simage" type="file" class="form-control-file">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Content</label>
-                                            <textarea name="scontent" class="form-control" placeholder="<?= $row['content'];?>" rows="5" required></textarea>
-                                        </div>
+                                    <div class="form-group">
+                                        <label>Image</label>
+                                        <input name="simage" type="file" class="form-control-file">
                                     </div>
-                                    <div class="modal-footer">
-                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                        <input type="submit" class="btn btn-info" value="Save">
+                                    <div class="form-group">
+                                        <label>Content</label>
+                                        <textarea name="scontent" class="form-control" placeholder="<?= $row['content']; ?>" rows="5" required></textarea>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                    <input type="submit" class="btn btn-info" value="Save">
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <!-- END EDIT MODAL HTML -->
-
-    <!-- Closing brackets -->
+                </div>
+                <!-- Closing brackets -->
     <?php
-                }
-                // Free result set
-                mysqli_free_result($result);
             }
+            // Free result set
+            mysqli_free_result($result);
         }
+    }
     ?>
 
 
-
-
-
-
-
-
-    <!-- Delete Modal HTML -->
-    <div id="deleteNewsModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form action="_news_delete.php" method="POST">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Delete News Post</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <!-- DELETE MODAL -->
+    <!-- Need to loop through db news posts and generate unique modal for each post -->
+    <?php
+    $sql = "SELECT * FROM news";
+    if ($result = mysqli_query($connect, $sql)) {
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_array($result)) { ?>
+                <div id="deleteNewsModal-<?= $row['id']; ?>" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form action="_news_delete.php?id=<?= $row['id']; ?>" method="POST">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Delete News Post</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to delete this record?</p>
+                                    <p>ID = <?= $row['id']; ?></p>
+                                    <p>Title = <?= $row['title']; ?></p>
+                                    <p class="text-warning"><small>This action cannot be undone.</small></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                    <input type="submit" class="btn btn-danger" value="Delete">
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <label for="news-posts">Which post would you like to remove?</label>
-                        <select name="news-posts" id="news-posts">
+                </div>
+                <!-- Closing brackets -->
+    <?php
+            }
+            // Free result set
+            mysqli_free_result($result);
+        }
+    }
+    ?>
 
-                            <!-- START LOOP -->
-                            <?php
-                            // Attempt select query execution
-                            $sql = "SELECT * FROM news";
-                            if ($result = mysqli_query($connect, $sql)) {
-                                if (mysqli_num_rows($result) > 0) {
-                                    while ($row = mysqli_fetch_array($result)) {
 
-                                        echo "<option value='". $row['id'] . "'>". $row['title'] ."</option>";
+    <!-- ******************** END ALL MODALS ******************** -->
 
-                                    }
-                                    // Free result set
-                                    mysqli_free_result($result);
-                                } else {
-                                    echo "No records matching your query were found.";
-                                }
-                            } else {
-                                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-                            }
-                            ?>
-                            <!-- END LOOP -->
-                        </select>
-                        <br>
-                        <br>
-                        <p>Are you sure you want to delete these Records?</p>
-                        <p class="text-warning"><small>This action cannot be undone.</small></p>
-                    </div>
-                    <div class="modal-footer">
-                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <input type="submit" class="btn btn-danger" value="Delete">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
+    
     <!-- Footer -->
     <footer class="py-3">
         <div class="container">
