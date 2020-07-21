@@ -1,4 +1,15 @@
 <?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: admin_login.php");
+    exit;
+}
+?>
+
+<?php
     // Include config file
     require_once 'db_connect.php';
 
@@ -78,7 +89,7 @@
                 // Attempt to execute the prepared statement
                 if (mysqli_stmt_execute($stmt)) {
                     // Redirect to login page
-                    header("location: admin_login.php");
+                    header("location: admin.php");
                 } else {
                     echo "Something went wrong. Please try again later.";
                 }
