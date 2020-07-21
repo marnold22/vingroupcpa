@@ -112,7 +112,13 @@
                 // Free result set
                 mysqli_free_result($result);
             } else {
-                echo "No records matching your query were found.";
+                echo "
+                <br>
+                <div class='col-md-12'>
+                    <h2 class='featurette-heading'>No news postings were found.<span class='text-muted'></span></h2>
+                </div>
+                <br>
+                ";
             }
         } else {
             echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
