@@ -5,7 +5,7 @@ require_once 'db_connect.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //to protect from mysql injections
-    $id = trim($_POST['news-posts']);
+    $id = $_GET['id'];
 
     //Prepair SQL Delete Statement
     $sql = "DELETE FROM news WHERE id='$id'";
