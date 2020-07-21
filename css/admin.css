@@ -161,3 +161,9 @@ table.table .overflow {
     overflow: hidden;
     white-space: nowrap;
 }
+
+/* ---------------------------------------------------------------------- ADMIN NEWS PAGE ---------------------------------------------------------------------- */
+.admin-users {
+	min-height: 100vh;
+    background-color: #f6f6f6;
+}
