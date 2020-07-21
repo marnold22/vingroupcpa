@@ -30,6 +30,9 @@ require_once 'db_connect.php';
                     <a class="nav-link active" href="admin_news.php">News</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="admin_users.php">Users</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="admin_reset_password.php">Password Reset</a>
                 </li>
                 <li class="nav-item">
