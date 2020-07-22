@@ -1,10 +1,137 @@
 <?php
+
 // Include config file
 require_once 'db_connect.php';
+
+// Global functions:
+// 1.) Sanitizes user input
+function StringInputCleaner($data)
+{
+    //remove space bfore and after
+    $data = trim($data);
+    //remove slashes
+    $data = stripslashes($data);
+    $data = (filter_var($data, FILTER_SANITIZE_STRING));
+    return $data;
+}
+
+
+
+
+
+// ------------------------------ START ADD NEWS POST ------------------------------ //
+// Define variables and initialize with empty values
+$addTitle = $addImage = $addContent = "";
+$addTitle_err = $addImage_err = $addContent_err = $addGlobal_err = "";
+$target_dir = "assets/news/";
+$img_upload = 1;
+
+if (isset($_POST['addnews'])) {
+    // Validate Title
+    if (!isset($_POST["ctitle"])) {
+        $addTitle_err = "Title cannot be left blank, please enter a title.";
+    } else {
+        $raw_title = trim($_POST["ctitle"]);
+        $addTitle = StringInputCleaner($raw_title);
+        $addTitle = mysqli_real_escape_string($connect, $addTitle);
+    }
+
+
+    // Validate Image
+    if (!isset($_FILES["cimage"]["name"])){
+        $addImage_err = "Image cannot be left blank, please add an image.";
+    } else {
+        $uploadedFile = $target_dir . basename($_FILES["cimage"]["name"]);
+        $imageFileType = strtolower(pathinfo($uploadedFile,PATHINFO_EXTENSION));
+
+        // Allow certain file formats
+        if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
+            $img_upload = 0;
+            $addImage_err = "Unsupported File Type.";
+        }
+
+        // Check to see if img_upload has errors
+        if ($img_upload > 0) {
+            $addImage = $uploadedFile;
+            move_uploaded_file($_FILES["cimage"]["name"], $uploadedFile);
+        } else {
+            $addImage_err = "File could not be uploaded.";
+        }
+    }
+
+
+    // Validate Content
+    if (!isset($_POST["ccontent"])) {
+        $addContent_err = "Content cannot be left blank, please enter a body message.";
+    } else {
+        $raw_content = trim($_POST["ccontent"]);
+        $addContent = StringInputCleaner($raw_content);
+        $addContent = mysqli_real_escape_string($connect, $addContent);
+    }
+
+    // Check to make sure nothing is left blank
+    if (empty($addTitle) || empty($addImage) || empty($addContent)) {
+        $addGlobal_err = "No fields can be left empty, please make sure to include all fields.";
+    } else {
+        $addGlobal_err = "";
+    }
+
+    if (!empty($addTitle_err) || !empty($addImage_err) || !empty($addContent_err) || !empty($addGlobal_err)) {
+        $addError_output = "ERRORS: " . $addTitle_err . " " . $addImage_err . " " . $addContent_err . " " . $addGlobal_err;
+    } else {
+        //Prepair SQL Insert Statement
+        $sql = "INSERT INTO news (title, image, content) VALUES ('$addTitle', '$addImage', '$addContent')";
+        if (mysqli_query($connect, $sql)) {
+            // Redirect to admin_news page
+            header("location: admin_news.php");
+        } else {
+            echo "ERROR: Could not execute $sql. " . mysqli_error($connect);
+        }
+    
+        // Close connection
+        mysqli_close($connect);
+    }
+}
+// ------------------------------ END ADD NEWS POST ------------------------------ //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,6 +185,11 @@ require_once 'db_connect.php';
                                 <a href="#addNewsModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p><?php if(!empty($addError_output)) { echo $addError_output; }?></p>
+                            </div>
+                        </div>
                     </div>
                     <table class="table table-striped table-hover">
                         <thead>
@@ -101,50 +233,42 @@ require_once 'db_connect.php';
                     </table>
                 </div>
             </div>
-        </div>
+        </div>  
     </div>
     <!-- End of Table -->
-
-
     <!-- ******************** START ALL MODALS ******************** -->
-
-
     <!-- ADD MODAL -->
     <div id="addNewsModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form action="_news_add.php" method="POST">
+                <form action="" method="POST" enctype="multipart/form-data">
                     <div class="modal-header">
                         <h4 class="modal-title">Create News Post</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
+
                         <div class="form-group">
                             <label>Title</label>
-                            <input name="ctitle" type="text" class="form-control" required>
-                            <span class="help-block"><?php echo $title_err; ?></span>
+                            <input name="ctitle" type="text" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Image</label>
                             <input name="cimage" type="file" class="form-control-file">
-                            <span class="help-block"><?php echo $image_err; ?></span>
                         </div>
                         <div class="form-group">
                             <label>Content</label>
-                            <textarea name="ccontent" class="form-control" placeholder="Content Body Here..." rows="5" required></textarea>
-                            <span class="help-block"><?php echo $content_err; ?></span>
+                            <textarea name="ccontent" class="form-control" placeholder="Content Body Here..." rows="5"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <input type="submit" class="btn btn-success" value="Add">
+                        <input type="submit" name="addnews" class="btn btn-success" value="Add">
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-
     <!-- EDIT MODAL -->
     <!-- Need to loop through db news posts and generate unique modal for each post -->
     <?php
@@ -177,7 +301,7 @@ require_once 'db_connect.php';
                                 </div>
                                 <div class="modal-footer">
                                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                    <input type="submit" class="btn btn-info" value="Save">
+                                    <input type="submit" name="editnews" class="btn btn-info" value="Save">
                                 </div>
                             </form>
                         </div>
@@ -191,8 +315,6 @@ require_once 'db_connect.php';
         }
     }
     ?>
-
-
     <!-- DELETE MODAL -->
     <!-- Need to loop through db news posts and generate unique modal for each post -->
     <?php
@@ -200,6 +322,7 @@ require_once 'db_connect.php';
     if ($result = mysqli_query($connect, $sql)) {
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_array($result)) { ?>
+
                 <div id="deleteNewsModal-<?= $row['id']; ?>" class="modal fade">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -216,7 +339,7 @@ require_once 'db_connect.php';
                                 </div>
                                 <div class="modal-footer">
                                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                    <input type="submit" class="btn btn-danger" value="Delete">
+                                    <input type="submit" name="deletenews" class="btn btn-danger" value="Delete">
                                 </div>
                             </form>
                         </div>
@@ -230,11 +353,7 @@ require_once 'db_connect.php';
         }
     }
     ?>
-
-
     <!-- ******************** END ALL MODALS ******************** -->
-
-    
     <!-- Footer -->
     <footer class="py-3">
         <div class="container">
