@@ -38,26 +38,31 @@ if (isset($_POST['addnews'])) {
 
 
     // Validate Image
-    if (!isset($_FILES["cimage"]["name"])){
-        $addImage_err = "Image cannot be left blank, please add an image.";
-    } else {
-        $uploadedFile = $target_dir . basename($_FILES["cimage"]["name"]);
-        $imageFileType = strtolower(pathinfo($uploadedFile,PATHINFO_EXTENSION));
-
-        // Allow certain file formats
-        if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
-            $img_upload = 0;
-            $addImage_err = "Unsupported File Type.";
+    if(isset($_FILES['cimage'])){
+        
+        $file_name = $_FILES['cimage']['name'];
+        $file_size = $_FILES['cimage']['size'];
+        $file_tmp = $_FILES['cimage']['tmp_name'];
+        $file_type = $_FILES['cimage']['type'];
+        $file_ext = strtolower(end(explode('.',$_FILES['cimage']['name'])));
+        
+        $extensions= array("jpeg","jpg","png");
+        
+        if(in_array($file_ext,$extensions)=== false){
+           $addImage_err .= "extension not allowed, please choose a JPEG or PNG file.";
         }
-
-        // Check to see if img_upload has errors
-        if ($img_upload > 0) {
-            $addImage = $uploadedFile;
-            move_uploaded_file($_FILES["cimage"]["name"], $uploadedFile);
-        } else {
-            $addImage_err = "File could not be uploaded.";
+        
+        if($file_size > 2097152){
+           $addImage_err .= 'File size must be excately 2 MB';
         }
-    }
+        
+        if(empty($addImage_err) == true){
+           move_uploaded_file($file_tmp,"assets/news/".$file_name);
+           $addImage = "assets/news/" . $file_name;
+        }else{
+            $addImage_err .= "Image could not be uploaded.";
+        }
+     }
 
 
     // Validate Content
@@ -250,15 +255,15 @@ if (isset($_POST['addnews'])) {
 
                         <div class="form-group">
                             <label>Title</label>
-                            <input name="ctitle" type="text" class="form-control">
+                            <input name="ctitle" type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Image</label>
-                            <input name="cimage" type="file" class="form-control-file">
+                            <input name="cimage" type="file" class="form-control-file" required>
                         </div>
                         <div class="form-group">
                             <label>Content</label>
-                            <textarea name="ccontent" class="form-control" placeholder="Content Body Here..." rows="5"></textarea>
+                            <textarea name="ccontent" class="form-control" placeholder="Content Body Here..." rows="5" required></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
