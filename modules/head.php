@@ -18,6 +18,6 @@
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/css/admin.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/admin.css"> -->
   <title> Wayne E. Vinson - Vin Group</title>
 </head>
