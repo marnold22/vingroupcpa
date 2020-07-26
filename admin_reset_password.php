@@ -74,7 +74,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 
 <!-- Head -->
-<?php include("modules/head.php") ?>
+<?php include("modules/admin_head.php") ?>
 
 <!-- Navigation -->
 <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark shadow fixed-top bg-cpagreen">
