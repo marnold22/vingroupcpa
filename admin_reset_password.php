@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <a class="nav-link" href="admin_news.php" aria-expanded="false">News Posts</a>
                         <a class="nav-link" href="admin_users.php" aria-expanded="false">Users Table</a>
                         <a class="nav-link" href="admin_reset_password.php" aria-expanded="false">Password Resset</a>
-                        <a class="nav-link" href="#" aria-expanded="false">Register</a>
+                        <a class="nav-link" href="admin_register.php" aria-expanded="false">Register</a>
                         <a class="nav-link" href="admin_logout.php" aria-expanded="false">Logout</a>
                     </div>
                 </div>
