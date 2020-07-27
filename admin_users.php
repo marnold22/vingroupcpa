@@ -34,57 +34,62 @@
         </div>
         <div id="layoutSidenav_content">
             <!-- PAGE UNIQUE CONTET GOES HERE -->
-            <!-- News Table -->
-            <div id="adminusers-page" class="admin-users">
-                <div class="container-xl">
-                    <div class="table-responsive">
-                        <div class="table-wrapper">
-                            <div class="table-title">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h2>Manage <b>Users</b></h2>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <!-- <a href="#addNewsModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a> -->
-                                    </div>
-                                </div>
+
+
+            <!-- START TABLE -->
+            <div class="container">
+                <div class="table-card">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h2>Manage <b>News Posts</b></h2>
                             </div>
-                            <table class="table table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Username</th>
-                                        <th>TOOLS</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- START LOOP -->
-                                    <?php
-                                    // Attempt select query execution
-                                    $sql = "SELECT * FROM users";
-                                    if ($result = mysqli_query($connect, $sql)) {
-                                        if (mysqli_num_rows($result) > 0) {
-                                            while ($row = mysqli_fetch_array($result)) {
-                                                echo "<tr>";
-                                                echo "<td class='overflow'>" . $row['id'] . "</td>";
-                                                echo "<td class='overflow'>" . $row['username'] . "</td>";
-                                                echo "<td class='overflow'></td>";
-                                                echo "</tr>";
-                                            }
-                                            // Free result set
-                                            mysqli_free_result($result);
-                                        } else {
-                                            echo "No records matching your query were found.";
-                                        }
-                                    } else {
-                                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-                                    }
-                                    ?>
-                                    <!-- END LOOP -->
-                                </tbody>
-                            </table>
+                            <div class="col-sm-6">
+                                <a href="#addNewsModal" class="btn btn-success tbl-btn" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p><?php if (!empty($addError_output)) {
+                                        echo $addError_output;
+                                    } ?></p>
+                            </div>
                         </div>
                     </div>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Username</th>
+                                <th>TOOLS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- START LOOP -->
+                            <?php
+                            // Attempt select query execution
+                            $sql = "SELECT * FROM users";
+                            if ($result = mysqli_query($connect, $sql)) {
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_array($result)) {
+                                        echo "<tr>";
+                                        echo "<td class='overflow'>" . $row['id'] . "</td>";
+                                        echo "<td class='overflow'>" . $row['username'] . "</td>";
+                                        echo "<td class='overflow'></td>";
+                                        echo "</tr>";
+                                    }
+                                    // Free result set
+                                    mysqli_free_result($result);
+                                } else {
+                                    echo "No records matching your query were found.";
+                                }
+                            } else {
+                                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                            }
+                            ?>
+                            <!-- END LOOP -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <!-- End of Table -->

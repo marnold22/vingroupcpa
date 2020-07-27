@@ -4,6 +4,7 @@
 <html lang="en">
 <!-- Head -->
 <?php include("modules/admin_head.php") ?>
+
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <a class="navbar-brand" href="admin.php">Vingroupcpa Admin</a>
@@ -31,10 +32,18 @@
         </div>
         <div id="layoutSidenav_content">
             <!-- PAGE UNIQUE CONTET GOES HERE -->
+            <div class="container">
+                <div class="welcome-card">
+                    <div class="text-center">
+                        <h2>Welcome to the admin dashboard!</h2>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Scripts -->
     <?php include("modules/scripts.php") ?>
 </body>
+
 </html>

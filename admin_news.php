@@ -134,73 +134,75 @@ if (isset($_POST['addnews'])) {
         <div id="layoutSidenav_content">
             <!-- PAGE UNIQUE CONTET GOES HERE -->
 
-            <!-- News Table -->
-            <div id="adminnews-page" class="admin-news">
-                <div class="container-xl">
-                    <div class="table-responsive">
-                        <div class="table-wrapper">
-                            <div class="table-title">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h2>Manage <b>News Posts</b></h2>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <a href="#addNewsModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p><?php if (!empty($addError_output)) {
-                                                echo $addError_output;
-                                            } ?></p>
-                                    </div>
-                                </div>
+
+
+            <!-- START TABLE -->
+            <div class="container">
+                <div class="table-card">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h2>Manage <b>News Posts</b></h2>
                             </div>
-                            <table class="table table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Post ID</th>
-                                        <th>Title</th>
-                                        <th>Content</th>
-                                        <th>Img</th>
-                                        <th>TOOLS</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- START LOOP -->
-                                    <?php
-                                    // Attempt select query execution
-                                    $sql = "SELECT * FROM news";
-                                    if ($result = mysqli_query($connect, $sql)) {
-                                        if (mysqli_num_rows($result) > 0) {
-                                            while ($row = mysqli_fetch_array($result)) {
-                                                echo "<tr>";
-                                                echo "<td class='overflow'>" . $row['id'] . "</td>";
-                                                echo "<td class='overflow'>" . $row['title'] . "</td>";
-                                                echo "<td class='overflow'>" . $row['content'] . "</td>";
-                                                echo "<td class='overflow'>" . $row['image'] . "</td>";
-                                                echo "<td class='overflow'>
-                                            <a href='#editNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                            <a href='#deleteNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-trash' aria-hidden='true'></i></a></td>";
-                                                echo "</tr>";
-                                            }
-                                            // Free result set
-                                            mysqli_free_result($result);
-                                        } else {
-                                            echo "No records matching your query were found.";
-                                        }
-                                    } else {
-                                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-                                    }
-                                    ?>
-                                    <!-- END LOOP -->
-                                </tbody>
-                            </table>
+                            <div class="col-sm-6">
+                                <a href="#addNewsModal" class="btn btn-success tbl-btn" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p><?php if (!empty($addError_output)) {
+                                        echo $addError_output;
+                                    } ?></p>
+                            </div>
                         </div>
                     </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Post ID</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Content</th>
+                                <th scope="col">Img</th>
+                                <th scope="col">TOOLS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- START LOOP -->
+                            <?php
+                            // Attempt select query execution
+                            $sql = "SELECT * FROM news";
+                            if ($result = mysqli_query($connect, $sql)) {
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_array($result)) {
+                                        echo "<tr>";
+                                        echo "<td class='overflow'>" . $row['id'] . "</td>";
+                                        echo "<td class='overflow'>" . $row['title'] . "</td>";
+                                        echo "<td class='overflow'>" . $row['content'] . "</td>";
+                                        echo "<td class='overflow'>" . $row['image'] . "</td>";
+                                        echo "<td class='overflow'>
+                                            <a href='#editNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a>
+                                            <a href='#deleteNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-trash' aria-hidden='true'></i></a></td>";
+                                        echo "</tr>";
+                                    }
+                                    // Free result set
+                                    mysqli_free_result($result);
+                                } else {
+                                    echo "No records matching your query were found.";
+                                }
+                            } else {
+                                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                            }
+                            ?>
+                            <!-- END LOOP -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <!-- End of Table -->
+
+
+
+
             <!-- ******************** START ALL MODALS ******************** -->
             <!-- ADD MODAL -->
             <div id="addNewsModal" class="modal fade">
