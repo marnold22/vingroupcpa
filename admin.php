@@ -30,6 +30,7 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
+            <!-- PAGE UNIQUE CONTET GOES HERE -->
         </div>
     </div>
 
