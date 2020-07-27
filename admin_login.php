@@ -92,40 +92,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 
 <!-- Head -->
-<?php include("modules/head.php") ?>
-
-<!-- Navigation -->
-<nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark shadow fixed-top bg-cpagreen">
-    <div class="container">
-        <a class="navbar-brand" href="index.php">
-            <img src="assets/logo.jpg" width="30" height="30" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="admin.php">Login</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<?php include("modules/admin_head.php") ?>
 
 <body>
-    <!-- Hero Banner -->
-    <header class="herobanner herobanner-admin-login">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 text-center">
-                    <h1>Please Log In</h1>
+    <!-- Login Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sign In</h5>
+                        <form class="form-signin" action="" method="POST" >
+
+                            <div class="form-label-group">
+                                <input name="username" type="text" id="inputUsername" class="form-control" placeholder="User Name" required autofocus>
+                                <label for="inputUsername">Username</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                <label for="inputPassword">Password</label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Modal -->
-        <?php include("modules/admin-login-modal.php") ?>
-    </header>
+    </div>
 
     <!-- Footer -->
     <footer class="py-3">
