@@ -132,13 +132,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Scripts -->
     <?php include("modules/scripts.php") ?>
-
-
-    <script type="text/javascript">
-        $(window).on('load', function() {
-            $('#adminLogModal').modal('show');
-        });
-    </script>
 </body>
 
 </html>
