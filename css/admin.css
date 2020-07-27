@@ -2,6 +2,12 @@
 /*  */
 /*  */
 /*  */
+
+.help-block {
+    color: red;
+}
+
+
 /* ---------------------------------------------------------------------- ADMIN REGISTER PAGE ---------------------------------------------------------------------- */
 .herobanner-admin-register {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i3.jpg");
