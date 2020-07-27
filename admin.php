@@ -15,7 +15,7 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Admin</div>
-                        <a class="nav-link" href="#" aria-expanded="false">Home</a>
+                        <a class="nav-link" href="admin.php" aria-expanded="false">Home</a>
                         <a class="nav-link" href="admin_news.php" aria-expanded="false">News Posts</a>
                         <a class="nav-link" href="admin_users.php" aria-expanded="false">Users Table</a>
                         <a class="nav-link" href="admin_reset_password.php" aria-expanded="false">Password Resset</a>
