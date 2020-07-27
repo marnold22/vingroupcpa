@@ -106,14 +106,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <h5 class="card-title text-center">Sign In</h5>
                         <form class="form-signin" action="" method="POST" >
 
-                            <div class="form-label-group">
+                            <div class="form-label-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                                 <input name="username" type="text" id="inputUsername" class="form-control" placeholder="User Name" required autofocus>
                                 <label for="inputUsername">Username</label>
+                                <span class="help-block"><?php echo $username_err; ?></span>
                             </div>
 
-                            <div class="form-label-group">
+                            <div class="form-label-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                                 <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                                 <label for="inputPassword">Password</label>
+                                <span class="help-block"><?php echo $password_err; ?></span>
                             </div>
                             <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
 
