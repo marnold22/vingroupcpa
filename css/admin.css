@@ -2,16 +2,6 @@
 /*  */
 /*  */
 /*  */
-/* ---------------------------------------------------------------------- ADMIN LOGIN / LOGOUT PAGE ---------------------------------------------------------------------- */
-.herobanner-admin-login {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i2.jpg");
-    color: #000;
-    height: 98vh;
-}
-.herobanner-admin-login h1 {
-    color: #fff;
-}
-
 /* ---------------------------------------------------------------------- ADMIN REGISTER PAGE ---------------------------------------------------------------------- */
 .herobanner-admin-register {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i3.jpg");
@@ -19,16 +9,6 @@
     height: 98vh;
 }
 .herobanner-admin-register h1 {
-    color: #fff;
-}
-
-/* ---------------------------------------------------------------------- ADMIN REGISTER PAGE ---------------------------------------------------------------------- */
-.herobanner-admin-passreset {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i4.jpg");
-    color: #000;
-    height: 98vh;
-}
-.herobanner-admin-passreset h1 {
     color: #fff;
 }
 
