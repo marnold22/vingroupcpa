@@ -1,55 +1,55 @@
 <?php include("_admin_check_loggedout.php") ?>
 
-<?php 
+<?php
 // Include config file
 require_once 'db_connect.php';
- 
+
 // Define variables and initialize with empty values
 $new_password = $confirm_password = "";
 $new_password_err = $confirm_password_err = "";
- 
+
 // Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     // Validate new password
-    if(empty(trim($_POST["new_password"]))){
-        $new_password_err = "Please enter the new password.";     
-    } elseif(strlen(trim($_POST["new_password"])) < 6){
+    if (empty(trim($_POST["new_password"]))) {
+        $new_password_err = "Please enter the new password.";
+    } elseif (strlen(trim($_POST["new_password"])) < 6) {
         $new_password_err = "Password must have at least 6 characters.";
-    } else{
+    } else {
         $new_password = trim($_POST["new_password"]);
     }
-    
+
     // Validate confirm password
-    if(empty(trim($_POST["confirm_password"]))){
+    if (empty(trim($_POST["confirm_password"]))) {
         $confirm_password_err = "Please confirm the password.";
-    } else{
+    } else {
         $confirm_password = trim($_POST["confirm_password"]);
-        if(empty($new_password_err) && ($new_password != $confirm_password)){
+        if (empty($new_password_err) && ($new_password != $confirm_password)) {
             $confirm_password_err = "Password did not match.";
         }
     }
-        
+
     // Check input errors before updating the database
-    if(empty($new_password_err) && empty($confirm_password_err)){
+    if (empty($new_password_err) && empty($confirm_password_err)) {
         // Prepare an update statement
         $sql = "UPDATE users SET password = ? WHERE id = ?";
-        
-        if($stmt = mysqli_prepare($connect, $sql)){
+
+        if ($stmt = mysqli_prepare($connect, $sql)) {
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
-            
+
             // Set parameters
             $param_password = password_hash($new_password, PASSWORD_DEFAULT);
             $param_id = $_SESSION["id"];
-            
+
             // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
+            if (mysqli_stmt_execute($stmt)) {
                 // Password updated successfully. Destroy the session, and redirect to login page
                 session_destroy();
                 header("location: admin_login.php");
                 exit();
-            } else{
+            } else {
                 echo "Oops! Something went wrong. Please try again later.";
             }
 
@@ -57,12 +57,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_close($stmt);
         }
     }
-    
+
     // Close connection
     mysqli_close($connect);
 }
 ?>
- 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,7 +79,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="admin.php">Home</a>
                 </li>
@@ -101,18 +101,34 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </nav>
 
 <body>
-    <!-- Hero Banner -->
-    <header class="herobanner herobanner-admin-passreset">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 text-center">
-                    <h1>Reset Password</h1>
+    <!-- Password Reset Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Password Reset</h5>
+                        <form class="form-signin" action="" method="POST">
+
+                            <div class="form-label-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
+                                <input name="new_password" type="text" id="newPassword" class="form-control" placeholder="New Password" required autofocus>
+                                <label for="newPassword">New Password</label>
+                                <span class="help-block"><?php echo $new_password_err; ?></span>
+                            </div>
+
+                            <div class="form-label-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                                <input name="confirm_password" type="text" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
+                                <label for="confirmPassword">Confirm Password</label>
+                                <span class="help-block"><?php echo $confirm_password_err; ?></span>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Confirm</button>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Modal -->
-        <?php include("modules/admin-passreset-modal.php") ?>
-    </header>
+    </div>
 
     <!-- Footer -->
     <footer class="py-3">
@@ -124,13 +140,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <!-- Scripts -->
     <?php include("modules/scripts.php") ?>
-
-
-    <script type="text/javascript">
-        $(window).on('load', function() {
-            $('#adminPassResetModal').modal('show');
-        });
-    </script>
 </body>
 
 </html>
