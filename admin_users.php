@@ -1,6 +1,8 @@
+<?php include("_admin_check_loggedout.php") ?>
+
 <?php
-// Include config file
-require_once 'db_connect.php';
+    // Include config file
+    require_once 'db_connect.php';
 ?>
 
 

@@ -1,3 +1,5 @@
+<?php include("_admin_check_loggedout.php") ?>
+
 <?php
 
 // Include config file
@@ -14,9 +16,6 @@ function StringInputCleaner($data)
     $data = (filter_var($data, FILTER_SANITIZE_STRING));
     return $data;
 }
-
-
-
 
 
 // ------------------------------ START ADD NEWS POST ------------------------------ //

@@ -1,13 +1,4 @@
-<?php
-// Initialize the session
-session_start();
-
-// Check if the user is logged in, if not then redirect him to login page
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: admin_login.php");
-    exit;
-}
-?>
+<?php include("_admin_check_loggedout.php") ?>
 
 <?php
     // Include config file
