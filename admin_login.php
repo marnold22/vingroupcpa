@@ -7,7 +7,9 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("location: admin.php");
     exit;
 }
+?>
 
+<?php
 // Include config file
 require_once 'db_connect.php';
 
