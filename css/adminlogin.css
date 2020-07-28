@@ -4,8 +4,12 @@
   }
   
   body {
-    background: #007bff;
-    background: linear-gradient(to right, #0062E6, #33AEFF);
+    /* background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF); */
+    /* background: #346272; */
+    background-image: linear-gradient(rgba(52, 98, 114, 0.85), rgba(52, 98, 114, 0.85)), url("../assets/i7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .card-signin {
