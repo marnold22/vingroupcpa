@@ -142,10 +142,10 @@ if (isset($_POST['addnews'])) {
                     <div class="table-title">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h2>Manage <b>News Posts</b></h2>
+                                <h2 class="news-header">Manage <b>News Posts</b></h2>
                             </div>
                             <div class="col-sm-6">
-                                <a href="#addNewsModal" class="btn btn-success tbl-btn" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
+                                <a id="news-btn" href="#addNewsModal" class="btn btn-success tbl-btn" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
                             </div>
                         </div>
                         <div class="row">
@@ -156,46 +156,48 @@ if (isset($_POST['addnews'])) {
                             </div>
                         </div>
                     </div>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Post ID</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Content</th>
-                                <th scope="col">Img</th>
-                                <th scope="col">TOOLS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- START LOOP -->
-                            <?php
-                            // Attempt select query execution
-                            $sql = "SELECT * FROM news";
-                            if ($result = mysqli_query($connect, $sql)) {
-                                if (mysqli_num_rows($result) > 0) {
-                                    while ($row = mysqli_fetch_array($result)) {
-                                        echo "<tr>";
-                                        echo "<td class='overflow'>" . $row['id'] . "</td>";
-                                        echo "<td class='overflow'>" . $row['title'] . "</td>";
-                                        echo "<td class='overflow'>" . $row['content'] . "</td>";
-                                        echo "<td class='overflow'>" . $row['image'] . "</td>";
-                                        echo "<td class='overflow'>
-                                            <a href='#editNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                            <a href='#deleteNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-trash' aria-hidden='true'></i></a></td>";
-                                        echo "</tr>";
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Post ID</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Content</th>
+                                    <th scope="col">Img</th>
+                                    <th scope="col">TOOLS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- START LOOP -->
+                                <?php
+                                // Attempt select query execution
+                                $sql = "SELECT * FROM news";
+                                if ($result = mysqli_query($connect, $sql)) {
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while ($row = mysqli_fetch_array($result)) {
+                                            echo "<tr>";
+                                            echo "<td class='overflow'>" . $row['id'] . "</td>";
+                                            echo "<td class='overflow'>" . $row['title'] . "</td>";
+                                            echo "<td class='overflow'>" . $row['content'] . "</td>";
+                                            echo "<td class='overflow'>" . $row['image'] . "</td>";
+                                            echo "<td class='overflow'>
+                                                <a href='#editNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                <a href='#deleteNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-trash' aria-hidden='true'></i></a></td>";
+                                            echo "</tr>";
+                                        }
+                                        // Free result set
+                                        mysqli_free_result($result);
+                                    } else {
+                                        echo "No records matching your query were found.";
                                     }
-                                    // Free result set
-                                    mysqli_free_result($result);
                                 } else {
-                                    echo "No records matching your query were found.";
+                                    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
                                 }
-                            } else {
-                                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-                            }
-                            ?>
-                            <!-- END LOOP -->
-                        </tbody>
-                    </table>
+                                ?>
+                                <!-- END LOOP -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <!-- End of Table -->
@@ -205,7 +207,7 @@ if (isset($_POST['addnews'])) {
 
             <!-- ******************** START ALL MODALS ******************** -->
             <!-- ADD MODAL -->
-            <div id="addNewsModal" class="modal fade">
+            <div id="addNewsModal" class="modal fade news-modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <form action="" method="POST" enctype="multipart/form-data">
@@ -244,7 +246,7 @@ if (isset($_POST['addnews'])) {
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_array($result)) { ?>
 
-                        <div id="editNewsModal-<?= $row['id']; ?>" class="modal fade">
+                        <div id="editNewsModal-<?= $row['id']; ?>" class="modal fade news-modal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <form action="_news_update.php?id=<?= $row['id']; ?>" method="POST">
@@ -290,7 +292,7 @@ if (isset($_POST['addnews'])) {
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_array($result)) { ?>
 
-                        <div id="deleteNewsModal-<?= $row['id']; ?>" class="modal fade">
+                        <div id="deleteNewsModal-<?= $row['id']; ?>" class="modal fade news-modal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <form action="_news_delete.php?id=<?= $row['id']; ?>" method="POST">
@@ -326,6 +328,23 @@ if (isset($_POST['addnews'])) {
 
     <!-- Scripts -->
     <?php include("modules/scripts.php") ?>
+    <script>
+        jQuery(document).ready(function($) {
+            var alterClass = function() {
+                var ww = document.body.clientWidth;
+                if (ww < 600) {
+                    $('#news-btn').addClass('btn-block');
+                } else if (ww >= 601) {
+                    $('#news-btn').removeClass('btn-block');
+                };
+            };
+            $(window).resize(function() {
+                alterClass();
+            });
+            //Fire it when the page first loads:
+            alterClass();
+        });
+    </script>
     <script>
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);

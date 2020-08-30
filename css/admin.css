@@ -33,8 +33,21 @@
 }
 
 table.table .overflow {
-	max-width: 500px;
+	max-width: 100px;
 	text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+/*  ---------- Mobile ----------*/
+@media screen and (max-width: 600px), screen and (max-height: 600px) {
+	.news-header {
+		font-size: 1.5rem;
+		padding-bottom: 10px;
+	}
+
+	.tbl-btn {
+		float: left;
+	}
+
 }
