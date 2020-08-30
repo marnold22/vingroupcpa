@@ -9,7 +9,7 @@
     /* background: #346272; */
     background-image: linear-gradient(rgba(52, 98, 114, 0.85), rgba(52, 98, 114, 0.85)), url("../assets/i7.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
   }
   
   .card-signin {
