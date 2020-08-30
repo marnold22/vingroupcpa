@@ -56,40 +56,42 @@
                             </div>
                         </div>
                     </div>
-                    <table class="table table-striped table-hover">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Username</th>
-                                <th>TOOLS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- START LOOP -->
-                            <?php
-                            // Attempt select query execution
-                            $sql = "SELECT * FROM users";
-                            if ($result = mysqli_query($connect, $sql)) {
-                                if (mysqli_num_rows($result) > 0) {
-                                    while ($row = mysqli_fetch_array($result)) {
-                                        echo "<tr>";
-                                        echo "<td class='overflow'>" . $row['id'] . "</td>";
-                                        echo "<td class='overflow'>" . $row['username'] . "</td>";
-                                        echo "<td class='overflow'>NA</td>";
-                                        echo "</tr>";
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>TOOLS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- START LOOP -->
+                                <?php
+                                // Attempt select query execution
+                                $sql = "SELECT * FROM users";
+                                if ($result = mysqli_query($connect, $sql)) {
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while ($row = mysqli_fetch_array($result)) {
+                                            echo "<tr>";
+                                            echo "<td class='overflow'>" . $row['id'] . "</td>";
+                                            echo "<td class='overflow'>" . $row['username'] . "</td>";
+                                            echo "<td class='overflow'>NA</td>";
+                                            echo "</tr>";
+                                        }
+                                        // Free result set
+                                        mysqli_free_result($result);
+                                    } else {
+                                        echo "No records matching your query were found.";
                                     }
-                                    // Free result set
-                                    mysqli_free_result($result);
                                 } else {
-                                    echo "No records matching your query were found.";
+                                    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
                                 }
-                            } else {
-                                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-                            }
-                            ?>
-                            <!-- END LOOP -->
-                        </tbody>
-                    </table>
+                                ?>
+                                <!-- END LOOP -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <!-- End of Table -->
