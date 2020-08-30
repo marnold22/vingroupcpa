@@ -42,10 +42,10 @@
                     <div class="table-title">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h2>Manage <b>News Posts</b></h2>
+                                <h2>View <b>Users</b></h2>
                             </div>
                             <div class="col-sm-6">
-                                <a href="#addNewsModal" class="btn btn-success tbl-btn" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a>
+                                <!-- <a href="#addNewsModal" class="btn btn-success tbl-btn" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a> -->
                             </div>
                         </div>
                         <div class="row">
@@ -75,7 +75,7 @@
                                         echo "<tr>";
                                         echo "<td class='overflow'>" . $row['id'] . "</td>";
                                         echo "<td class='overflow'>" . $row['username'] . "</td>";
-                                        echo "<td class='overflow'></td>";
+                                        echo "<td class='overflow'>NA</td>";
                                         echo "</tr>";
                                     }
                                     // Free result set
