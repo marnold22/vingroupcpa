@@ -248,6 +248,12 @@ footer div div div a {
 #events-tablet {display: none;}
 #events-mobile {display: none;}
 
+/* ---------------------------------------------------------------------- NEWS PAGE ---------------------------------------------------------------------- */
+.herobanner-news {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/inews.jpg");
+  color: #fff;
+  height: 100vh;
+}
 
 /* ---------------------------------------------------------------------- ABOUT US PAGE ---------------------------------------------------------------------- */
 .herobanner-about {

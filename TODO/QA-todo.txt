@@ -1,4 +1,0 @@
-** Frontend
-1. Need paypal account link - to add online banking (button)
-2. Still missing accounting policy - need to upload pdf file
-3. Need staff photos

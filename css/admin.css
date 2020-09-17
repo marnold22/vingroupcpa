@@ -1,0 +1,53 @@
+/* EXTENSION OF MAIN CSS BUT FOR ADMIN PAGES */
+/*  */
+/*  */
+/*  */
+
+/* Error Color */
+.help-block {
+    color: red;
+}
+
+/* Admin Home Page */
+.welcome-card {
+	border: 0;
+	border-radius: 1rem;
+	background: #fff;
+	padding: 20px 25px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+}
+
+/* Table Styles */
+.table-card {
+	border: 0;
+	border-radius: 1rem;
+	background: #fff;
+	padding: 20px 25px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+}
+
+.tbl-btn {
+	float: right;
+}
+
+table.table .overflow {
+	max-width: 100px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*  ---------- Mobile ----------*/
+@media screen and (max-width: 600px), screen and (max-height: 600px) {
+	.news-header {
+		font-size: 1.5rem;
+		padding-bottom: 10px;
+	}
+
+	.tbl-btn {
+		float: left;
+	}
+
+}
