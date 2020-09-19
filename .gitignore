@@ -4,4 +4,5 @@ composer.lock
 
 # Project specific ignored files
 .env
-#info.php
+info.php
+assets/news/
