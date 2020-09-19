@@ -6,4 +6,4 @@ composer.lock
 .env
 info.php
 SQL-SCRIPTS/
-Orig-Admin/
+Orig-Admin/*
