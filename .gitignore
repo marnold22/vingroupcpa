@@ -1,5 +1,9 @@
-INFO/
+# Utilities ignored (compiled on server)
 vendor/
 composer.lock
+
+# Project specific ignored files
 .env
+info.php
 SQL-SCRIPTS/
+Original Admin Pages/
