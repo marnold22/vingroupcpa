@@ -52,7 +52,7 @@ if (isset($_POST['addnews'])) {
         }
 
         if ($file_size > 2097152) {
-            $addImage_err .= 'File size must be excately 2 MB';
+            $addImage_err .= 'File size must be less than 2 MB';
         }
 
         if (empty($addImage_err) == true) {
