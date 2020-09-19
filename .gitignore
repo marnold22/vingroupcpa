@@ -4,6 +4,3 @@ composer.lock
 
 # Project specific ignored files
 .env
-info.php
-SQL-SCRIPTS/
-Orig-Admin/*
