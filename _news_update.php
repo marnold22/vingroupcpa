@@ -66,7 +66,7 @@ if (isset($_POST['editnews'])) {
     } else {
         // Use original post image
         // Query for original post image
-        $sql = "SELECT image FROM news WHERE id='$id'";
+        $sql = "SELECT image FROM news WHERE id='$postid'";
         if ($result = mysqli_query($connect, $sql)) {
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_array($result)) {
