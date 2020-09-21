@@ -97,7 +97,19 @@
                     <div class="col-md-12">
                         <div class="collapse btn-div-gap" id="collapseEvent-<?=$row['id']; ?>">
                             <div class="card card-body">
-                                <p><?= $row['content']; ?></p>
+                                <p>
+                                    <?php
+                                        // Searches text for "\n" and replaces with a <br>
+                                        $text = nl2br($row['content']);
+                                        $box = '';
+                                        $bullet = '&bull;';
+
+                                        // Search text for '' and add bullets in place
+                                        $dropdown = str_replace($box, $bullet, $text);
+                                        echo($dropdown);
+                                        // Note - look into explode() for further unordered lists  
+                                    ?>
+                                </p>
                             </div>
                         </div>
                     </div>
