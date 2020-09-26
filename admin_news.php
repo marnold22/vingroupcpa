@@ -48,25 +48,25 @@ if (isset($_POST['addnews'])) {
         $extensions = array("jpeg", "jpg", "png");
 
         if (in_array($file_ext, $extensions) === false) {
-            $addImage_err .= "extension not allowed, please choose a JPEG or PNG file.";
+            $addImage_err .= "extension not allowed, please choose a JPEG or PNG file. ";
         }
 
         if ($file_size > 2097152) {
-            $addImage_err .= 'File size must be less than 2 MB';
+            $addImage_err .= "File size must be less than 2 MB ";
         }
 
         if (empty($addImage_err) == true) {
             move_uploaded_file($file_tmp, "assets/news/" . $file_name);
             $addImage = "assets/news/" . $file_name;
         } else {
-            $addImage_err .= "Image could not be uploaded.";
+            $addImage_err .= "Image could not be uploaded. ";
         }
     }
 
 
     // Validate Content
     if (!isset($_POST["ccontent"])) {
-        $addContent_err = "Content cannot be left blank, please enter a body message.";
+        $addContent_err = "Content cannot be left blank, please enter a body message. ";
     } else {
         $raw_content = trim($_POST["ccontent"]);
         $addContent = StringInputCleaner($raw_content);
@@ -75,7 +75,7 @@ if (isset($_POST['addnews'])) {
 
     // Check to make sure nothing is left blank
     if (empty($addTitle) || empty($addImage) || empty($addContent)) {
-        $addGlobal_err = "No fields can be left empty, please make sure to include all fields.";
+        $addGlobal_err = "No fields can be left empty, please make sure to include all fields. ";
     } else {
         $addGlobal_err = "";
     }
@@ -257,7 +257,7 @@ if (isset($_POST['addnews'])) {
                                         <div class="modal-body">
                                             <div class="form-group">
                                                 <label>Title</label>
-                                                <input name="stitle" type="text" class="form-control" placeholder="<?= $row['title']; ?>" required>
+                                                <input name="stitle" type="text" class="form-control" value="<?= $row['title']; ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Image</label>
@@ -265,7 +265,7 @@ if (isset($_POST['addnews'])) {
                                             </div>
                                             <div class="form-group">
                                                 <label>Content</label>
-                                                <textarea name="scontent" class="form-control" placeholder="<?= $row['content']; ?>" rows="5" required></textarea>
+                                                <textarea name="scontent" class="form-control" value="" rows="5" required> <?= $row['content']; ?> </textarea>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -345,6 +345,15 @@ if (isset($_POST['addnews'])) {
             alterClass();
         });
     </script>
+
+    <!-- <script>
+        $(document).ready(function() {    
+            $("#fname").val("Joe"); 
+            $("#lname").val("Bean"); 
+            $("#title").val("Boss");
+        });
+    </script> -->
+
     <script>
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);

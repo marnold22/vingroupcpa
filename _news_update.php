@@ -30,7 +30,7 @@ if (isset($_POST['editnews'])) {
 
     // Validate Title
     if (!isset($_POST["stitle"])) {
-        $editTitle_err = "Title cannot be left blank, please enter a title.";
+        $editTitle_err = "Title cannot be left blank, please enter a title. ";
     } else {
         $raw_title = trim($_POST["stitle"]);
         $editTitle = StringInputCleaner($raw_title);
@@ -50,20 +50,20 @@ if (isset($_POST['editnews'])) {
         $extensions= array("jpeg","jpg","png");
         
         if(in_array($file_ext,$extensions)=== false){
-           $editImage_err .= "extension not allowed, please choose a JPEG or PNG file.";
+           $editImage_err .= "extension not allowed, please choose a JPEG or PNG file. ";
         }
         
         if($file_size > 2097152){
-           $editImage_err .= 'File size must be excately 2 MB';
+           $editImage_err .= "File size must be less than 2 MB ";
         }
         
         if(empty($editImage_err) == true){
            move_uploaded_file($file_tmp,"assets/news/".$file_name);
            $editImage = "assets/news/" . $file_name;
         }else{
-            $editImage_err .= "Image could not be uploaded.";
+            $editImage_err .= "Image could not be uploaded. ";
         }
-    } else {
+    }else {
         // Use original post image
         // Query for original post image
         $sql = "SELECT image FROM news WHERE id='$postid'";
@@ -80,7 +80,7 @@ if (isset($_POST['editnews'])) {
 
     // Validate Content
     if (!isset($_POST["scontent"])) {
-        $editContent_err = "Content cannot be left blank, please enter a body message.";
+        $editContent_err = "Content cannot be left blank, please enter a body message. ";
     } else {
         $raw_content = trim($_POST["scontent"]);
         $editContent = StringInputCleaner($raw_content);
@@ -88,8 +88,8 @@ if (isset($_POST['editnews'])) {
     }
 
     // Check to make sure nothing is left blank
-    if (empty($editTitle) || empty($editImage) || empty($editContent)) {
-        $editGlobal_err = "No fields can be left empty, please make sure to include all fields.";
+    if (empty($editTitle) || empty($editContent)) {
+        $editGlobal_err = "No fields can be left empty, please make sure to include all fields. ";
     } else {
         $editGlobal_err = "";
     }
