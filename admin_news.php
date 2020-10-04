@@ -85,6 +85,7 @@ if (isset($_POST['addnews'])) {
     } else {
         //Prepair SQL Insert Statement
         $sql = "INSERT INTO news (title, image, content) VALUES ('$addTitle', '$addImage', '$addContent')";
+        
         if (mysqli_query($connect, $sql)) {
             // Redirect to admin_news page
             header("location: admin_news.php");
@@ -345,15 +346,7 @@ if (isset($_POST['addnews'])) {
             alterClass();
         });
     </script>
-
-    <!-- <script>
-        $(document).ready(function() {    
-            $("#fname").val("Joe"); 
-            $("#lname").val("Bean"); 
-            $("#title").val("Boss");
-        });
-    </script> -->
-
+    
     <script>
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
