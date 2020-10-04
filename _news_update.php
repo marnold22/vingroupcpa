@@ -29,23 +29,23 @@ if (isset($_POST['editnews'])) {
     
 
     // Validate Title
-    if (!isset($_POST["stitle"])) {
+    if (!isset($_POST["etitle"])) {
         $editTitle_err = "Title cannot be left blank, please enter a title. ";
     } else {
-        $raw_title = trim($_POST["stitle"]);
+        $raw_title = trim($_POST["etitle"]);
         $editTitle = StringInputCleaner($raw_title);
         $editTitle = mysqli_real_escape_string($connect, $editTitle);
     }
 
 
     // Validate Image
-    if(isset($_FILES['simage'])){
-        
-        $file_name = $_FILES['simage']['name'];
-        $file_size = $_FILES['simage']['size'];
-        $file_tmp = $_FILES['simage']['tmp_name'];
-        $file_type = $_FILES['simage']['type'];
-        $file_ext = strtolower(end(explode('.',$_FILES['simage']['name'])));
+    if(isset($_FILES['eimage'])){
+
+        $file_name = $_FILES['eimage']['name'];
+        $file_size = $_FILES['eimage']['size'];
+        $file_tmp = $_FILES['eimage']['tmp_name'];
+        $file_type = $_FILES['eimage']['type'];
+        $file_ext = strtolower(end(explode('.',$_FILES['eimage']['name'])));
         
         $extensions= array("jpeg","jpg","png");
         
@@ -63,15 +63,17 @@ if (isset($_POST['editnews'])) {
         }else{
             $editImage_err .= "Image could not be uploaded. ";
         }
-    }else {
+    }
+    
+    else {
         // Use original post image
         // Query for original post image
-        $sql = "SELECT image FROM news WHERE id='$postid'";
+        $sql = "SELECT picture FROM news WHERE id='$postid'";
         if ($result = mysqli_query($connect, $sql)) {
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_array($result)) {
                     // Set original post image
-                    $editImage = $row['image'];
+                    $editImage = $row['picture'];
                 }
             }
         }
@@ -79,10 +81,10 @@ if (isset($_POST['editnews'])) {
 
 
     // Validate Content
-    if (!isset($_POST["scontent"])) {
+    if (!isset($_POST["econtent"])) {
         $editContent_err = "Content cannot be left blank, please enter a body message. ";
     } else {
-        $raw_content = trim($_POST["scontent"]);
+        $raw_content = trim($_POST["econtent"]);
         $editContent = StringInputCleaner($raw_content);
         $editContent = mysqli_real_escape_string($connect, $editContent);
     }
@@ -97,13 +99,13 @@ if (isset($_POST['editnews'])) {
     if (!empty($editTitle_err) || !empty($editImage_err) || !empty($editContent_err) || !empty($editGlobal_err)) {
         $editError_output = "ERRORS: " . $editTitle_err . " " . $editImage_err . " " . $editContent_err . " " . $editGlobal_err;
     } else {
-        
-        // Prepair SQL Update Statement
+
+        // // Prepair SQL Update Statement
         $sql = "UPDATE `news` SET 
-                `title` = '$editTitle', 
-                `image` = '$editImage', 
-                `content` = '$editContent' 
-                WHERE `id` = '$postid'";
+            `title` = '$editTitle', 
+            `picture` = '$editImage', 
+            `content` = '$editContent' 
+            WHERE `id` = '$postid'";
 
         if (mysqli_query($connect, $sql)) {
             // Redirect to admin_news page
