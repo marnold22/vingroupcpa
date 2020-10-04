@@ -84,7 +84,7 @@ if (isset($_POST['addnews'])) {
         $addError_output = "ERRORS: " . $addTitle_err . " " . $addImage_err . " " . $addContent_err . " " . $addGlobal_err;
     } else {
         //Prepair SQL Insert Statement
-        $sql = "INSERT INTO news (title, image, content) VALUES ('$addTitle', '$addImage', '$addContent')";
+        $sql = "INSERT INTO news (title, picture, content) VALUES ('$addTitle', '$addImage', '$addContent')";
         
         if (mysqli_query($connect, $sql)) {
             // Redirect to admin_news page
@@ -164,7 +164,7 @@ if (isset($_POST['addnews'])) {
                                     <th scope="col">Post ID</th>
                                     <th scope="col">Title</th>
                                     <th scope="col">Content</th>
-                                    <th scope="col">Img</th>
+                                    <th scope="col">Picture</th>
                                     <th scope="col">TOOLS</th>
                                 </tr>
                             </thead>
@@ -180,7 +180,7 @@ if (isset($_POST['addnews'])) {
                                             echo "<td class='overflow'>" . $row['id'] . "</td>";
                                             echo "<td class='overflow'>" . $row['title'] . "</td>";
                                             echo "<td class='overflow'>" . $row['content'] . "</td>";
-                                            echo "<td class='overflow'>" . $row['image'] . "</td>";
+                                            echo "<td class='overflow'>" . $row['picture'] . "</td>";
                                             echo "<td class='overflow'>
                                                 <a href='#editNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a>
                                                 <a href='#deleteNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-trash' aria-hidden='true'></i></a></td>";
@@ -223,7 +223,7 @@ if (isset($_POST['addnews'])) {
                                     <input name="atitle" type="text" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>Image</label>
+                                    <label>Picture</label>
                                     <input name="aimage" type="file" class="form-control-file" required>
                                 </div>
                                 <div class="form-group">
@@ -261,7 +261,7 @@ if (isset($_POST['addnews'])) {
                                                 <input name="etitle" type="text" class="form-control" value="<?= $row['title']; ?>" required>
                                             </div>
                                             <div class="form-group">
-                                                <label>Image</label>
+                                                <label>Picture</label>
                                                 <input name="eimage" type="file" class="form-control-file">
                                             </div>
                                             <div class="form-group">
