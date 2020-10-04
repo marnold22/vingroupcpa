@@ -104,16 +104,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <form class="form-signin" action="" method="POST">
 
                                     <div class="form-label-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
-                                        <input name="new_password" type="text" id="newPassword" class="form-control" placeholder="New Password" required autofocus>
+                                        <input name="new_password" type="password" id="newPassword" class="form-control" placeholder="New Password" required autofocus>
                                         <label for="newPassword">New Password</label>
                                         <span class="help-block"><?php echo $new_password_err; ?></span>
                                     </div>
 
                                     <div class="form-label-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-                                        <input name="confirm_password" type="text" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
+                                        <input name="confirm_password" type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
                                         <label for="confirmPassword">Confirm Password</label>
                                         <span class="help-block"><?php echo $confirm_password_err; ?></span>
                                     </div>
+
+                                    <div class="form-label-group text-center">
+                                        <input type="checkbox" onclick="showPassword()"> Show Password
+                                    </div>
+                                    
                                     <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Confirm</button>
 
                                 </form>
@@ -127,6 +132,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Scripts -->
     <?php include("modules/scripts.php") ?>
+
+    <script>
+        function showPassword() {
+            var newPass = document.getElementById("newPassword");
+            var confirmPass = document.getElementById("confirmPassword");
+
+            if (newPass.type === "password" || confirmPass.type === "password") {
+                newPass.type = "text";
+                confirmPass.type = "text";
+            } else {
+                newPass.type = "password";
+                confirmPass.type = "password";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
