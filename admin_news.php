@@ -27,23 +27,23 @@ $img_upload = 1;
 
 if (isset($_POST['addnews'])) {
     // Validate Title
-    if (!isset($_POST["ctitle"])) {
+    if (!isset($_POST["atitle"])) {
         $addTitle_err = "Title cannot be left blank, please enter a title.";
     } else {
-        $raw_title = trim($_POST["ctitle"]);
+        $raw_title = trim($_POST["atitle"]);
         $addTitle = StringInputCleaner($raw_title);
         $addTitle = mysqli_real_escape_string($connect, $addTitle);
     }
 
 
     // Validate Image
-    if (isset($_FILES['cimage'])) {
+    if (isset($_FILES['aimage'])) {
 
-        $file_name = $_FILES['cimage']['name'];
-        $file_size = $_FILES['cimage']['size'];
-        $file_tmp = $_FILES['cimage']['tmp_name'];
-        $file_type = $_FILES['cimage']['type'];
-        $file_ext = strtolower(end(explode('.', $_FILES['cimage']['name'])));
+        $file_name = $_FILES['aimage']['name'];
+        $file_size = $_FILES['aimage']['size'];
+        $file_tmp = $_FILES['aimage']['tmp_name'];
+        $file_type = $_FILES['aimage']['type'];
+        $file_ext = strtolower(end(explode('.', $_FILES['aimage']['name'])));
 
         $extensions = array("jpeg", "jpg", "png");
 
@@ -65,10 +65,10 @@ if (isset($_POST['addnews'])) {
 
 
     // Validate Content
-    if (!isset($_POST["ccontent"])) {
+    if (!isset($_POST["acontent"])) {
         $addContent_err = "Content cannot be left blank, please enter a body message. ";
     } else {
-        $raw_content = trim($_POST["ccontent"]);
+        $raw_content = trim($_POST["acontent"]);
         $addContent = StringInputCleaner($raw_content);
         $addContent = mysqli_real_escape_string($connect, $addContent);
     }
@@ -220,15 +220,15 @@ if (isset($_POST['addnews'])) {
 
                                 <div class="form-group">
                                     <label>Title</label>
-                                    <input name="ctitle" type="text" class="form-control" required>
+                                    <input name="atitle" type="text" class="form-control" required>
                                 </div>
                                 <div class="form-group">
                                     <label>Image</label>
-                                    <input name="cimage" type="file" class="form-control-file" required>
+                                    <input name="aimage" type="file" class="form-control-file" required>
                                 </div>
                                 <div class="form-group">
                                     <label>Content</label>
-                                    <textarea name="ccontent" class="form-control" placeholder="Content Body Here..." rows="5" required></textarea>
+                                    <textarea name="acontent" class="form-control" placeholder="Content Body Here..." rows="5" required></textarea>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -258,15 +258,15 @@ if (isset($_POST['addnews'])) {
                                         <div class="modal-body">
                                             <div class="form-group">
                                                 <label>Title</label>
-                                                <input name="stitle" type="text" class="form-control" value="<?= $row['title']; ?>" required>
+                                                <input name="etitle" type="text" class="form-control" value="<?= $row['title']; ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Image</label>
-                                                <input name="simage" type="file" class="form-control-file">
+                                                <input name="eimage" type="file" class="form-control-file">
                                             </div>
                                             <div class="form-group">
                                                 <label>Content</label>
-                                                <textarea name="scontent" class="form-control" value="" rows="5" required> <?= $row['content']; ?> </textarea>
+                                                <textarea name="econtent" class="form-control" value="" rows="5" required> <?= $row['content']; ?> </textarea>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
