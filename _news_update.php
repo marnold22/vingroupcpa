@@ -45,7 +45,7 @@ if (isset($_POST['editnews'])) {
         $file_size = $_FILES['eimage']['size'];
         $file_tmp = $_FILES['eimage']['tmp_name'];
         $file_type = $_FILES['eimage']['type'];
-        $file_ext = strtolower(end(explode('.',$_FILES['eimage']['name'])));
+        $file_ext = strtolower(end(explode('.', $_FILES['eimage']['name'])));
         
         $extensions= array("jpeg","jpg","png");
         
@@ -63,9 +63,7 @@ if (isset($_POST['editnews'])) {
         }else{
             $editImage_err .= "Image could not be uploaded. ";
         }
-    }
-    
-    else {
+    }else {
         // Use original post image
         // Query for original post image
         $sql = "SELECT picture FROM news WHERE id='$postid'";

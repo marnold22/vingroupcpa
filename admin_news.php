@@ -98,8 +98,6 @@ if (isset($_POST['addnews'])) {
     }
 }
 // ------------------------------ END ADD NEWS POST ------------------------------ //
-
-
 ?>
 
 <!DOCTYPE html>
@@ -239,6 +237,7 @@ if (isset($_POST['addnews'])) {
                     </div>
                 </div>
             </div>
+
             <!-- EDIT MODAL -->
             <!-- Need to loop through db news posts and generate unique modal for each post -->
             <?php
@@ -250,7 +249,7 @@ if (isset($_POST['addnews'])) {
                         <div id="editNewsModal-<?= $row['id']; ?>" class="modal fade news-modal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <form action="_news_update.php?id=<?= $row['id']; ?>" method="POST">
+                                    <form action="_news_update.php?id=<?= $row['id']; ?>" method="POST" enctype="multipart/form-data">
                                         <div class="modal-header">
                                             <h4 class="modal-title">Edit News Post</h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -262,7 +261,7 @@ if (isset($_POST['addnews'])) {
                                             </div>
                                             <div class="form-group">
                                                 <label>Picture</label>
-                                                <input name="eimage" type="file" class="form-control-file">
+                                                <input name="eimage" type="file" class="form-control-file" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Content</label>
@@ -285,6 +284,7 @@ if (isset($_POST['addnews'])) {
                 }
             }
             ?>
+
             <!-- DELETE MODAL -->
             <!-- Need to loop through db news posts and generate unique modal for each post -->
             <?php
