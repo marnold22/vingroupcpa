@@ -61,6 +61,9 @@ if (isset($_POST['addnews'])) {
         } else {
             $addImage_err .= "Image could not be uploaded. ";
         }
+    } else {
+        $addImage = "assets/news/news-default.jpg";
+        $addImage_err = "";
     }
 
 
