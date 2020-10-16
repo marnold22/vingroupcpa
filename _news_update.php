@@ -53,8 +53,8 @@ if (isset($_POST['editnews'])) {
            $editImage_err .= "extension not allowed, please choose a JPEG or PNG file. ";
         }
         
-        if($file_size > 2097152){
-           $editImage_err .= "File size must be less than 2 MB ";
+        if($file_size > 10485760){
+           $editImage_err .= "File size must be less than 10 MB ";
         }
         
         if(empty($editImage_err) == true){

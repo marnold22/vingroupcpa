@@ -51,8 +51,8 @@ if (isset($_POST['addnews'])) {
             $addImage_err .= "extension not allowed, please choose a JPEG or PNG file. ";
         }
 
-        if ($file_size > 2097152) {
-            $addImage_err .= "File size must be less than 2 MB ";
+        if ($file_size > 10485760) {
+            $addImage_err .= "File size must be less than 10 MB ";
         }
 
         if (empty($addImage_err) == true) {
