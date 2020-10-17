@@ -6,3 +6,6 @@ composer.lock
 .env
 info.php
 assets/news/
+
+# Any .backup files
+*.backup
