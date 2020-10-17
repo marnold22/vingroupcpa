@@ -1,14 +1,10 @@
 <?php
 
-// Include config file
 require_once 'db_connect.php';
 
-//To SANITIZE String value use
-function StringInputCleaner($data)
-{
-    //remove space bfore and after
+// String Sanatize Function
+function InputCleaner($data) {
     $data = trim($data);
-    //remove slashes
     $data = stripslashes($data);
     $data = (filter_var($data, FILTER_SANITIZE_STRING));
     return $data;
@@ -18,54 +14,32 @@ function StringInputCleaner($data)
 // ------------------------------ START EDIT NEWS POST ------------------------------ //
 // Define variables and initialize with empty values
 $editTitle = $editImage = $editContent = "";
-$editTitle_err = $editImage_err = $editContent_err = $editGlobal_err = "";
+$editTitle_err = $editImage_err = $editContent_err = "";
 $editTarget_dir = "assets/news/";
-$editImg_upload = 1;
 
-if (isset($_POST['editnews'])) {
+if (isset($_POST['EDITNEWS'])) {
 
     //Get id of which post is being edited
     $postid = $_GET['id'];
-    
 
     // Validate Title
-    if (!isset($_POST["etitle"])) {
-        $editTitle_err = "Title cannot be left blank, please enter a title. ";
+    if (empty($_POST['etitle'])) {
+        $editTitle_err = "Title must be provided. ";
     } else {
-        $raw_title = trim($_POST["etitle"]);
-        $editTitle = StringInputCleaner($raw_title);
-        $editTitle = mysqli_real_escape_string($connect, $editTitle);
+        $editTitle = InputCleaner($_POST['etitle']);
     }
 
+    // Validate content
+    if (empty($_POST['econtent'])) {
+        $editContent_err = "Content must be provided. ";
+    } else {
+        $editContent = InputCleaner($_POST['econtent']);
+    }
 
     // Validate Image
-    if(isset($_FILES['eimage'])){
-
-        $file_name = $_FILES['eimage']['name'];
-        $file_size = $_FILES['eimage']['size'];
-        $file_tmp = $_FILES['eimage']['tmp_name'];
-        $file_type = $_FILES['eimage']['type'];
-        $file_ext = strtolower(end(explode('.', $_FILES['eimage']['name'])));
-        
-        $extensions= array("jpeg","jpg","png");
-        
-        if(in_array($file_ext,$extensions)=== false){
-           $editImage_err .= "extension not allowed, please choose a JPEG or PNG file. ";
-        }
-        
-        if($file_size > 10485760){
-           $editImage_err .= "File size must be less than 10 MB ";
-        }
-        
-        if(empty($editImage_err) == true){
-           move_uploaded_file($file_tmp,"assets/news/".$file_name);
-           $editImage = "assets/news/" . $file_name;
-        }else{
-            $editImage_err .= "Image could not be uploaded. ";
-        }
-    }else {
+    if (empty($_FILES['eimage'])) {
+        // $editImage = "assets/news/news-default.jpg";
         // Use original post image
-        // Query for original post image
         $sql = "SELECT picture FROM news WHERE id='$postid'";
         if ($result = mysqli_query($connect, $sql)) {
             if (mysqli_num_rows($result) > 0) {
@@ -74,48 +48,58 @@ if (isset($_POST['editnews'])) {
                     $editImage = $row['picture'];
                 }
             }
+        } else {
+            $editImage = "assets/news/news-default.jpg";
         }
+    } else {
+        $file_name = $_FILES['eimage']['name'];
+        $file_size = $_FILES['eimage']['size'];
+        $file_tmp = $_FILES['eimage']['tmp_name'];
+        $file_type = $_FILES['eimage']['type'];
+        $file_ext_raw = explode('.', $_FILES['eimage']['name']);
+        $file_ext = strtolower(end($file_ext_raw));
+        $extensions = array("jpeg", "jpg", "png");
+
+        // Check to make sure file meets specifications
+        if (!in_array($file_ext, $extensions)) {
+            $editImage_err = "Extension not allowed, please choose a JPG, JPEG, or PNG file. ";
+        } elseif ($file_size > 10485760) {
+            $editImage_err .= "File size must be less than 10 MB. ";
+        } else {
+            $editImage_err = "";
+        }
+
+        // Upload image if there are not any errors
+        if (empty($editImage_err)) {
+            move_uploaded_file($file_tmp, "assets/news/" . $file_name);
+            $editImage = "assets/news/" . $file_name;
+        } else {
+            $editImage_err = "Image could not successfully be uploaded. ";
+        }
+
     }
 
+    // Check there are no errors and run SQL statement
+    if (empty($editTitle_err) && empty($editContent_err) && empty($editImage_err)) {
 
-    // Validate Content
-    if (!isset($_POST["econtent"])) {
-        $editContent_err = "Content cannot be left blank, please enter a body message. ";
-    } else {
-        $raw_content = trim($_POST["econtent"]);
-        $editContent = StringInputCleaner($raw_content);
-        $editContent = mysqli_real_escape_string($connect, $editContent);
-    }
-
-    // Check to make sure nothing is left blank
-    if (empty($editTitle) || empty($editContent)) {
-        $editGlobal_err = "No fields can be left empty, please make sure to include all fields. ";
-    } else {
-        $editGlobal_err = "";
-    }
-
-    if (!empty($editTitle_err) || !empty($editImage_err) || !empty($editContent_err) || !empty($editGlobal_err)) {
-        $editError_output = "ERRORS: " . $editTitle_err . " " . $editImage_err . " " . $editContent_err . " " . $editGlobal_err;
-    } else {
-
-        // // Prepair SQL Update Statement
+        // Prepair SQL Update Statement
         $sql = "UPDATE `news` SET 
-            `title` = '$editTitle', 
-            `picture` = '$editImage', 
-            `content` = '$editContent' 
-            WHERE `id` = '$postid'";
+        `title` = '$editTitle', 
+        `picture` = '$editImage', 
+        `content` = '$editContent' 
+        WHERE `id` = '$postid'";
 
+        // Run SQL Statement
         if (mysqli_query($connect, $sql)) {
-            // Redirect to admin_news page
             header("location: admin_news.php");
         } else {
-            echo "ERROR: Could not execute $sql. " . mysqli_error($connect);
+            echo "ERROR: Could not execute" . $sql. "statement due to" . mysqli_error($connect);
         }
-    
-        // Close connection
         mysqli_close($connect);
+    } else {
+        $editError_output = $editTitle_err . $editContent_err . $editImage_err; 
     }
 }
-// ------------------------------ END EDIT NEWS POST ------------------------------ //
 
+// ------------------------------ END EDIT NEWS POST ------------------------------ //
 ?>
