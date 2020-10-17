@@ -3,7 +3,7 @@
 // Include config file
 require_once 'db_connect.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['DELETENEWS'])) {
     //to protect from mysql injections
     $id = $_GET['id'];
 
