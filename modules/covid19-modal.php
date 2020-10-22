@@ -14,7 +14,7 @@
                 <p id="covid-19"><strong>Under the current Washington State regulations our office is open but you will need to call for an appointment.</strong></p>
                 <p id="covid-19">In order to keep our clients safe and healthy, as well as our staff, some of our procedures will be a little different. We will be allowing a space of time between appointments to give time to wipe down areas, pens, etc.. We will also be cleaning countertops, chairs, work spaces, door handles, etc. periodically through the day.</p>
                 <p id="covid-19"><i>Even though appointments are available, please feel free to access us through any of the following ways: mail, email, fax, access the portal, call, face time and/or drop off paperwork in person or in the back mail slot of our building.</i></p>
-                <p id="covid-19"><strong>590-443-4262 or cpa@vingroup.com</strong></p>
+                <p id="covid-19"><strong>509-443-4262 or cpa@vingroup.com</strong></p>
                 <!-- Removed Covid-19 Buttons From Modal -->
                 <!-- <a class="btn-c19" href="../assets/pdf/CARES_Act_Visual.pdf" target="_blank" role="button" >Cares Act Visual</a> -->
                 <!-- <a class="btn-c19" href="../assets/pdf/covid19sbassistanceprgms.pdf" target="_blank" role="button" >Covid-19 Assistance</a> -->
