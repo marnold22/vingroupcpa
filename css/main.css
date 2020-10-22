@@ -128,6 +128,10 @@ footer {
 footer div div div a {
   color: inherit;
 }
+#covid-19-title {
+  color: #346272;
+  font-size: 2rem;
+}
 #covid-19 {
   color: #346272;
   font-size: 1rem;
