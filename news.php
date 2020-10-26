@@ -110,6 +110,12 @@
                                         // Note - look into explode() for further unordered lists  
                                     ?>
                                 </p>
+                                <?php 
+                                    if(!empty($row['link'])) { ?>
+                                    <div class="container text-center">
+                                        <a class="btn-services" href="<?= $row['link'] ?>" target="_blank">Link</a>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
