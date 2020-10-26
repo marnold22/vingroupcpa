@@ -13,7 +13,7 @@ function InputCleaner($data) {
 
 // ------------------------------ START EDIT NEWS POST ------------------------------ //
 // Define variables and initialize with empty values
-$editTitle = $editImage = $editContent = "";
+$editTitle = $editImage = $editContent = $editLink = "";
 $editTitle_err = $editImage_err = $editContent_err = "";
 $editTarget_dir = "assets/news/";
 
@@ -29,11 +29,18 @@ if (isset($_POST['EDITNEWS'])) {
         $editTitle = InputCleaner($_POST['etitle']);
     }
 
-    // Validate content
+    // Validate Content
     if (empty($_POST['econtent'])) {
         $editContent_err = "Content must be provided. ";
     } else {
         $editContent = InputCleaner($_POST['econtent']);
+    }
+
+    //Validate Link
+    if(empty($_POST['elink'])) {
+        $editLink = "";
+    } else {
+        $editLink = $_POST['elink'];
     }
 
     // Validate Image
@@ -86,7 +93,8 @@ if (isset($_POST['EDITNEWS'])) {
         $sql = "UPDATE `news` SET 
         `title` = '$editTitle', 
         `picture` = '$editImage', 
-        `content` = '$editContent' 
+        `content` = '$editContent', 
+        `link` = '$editLink'
         WHERE `id` = '$postid'";
 
         // Run SQL Statement

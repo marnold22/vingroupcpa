@@ -14,7 +14,7 @@
 
     // ------------------------------ START ADD NEWS POST ------------------------------ //
     // Define variables and initialize with empty values
-    $addTitle = $addImage = $addContent = "";
+    $addTitle = $addImage = $addContent = $addLink= "";
     $addTitle_err = $addImage_err = $addContent_err = "";
     $target_dir = "assets/news/";
 
@@ -26,11 +26,18 @@
         } else {
             $addTitle = InputCleaner($_POST['atitle']);
         }
-        // Validate content
+        // Validate Content
         if (empty($_POST['acontent'])) {
             $addContent_err = "Content must be provided. ";
         } else {
             $addContent = InputCleaner($_POST['acontent']);
+        }
+
+        // Validate Link
+        if (empty($_POST['alink'])) {
+            $addLink = "";
+        } else {
+            $addLink = $_POST['alink'];
         }
 
         // Validate Image
@@ -67,7 +74,7 @@
         // Check there are no errors and run SQL statement
         if (empty($addTitle_err) && empty($addContent_err) && empty($addImage_err)) {
             //Prepair SQL Insert Statement
-            $sql = "INSERT INTO news (title, picture, content) VALUES ('$addTitle', '$addImage', '$addContent')";
+            $sql = "INSERT INTO news (title, picture, content, link) VALUES ('$addTitle', '$addImage', '$addContent', '$addLink')";
 
             // Run SQL Statement
             if (mysqli_query($connect, $sql)) {
@@ -154,6 +161,7 @@
                                     <th scope="col">Title</th>
                                     <th scope="col">Content</th>
                                     <th scope="col">Picture</th>
+                                    <th scope="col">Link</th>
                                     <th scope="col">TOOLS</th>
                                 </tr>
                             </thead>
@@ -170,6 +178,7 @@
                                             echo "<td class='overflow'>" . $row['title'] . "</td>";
                                             echo "<td class='overflow'>" . $row['content'] . "</td>";
                                             echo "<td class='overflow'>" . $row['picture'] . "</td>";
+                                            echo "<td class='overflow'>" . $row['link'] . "</td>";
                                             echo "<td class='overflow'>
                                                 <a href='#editNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-pencil' aria-hidden='true'></i></a>
                                                 <a href='#deleteNewsModal-" . $row['id'] . "' data-toggle='modal'><i class='fa fa-trash' aria-hidden='true'></i></a></td>";
@@ -219,6 +228,10 @@
                                     <label>Content</label>
                                     <textarea name="acontent" class="form-control" placeholder="Content Body Here..." rows="5"></textarea>
                                 </div>
+                                <div class="form-group">
+                                    <label>Link</label>
+                                    <input name="alink" type="text" class="form-control" placeholder="Link Here...">
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
@@ -257,6 +270,10 @@
                                             <div class="form-group">
                                                 <label>Content</label>
                                                 <textarea name="econtent" class="form-control" value="" rows="5" > <?= $row['content']; ?> </textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Link</label>
+                                                <input name="elink" type="text" class="form-control" value="<?= $row['link']; ?>" >
                                             </div>
                                         </div>
                                         <div class="modal-footer">
