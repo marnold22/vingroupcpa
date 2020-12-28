@@ -16,7 +16,6 @@
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
-
 /* featurette objects */
 .featurette-divider {
   margin: 5rem 0;
@@ -140,7 +139,6 @@ footer div div div a {
   padding-right: 10px;
   padding-left: 10px;
 }
-
 .btn-c19 {
   border: 2px solid black;
   border-color: #346272;
@@ -235,6 +233,7 @@ footer div div div a {
 #services-mobile {display: none;}
 
 
+
 /* ---------------------------------------------------------------------- EVENTS PAGE ---------------------------------------------------------------------- */
 .herobanner-events {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/i3.jpg");
@@ -252,12 +251,16 @@ footer div div div a {
 #events-tablet {display: none;}
 #events-mobile {display: none;}
 
+
+
 /* ---------------------------------------------------------------------- NEWS PAGE ---------------------------------------------------------------------- */
 .herobanner-news {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/inews.jpg");
   color: #fff;
   height: 100vh;
 }
+
+
 
 /* ---------------------------------------------------------------------- ABOUT US PAGE ---------------------------------------------------------------------- */
 .herobanner-about {
@@ -305,6 +308,15 @@ footer div div div a {
 .success {
   color: #346272;
   font-weight: bold;
+}
+
+
+
+/* ---------------------------------------------------------------------- CURRENTLY DOWN PAGE ---------------------------------------------------------------------- */
+.herobanner-down {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/currently_down.jpg");
+  color: #fff;
+  height: 100vh;
 }
 
 
