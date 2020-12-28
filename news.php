@@ -32,7 +32,7 @@
                         <a class="nav-link" href="events.php">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="news.php">News</a>
+                        <a class="nav-link active" href="currently_down.php">News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.php">About</a>
