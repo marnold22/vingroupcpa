@@ -270,7 +270,7 @@
 
     <hr class="featurette-divider">
 
-    <div id="invest-retire" class="row featurette">
+    <!-- <div id="invest-retire" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Investment & Retirement. <span class="text-muted"></span></h2>
         <p class="lead">Vin Group can assist you with your investment and retirement planning. We can provide you with information about a diverse set of investment options including life insurance. We excel at providing a comprehensive approach to
@@ -296,7 +296,7 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider"> -->
 
     <div id="seminars" class="row featurette">
       <div class="col-md-12">

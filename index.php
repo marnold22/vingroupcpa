@@ -113,7 +113,8 @@
               </div>
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-md-4 mb-2">
+                  <!-- Changed from md-4 to md-6 to accomidate the removal of retirement section -->
+                  <div class="col-md-6 mb-2">
                     <div class="card h-100 service-card">
                       <div class="card-body">
                         <h4 class="card-title">Consulting</h4>
@@ -125,7 +126,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 mb-2">
+                  <!-- Changed from md-4 to md-6 to accomidate the removal of retirement section -->
+                  <div class="col-md-6 mb-2">
                     <div class="card h-100 service-card">
                       <div class="card-body">
                         <h4 class="card-title">Church & Non-Profit</h4>
@@ -137,7 +139,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 mb-2">
+
+
+                  <!-- Removed Retirement Section -->
+                  <!-- <div class="col-md-4 mb-2">
                     <div class="card h-100 service-card">
                       <div class="card-body">
                         <h4 class="card-title">Investment & Retirement</h4>
@@ -148,7 +153,9 @@
                         <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
+
+
                 </div>
               </div>
               <div class="carousel-item">
@@ -290,22 +297,6 @@
                   <div class="col-md-6 mb-2">
                     <div class="card h-100 service-card">
                       <div class="card-body">
-                        <h4 class="card-title">Investment & Retirement</h4>
-                        <p class="card-text">Vin Group can assist you with your investment and retirement planning. We can provide you with information about a diverse set of investment options including life insurance. We excel at providing a
-                          comprehensive approach to financial planning because we can see our clients’ entire financial picture as we advise them about future planning.</p>
-                      </div>
-                      <div class="card-footer py-4 text-center">
-                        <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-6 mb-2">
-                    <div class="card h-100 service-card">
-                      <div class="card-body">
                         <h4 class="card-title">Seminars</h4>
                         <p class="card-text">Wayne has developed a highly successful seminar entitled "Getting the House in Order." The seminar equips treasurers and ministers in efficient money saving stewardship, with specific training in
                           QuickBooks®. Wayne is available to do a seminar in your area should you want to pull one together for yours and other churches.</p>
@@ -315,6 +306,27 @@
                       </div>
                     </div>
                   </div>
+
+
+                  <!-- Removed Retirement Section -->
+                  <!-- <div class="col-md-6 mb-2">
+                    <div class="card h-100 service-card">
+                      <div class="card-body">
+                        <h4 class="card-title">Investment & Retirement</h4>
+                        <p class="card-text">Vin Group can assist you with your investment and retirement planning. We can provide you with information about a diverse set of investment options including life insurance. We excel at providing a
+                          comprehensive approach to financial planning because we can see our clients’ entire financial picture as we advise them about future planning.</p>
+                      </div>
+                      <div class="card-footer py-4 text-center">
+                        <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
+                      </div>
+                    </div>
+                  </div> -->
+
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
                   <div class="col-md-6 mb-2">
                     <div class="card h-100 service-card">
                       <div class="card-body">
@@ -326,9 +338,22 @@
                       </div>
                     </div>
                   </div>
+                  <div class="col-md-6 mb-2">
+                    <div class="card h-100 service-card">
+                      <div class="card-body">
+                        <h4 class="card-title">Payment Options</h4>
+                        <p class="card-text">The Vin Group provides various payment options for your convenience. These options range from online payments, automatic bank withdrawl, and credit card options.</p>
+                      </div>
+                      <div class="card-footer py-4 text-center">
+                        <a href="services.php#payment-options" class="btn-services-inverse">See payment options &raquo;</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="carousel-item">
+
+              <!-- Moved "Payment Options" up to accomidate the removal of retirement section -->
+              <!-- <div class="carousel-item">
                 <div class="row">
                   <div class="col-md-12 mb-2">
                     <div class="card h-100 service-card">
@@ -342,7 +367,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
+
+
             </div>
           </div>
         </div>
@@ -426,7 +453,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 mb-2">
+
+
+        <!-- Removed Retirement Section -->
+        <!-- <div class="col-md-6 mb-2">
           <div class="card h-100 service-card">
             <div class="card-body">
               <h4 class="card-title">Investment & Retirement</h4>
@@ -437,7 +467,9 @@
               <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
             </div>
           </div>
-        </div>
+        </div> -->
+
+        
         <div class="col-md-6 mb-2">
           <div class="card h-100 service-card">
             <div class="card-body">
