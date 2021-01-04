@@ -942,7 +942,8 @@
       </div>
       <div class="col-md-12">
         <div class="btn-group-vertical">
-          <a href="https://secure.squarespace.com/checkout/donate?donatePageId=5e3b51bf226f6d03076f8a27" class="btn-services" target="_blank">Online Payment</a>
+          <!-- Original Payment href = https://secure.squarespace.com/checkout/donate?donatePageId=5e3b51bf226f6d03076f8a27 -->
+          <a href="" class="btn-services-disbaled" target="_blank">Online Payment</a>
           <a href="assets/pdf/auto_bank_withdraw_consent.pdf" class="btn-services" target="_blank">Automatic Bank Acct. Withdrawl Form</a>
           <a href="assets/pdf/visa_mc_charge_consent.pdf" class="btn-services" target="_blank">Visa / Mastercard Authorization Form</a>
         </div>
