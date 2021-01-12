@@ -9,6 +9,11 @@ $("#services-lm").click(function() {
         scrollTop: $("#services-page").offset().top
     }, 1000);
 });
+$("#forms-lm").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#forms-page").offset().top
+    }, 1000);
+});
 $("#events-lm").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#events-page").offset().top
