@@ -62,7 +62,7 @@
 
 
     <div id="news-page" class="container">
-        <div class="col-md-12">
+        <div class="row news-header">
             <h2 class="featurette-heading">News Postings<span class="text-muted"></span></h2>
         </div>
 
@@ -85,10 +85,12 @@
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <h2 class="featurette-heading"><?= $row['title']; ?><span class="text-muted"></span></h2>
-                        <div class="row">
-                            <div class="col event-btn">
-                                <a class="btn-services" data-toggle="collapse" href="#collapseEvent-<?=$row['id']; ?>" role="button" aria-expanded="false" aria-controls="collapseEvent-<?=$row['id']; ?>>">Learn More</a>
+                        <div class="vertical-center">
+                            <h2 class="featurette-heading"><?= $row['title']; ?><span class="text-muted"></span></h2>
+                            <div class="row">
+                                <div class="col event-btn">
+                                    <a class="btn-services" data-toggle="collapse" href="#collapseEvent-<?=$row['id']; ?>" role="button" aria-expanded="false" aria-controls="collapseEvent-<?=$row['id']; ?>>">Learn More</a>
+                                </div>
                             </div>
                         </div>
                     </div>

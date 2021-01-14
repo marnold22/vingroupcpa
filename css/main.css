@@ -39,7 +39,13 @@ a:hover, a:visited, a:link, a:active {
   color: #346272;
   font-size: 1.3rem;
 }
-
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 
 /* ---------------------------------------------------------------------- HERO BANNER ---------------------------------------------------------------------- */
@@ -284,6 +290,10 @@ a.pdf-style {
   color: #fff;
   height: 100vh;
 }
+.news-header {
+  padding-top: 5rem;
+  padding-left: 17px;
+}
 
 
 
@@ -362,6 +372,9 @@ a.pdf-style {
 /* ---------------------------------------------------------------------- MEDIA QUIERIES ---------------------------------------------------------------------- */
 /*  ---------- Global ----------*/
 @media (min-width: 40em) {
+  .news-header {
+    padding-top: 5rem;
+  }
   .featurette-heading, .featurette-quote {
     font-size: 40px;
   }
@@ -369,7 +382,8 @@ a.pdf-style {
 
 @media (min-width: 62em) {
   .featurette-heading, .featurette-quote {
-    margin-top: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -534,7 +548,7 @@ a.pdf-style {
       height: 100%;
   }
   .featurette-heading {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-top: 1rem;
   }
   .featurette-quote {
