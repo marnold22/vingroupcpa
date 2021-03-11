@@ -10,7 +10,7 @@
     <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark shadow fixed-top bg-cpagreen">
         <div class="container">
             <a class="navbar-brand" href="index.php">
-                <img src="assets/logo.jpg" width="30" height="30" alt="">
+                <img src="assets/logo.jpg" width="30" height="30" alt="White on green Vingroupcpa Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -70,7 +70,7 @@
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/#" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/gen-form.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
                             <div class="card-body text-center">
                                 <h6>W-4 Form</h6>
                             </div>
@@ -80,7 +80,7 @@
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/#" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/gen-form.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
                             <div class="card-body text-center">
                                 <h6>I-9 Form</h6>
                             </div>
@@ -90,7 +90,7 @@
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/#" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/gen-form.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
                             <div class="card-body text-center">
                                 <h6>W-2 Form</h6>
                             </div>
@@ -104,7 +104,7 @@
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/auto_bank_withdraw_consent.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/bank.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="assets/bank.jpg" alt="Automatic Bank Withdrawl Form">
                             <div class="card-body text-center">
                                 <h6>Automatic Bank Withdrawl</h6>
                             </div>
@@ -114,7 +114,7 @@
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/visa_mc_charge_consent.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/cc.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="assets/cc.jpg" alt="Credit Card Authorization Form">
                             <div class="card-body text-center">
                                 <h6>Credit Card Authorization</h6>
                             </div>

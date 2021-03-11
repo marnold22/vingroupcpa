@@ -15,7 +15,7 @@
     <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark shadow fixed-top bg-cpagreen">
         <div class="container">
             <a class="navbar-brand" href="index.php">
-                <img src="assets/logo.jpg" width="30" height="30" alt="">
+                <img src="assets/logo.jpg" width="30" height="30" alt="White on green Vingroupcpa Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -80,7 +80,7 @@
                     <div class="col-md-4">
                         <div class="event-padding">
                             <div class="card shadow">
-                                <img class="img-fluid" src="<?=$row['picture']; ?>" alt="" onerror="this.onerror=null;this.src='/assets/news/news-default.jpg';">
+                                <img class="img-fluid" src="<?=$row['picture']; ?>" alt="<?= $row['title']; ?>" onerror="this.onerror=null;this.src='/assets/news/news-default.jpg';">
                             </div>
                         </div>
                     </div>

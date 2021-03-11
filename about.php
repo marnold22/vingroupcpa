@@ -10,7 +10,7 @@
   <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark shadow fixed-top bg-cpagreen">
     <div class="container">
         <a class="navbar-brand" href="index.php">
-        <img src="assets/logo.jpg" width="30" height="30" alt="">
+        <img src="assets/logo.jpg" width="30" height="30" alt="White on green Vingroupcpa Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -68,7 +68,7 @@
         <div class="col-md-5">
           <div class="about-padding">
             <div class="card shadow">
-              <img class="img-fluid" src="assets/about.jpg" alt="">
+              <img class="img-fluid" src="assets/about.jpg" alt="Family image of Wayne Vinson and his Wife Annie Vinson infront of autumn trees.">
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
           <h2 class="featurette-heading">Our Story. <span class="text-muted"></span></h2>
           <div class="about-padding">
             <div class="card shadow">
-              <img class="img-fluid" src="assets/about.jpg" alt="">
+              <img class="img-fluid" src="assets/about.jpg" alt="Family image of Wayne Vinson and his Wife Annie Vinson infront of autumn trees.">
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@
         <div class="col-md-5">
           <h2 class="featurette-heading">Our Story. <span class="text-muted"></span></h2>
           <div class="card shadow">
-            <img class="img-fluid" src="assets/about.jpg" alt="">
+            <img class="img-fluid" src="assets/about.jpg" alt="Family image of Wayne Vinson and his Wife Annie Vinson infront of autumn trees.">
           </div>
         </div>
         <div class="col-md-7">
@@ -121,7 +121,7 @@
             <div class="carousel-item active">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Wayne E. Vinson - CPA & PS">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Wayne E. Vinson</h5>
                     <div class="card-text text-black-50">CPA & PS</div>
@@ -132,7 +132,7 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Krista Bennett - Office Manager & Accounting">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Krista</h5>
                     <div class="card-text text-black-50">Office Manager</div>
@@ -143,7 +143,7 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Carrie Liptac - Office Admin">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Carrie</h5>
                     <div class="card-text text-black-50">Office Admin</div>
@@ -154,7 +154,7 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Donna - Accounting">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Donna</h5>
                     <div class="card-text text-black-50">Accounting</div>
@@ -165,7 +165,7 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Natalya - Accounting">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Natalya</h5>
                     <div class="card-text text-black-50">Accounting</div>
@@ -176,7 +176,7 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Noah - Accounting">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Noah</h5>
                     <div class="card-text text-black-50">Accounting</div>
@@ -187,7 +187,7 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Victoria - Accounting">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Victoria</h5>
                     <div class="card-text text-black-50">Accounting</div>
@@ -198,7 +198,7 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="...">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Rebecca - CPA">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Rebecca</h5>
                     <div class="card-text text-black-50">CPA</div>
