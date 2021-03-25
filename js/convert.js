@@ -1,3 +1,4 @@
+// Credit for the convert functions goes all to strukturag git repo: https://github.com/strukturag/libheif //
 
 (function () {
 
