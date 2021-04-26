@@ -67,6 +67,8 @@
             </div>
 
             <div class="row forms-padding">
+
+                <!-- Row 1 Col 1 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/#" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
@@ -77,6 +79,8 @@
                         </div>
                     </a>
                 </div>
+
+                <!-- Row 1 Col 2 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/#" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
@@ -87,6 +91,8 @@
                         </div>
                     </a>
                 </div>
+
+                <!-- Row 1 Col 3 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/#" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
@@ -101,6 +107,8 @@
 
 
             <div class="row forms-padding">
+
+                <!-- Row 2 Col 1 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/auto_bank_withdraw_consent.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
@@ -111,6 +119,8 @@
                         </div>
                     </a>
                 </div>
+
+                <!-- Row 2 Col 2 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/visa_mc_charge_consent.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">

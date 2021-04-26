@@ -60,6 +60,7 @@
   <div id="home-page" class="container home"></div>
 
   <div class="container home">
+    
     <!-- DESKTOP VERSION -->
     <div id="index-desktop" class="row featurette">
       <div class="col-md-12">
@@ -510,6 +511,7 @@
     <hr class="featurette-divider">
   </div>
 
+  <!-- TESTIMONIAL-SECTION 1 -->
   <div class="fluid-container">
     <div class="design">
       <div class="content">
@@ -523,6 +525,7 @@
     </div>
   </div>
 
+  <!-- TESTIMONIAL-SECTION 1 -->
   <div class="fluid-container">
     <div class="blank">
       <div class="content">
@@ -536,6 +539,7 @@
     </div>
   </div>
 
+  <!-- CONTACT-US & HOURS -->
   <div class="fluid-container">
     <div class="contact">
       <div class="content">

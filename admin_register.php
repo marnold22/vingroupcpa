@@ -105,6 +105,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a class="navbar-brand" href="admin.php">Vingroupcpa Admin</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fa fa-window-maximize"></i></button>
     </nav>
+
+    <!-- Sidebar Navigation -->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -128,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </nav>
         </div>
         <div id="layoutSidenav_content">
-            <!-- PAGE UNIQUE CONTET GOES HERE -->
+
             <!-- User Registration Form -->
             <div class="container">
                 <div class="row">
@@ -137,19 +139,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="card-body">
                                 <h5 class="card-title text-center">Register User</h5>
                                 <form class="form-signin" action="" method="POST">
-
+                                    
+                                    <!-- Check for errors in Username -->
                                     <div class="form-label-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                                         <input name="username" type="text" id="createUser" class="form-control" placeholder="User Name" required autofocus>
                                         <label for="createUser">User Name</label>
                                         <span class="help-block"><?php echo $username_err; ?></span>
                                     </div>
 
+                                    <!-- Check for errors in Password -->
                                     <div class="form-label-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                                         <input name="password" type="password" id="createPass" class="form-control" placeholder="Password" required>
                                         <label for="createPass">Password</label>
                                         <span class="help-block"><?php echo $password_err; ?></span>
                                     </div>
 
+                                    <!-- Check for errors in Confirm Password (ie make sure they match) -->
                                     <div class="form-label-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                                         <input name="confirm_password" type="password" id="confirmCreatePass" class="form-control" placeholder="Confirm Password" required>
                                         <label for="confirmCreatePass">Confirm Password</label>

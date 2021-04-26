@@ -68,14 +68,14 @@
 
         <!-- START LOOP -->
         <?php
-        // Attempt select query execution
+        // Select all news articles and output each article with its own section
         $sql = "SELECT * FROM news";
         if ($result = mysqli_query($connect, $sql)) {
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_array($result)) { 
                 $counter = 0; ?>
 
-                <!-- NOTE - Make sure to chance collapseEvent-X to whatever iteration the loop is on -->
+                <!-- NOTE - Make sure to change collapseEvent-X to whatever iteration the loop is on -->
                 <div class="row featurette">
                     <div class="col-md-4">
                         <div class="event-padding">
@@ -96,6 +96,7 @@
                     </div>
 
                     <!-- Start of the Dropdown -->
+                    <!-- REGEX Simple clean up of certain text characters -->
                     <div class="col-md-12">
                         <div class="collapse btn-div-gap" id="collapseEvent-<?=$row['id']; ?>">
                             <div class="card card-body">
@@ -125,7 +126,7 @@
                 </div>
 
                 
-                <!-- LOOP END HERE -->
+                <!-- END NEWS LOOP -->
                 <?php $counter = $counter+1;}
 
 

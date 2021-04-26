@@ -12,6 +12,8 @@
         <a class="navbar-brand" href="admin.php">Vingroupcpa Admin</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fa fa-window-maximize"></i></button>
     </nav>
+
+    <!-- Sidebar Navigation -->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -35,8 +37,6 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
-            <!-- PAGE UNIQUE CONTET GOES HERE -->
-
 
             <!-- START TABLE -->
             <div class="container">
@@ -50,6 +50,8 @@
                                 <!-- <a href="#addNewsModal" class="btn btn-success tbl-btn" data-toggle="modal"><i class="fa fa-plus" aria-hidden="true"></i><span> Add News Post</span></a> -->
                             </div>
                         </div>
+
+                        <!-- Check for errors -->
                         <div class="row">
                             <div class="col-sm-12">
                                 <p><?php if (!empty($addError_output)) {
@@ -70,7 +72,7 @@
                             <tbody>
                                 <!-- START LOOP -->
                                 <?php
-                                // Attempt select query execution
+                                // Select all users from database and output their contents in the user table
                                 $sql = "SELECT * FROM users";
                                 if ($result = mysqli_query($connect, $sql)) {
                                     if (mysqli_num_rows($result) > 0) {

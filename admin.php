@@ -10,6 +10,8 @@
         <a class="navbar-brand" href="admin.php">Vingroupcpa Admin</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fa fa-window-maximize"></i></button>
     </nav>
+
+    <!-- Sidebar Navigation -->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -33,7 +35,6 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
-            <!-- PAGE UNIQUE CONTET GOES HERE -->
             <div class="container">
                 <div class="welcome-card">
                     <div class="text-center">

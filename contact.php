@@ -63,7 +63,7 @@
   <!-- Scripts -->
   <?php include("modules/scripts.php") ?>
 
-
+  <!-- Script for on window load immediately display contact modal -->
   <script type="text/javascript">
     $(window).on('load', function() {
       $('#contactModal').modal('show');

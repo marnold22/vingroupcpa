@@ -72,6 +72,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a class="navbar-brand" href="admin.php">Vingroupcpa Admin</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fa fa-window-maximize"></i></button>
     </nav>
+
+    <!-- Sidebar Navigation -->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -95,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </nav>
         </div>
         <div id="layoutSidenav_content">
-            <!-- PAGE UNIQUE CONTET GOES HERE -->
+
             <!-- Password Reset Form -->
             <div class="container">
                 <div class="row">
@@ -104,19 +106,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="card-body">
                                 <h5 class="card-title text-center">Password Reset</h5>
                                 <form class="form-signin" action="" method="POST">
-
+                                    
+                                    <!-- Check for errors in new password -->
                                     <div class="form-label-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
                                         <input name="new_password" type="password" id="newPassword" class="form-control" placeholder="New Password" required autofocus>
                                         <label for="newPassword">New Password</label>
                                         <span class="help-block"><?php echo $new_password_err; ?></span>
                                     </div>
 
+                                    <!-- Check for errors in confirm new password -->
                                     <div class="form-label-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                                         <input name="confirm_password" type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
                                         <label for="confirmPassword">Confirm Password</label>
                                         <span class="help-block"><?php echo $confirm_password_err; ?></span>
                                     </div>
 
+                                    <!-- Show Password (script below) -->
                                     <div class="form-label-group text-center">
                                         <input type="checkbox" onclick="showPassword()"> Show Password
                                     </div>

@@ -41,7 +41,7 @@
         </ul>
         </div>
     </div>
-</nav>
+  </nav>
 
   <!-- Hero Banner -->
   <header class="herobanner herobanner-services">
@@ -58,6 +58,8 @@
 
 
   <div id="services-page" class="container services">
+    
+    <!-- ACCOUNTING -->
     <div id="accounting" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Accounting. <span class="text-muted"></span></h2>
@@ -97,6 +99,8 @@
 
     <hr class="featurette-divider">
 
+
+    <!-- PAYROLL -->
     <div id="payroll" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Payroll. <span class="text-muted"></span></h2>
@@ -140,6 +144,7 @@
 
     <hr class="featurette-divider">
 
+    <!-- TAX PREP -->
     <div id="tax-prep" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Tax Preparation. <span class="text-muted"></span></h2>
@@ -189,6 +194,7 @@
 
     <hr class="featurette-divider">
 
+    <!-- CONSULTING -->
     <div id="consulting" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Consulting. <span class="text-muted"></span></h2>
@@ -233,6 +239,7 @@
 
     <hr class="featurette-divider">
 
+    <!-- CHURCHES & NON-PROFIT -->
     <div id="church-np" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Church & Non-Profit. <span class="text-muted"></span></h2>
@@ -298,6 +305,7 @@
 
     <hr class="featurette-divider"> -->
 
+    <!-- SEMINARS -->
     <div id="seminars" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Seminars. <span class="text-muted"></span></h2>
@@ -891,6 +899,7 @@
 
     <hr class="featurette-divider">
 
+    <!-- PRICING -->
     <div id="pricing" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Pricing<span class="text-muted"></span></h2>
@@ -925,6 +934,7 @@
 
     <hr class="featurette-divider">
 
+    <!-- PAYMENT OPTIONS -->
     <div id="payment-options" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Payment Options<span class="text-muted"></span></h2>

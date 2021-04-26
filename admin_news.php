@@ -101,6 +101,8 @@
         <a class="navbar-brand" href="admin.php">Vingroupcpa Admin</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fa fa-window-maximize"></i></button>
     </nav>
+
+    <!-- Sidebar Navigation -->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -124,9 +126,6 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
-            <!-- PAGE UNIQUE CONTET GOES HERE -->
-
-
 
             <!-- START TABLE -->
             <div class="container">
@@ -141,6 +140,7 @@
                             </div>
                         </div>
                         <div class="row">
+                            <!-- Check for errors -->
                             <div class="col-sm-12" style="color: red;">
                                 <p><?php if (!empty($addError_output)) {
                                         echo $addError_output;
@@ -148,6 +148,7 @@
                             </div>
                         </div>
                         <div class="row">
+                            <!-- Check for errors -->
                             <div class="col-sm-12" style="color: red;">
                                 <p><?php if (!empty($editError_output)) {
                                         echo $editError_output;
@@ -172,6 +173,8 @@
                                 <?php
                                 // Attempt select query execution
                                 $sql = "SELECT * FROM news";
+
+                                // Loop through all query data and output in table
                                 if ($result = mysqli_query($connect, $sql)) {
                                     if (mysqli_num_rows($result) > 0) {
                                         while ($row = mysqli_fetch_array($result)) {
@@ -207,7 +210,7 @@
 
 
             <!-- ******************** START ALL MODALS ******************** -->
-            <!-- ADD MODAL -->
+            <!-- ADD NEWS MODAL -->
             <div id="addNewsModal" class="modal fade news-modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -244,9 +247,11 @@
                 </div>
             </div>
 
-            <!-- EDIT MODAL -->
+            <!-- EDIT NEWS MODAL -->
             <!-- Need to loop through db news posts and generate unique modal for each post -->
             <?php
+
+            // Loop through all news postings from database and use unique identifier to pass to edit function
             $sql = "SELECT * FROM news";
             if ($result = mysqli_query($connect, $sql)) {
                 if (mysqli_num_rows($result) > 0) {
@@ -295,9 +300,11 @@
             }
             ?>
 
-            <!-- DELETE MODAL -->
+            <!-- DELETE NEWS MODAL -->
             <!-- Need to loop through db news posts and generate unique modal for each post -->
             <?php
+
+            // Loop through all news postings from database and use unique identifier for each "posting modal"
             $sql = "SELECT * FROM news";
             if ($result = mysqli_query($connect, $sql)) {
                 if (mysqli_num_rows($result) > 0) {

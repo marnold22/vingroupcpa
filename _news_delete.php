@@ -14,6 +14,7 @@ if (isset($_POST['DELETENEWS'])) {
         // Redirect to admin_news page
         header("location: admin_news.php");
     } else {
+        // Output errors
         echo "ERROR: Could not able to execute $sql. " . mysqli_error($connect);
     }
 

@@ -56,6 +56,7 @@
     </div>
   </header>
 
+<!-- Start About Section -->
   <div id="about-page" class="container about">
     <div id="about-desktop" class="row featurette">
         <div class="col-md-7">
@@ -110,6 +111,7 @@
 
     <hr class="featurette-divider">
 
+    <!-- Team Carousel -->
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">Our Team. <span class="text-muted"></span></h2>

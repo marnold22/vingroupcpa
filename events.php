@@ -56,8 +56,9 @@
     </div>
   </header>
 
-
   <div id="events-page" class="container services">
+
+    <!-- EVENTS - DESKTOP -->
     <div id="events-desktop" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Events<span class="text-muted"></span></h2>
@@ -140,6 +141,8 @@
       </div>
     </div>
 
+
+    <!-- EVENTS - TABLET -->
     <div id="events-tablet" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Events<span class="text-muted"></span></h2>
@@ -221,6 +224,8 @@
       </div>
     </div>
 
+
+    <!-- EVENTS - MOBILE -->
     <div id="events-mobile" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading">Events<span class="text-muted"></span></h2>

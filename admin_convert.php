@@ -41,6 +41,8 @@ require_once 'db_connect.php';
         <a class="navbar-brand" href="admin.php">Vingroupcpa Admin</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fa fa-window-maximize"></i></button>
     </nav>
+
+    <!-- Sidebar Navigation -->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -64,8 +66,8 @@ require_once 'db_connect.php';
             </nav>
         </div>
         <div id="layoutSidenav_content">
-            <!-- PAGE UNIQUE CONTET GOES HERE -->
-            <!-- Password Reset Form -->
+            
+            <!-- HEIC & HEIF File Converter Content -->
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">

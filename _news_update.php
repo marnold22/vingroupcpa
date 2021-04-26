@@ -12,40 +12,42 @@ function InputCleaner($data) {
 
 
 // ------------------------------ START EDIT NEWS POST ------------------------------ //
-// Define variables and initialize with empty values
+// Define variables and initialize with empty string values
 $editTitle = $editImage = $editContent = $editLink = "";
 $editTitle_err = $editImage_err = $editContent_err = "";
 $editTarget_dir = "assets/news/";
 
+// Check for EditNews $_POST
 if (isset($_POST['EDITNEWS'])) {
 
     //Get id of which post is being edited
     $postid = $_GET['id'];
 
-    // Validate Title
+    // Validate Title by checking if empty
     if (empty($_POST['etitle'])) {
         $editTitle_err = "Title must be provided. ";
     } else {
         $editTitle = InputCleaner($_POST['etitle']);
     }
 
-    // Validate Content
+    // Validate Content by checking if empty
     if (empty($_POST['econtent'])) {
         $editContent_err = "Content must be provided. ";
     } else {
         $editContent = InputCleaner($_POST['econtent']);
     }
 
-    //Validate Link
+    // Validate Link by checking if empty
     if(empty($_POST['elink'])) {
         $editLink = "";
     } else {
         $editLink = $_POST['elink'];
     }
 
-    // Validate Image
+    // Validate Image by checking if empty
     if (empty($_FILES['eimage'])) {
         // $editImage = "assets/news/news-default.jpg";
+        
         // Use original post image
         $sql = "SELECT picture FROM news WHERE id='$postid'";
         if ($result = mysqli_query($connect, $sql)) {
@@ -56,9 +58,11 @@ if (isset($_POST['EDITNEWS'])) {
                 }
             }
         } else {
+            // Else fallback to default image
             $editImage = "assets/news/news-default.jpg";
         }
     } else {
+        // Set up image for sanitization and saving
         $file_name = $_FILES['eimage']['name'];
         $file_size = $_FILES['eimage']['size'];
         $file_tmp = $_FILES['eimage']['tmp_name'];
