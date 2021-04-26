@@ -55,6 +55,8 @@
                 <br>
                 <span class="error"><?= $checklist_error ?></span>
                 <div class="row">
+
+                  <!-- COL 1 (Accounting, Payroll, Tax Prep, Consulting) -->
                   <div class="col">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="accounting" id="accounting">
@@ -73,15 +75,20 @@
                       <label class="form-check-label" for="consulting">Consulting</label>
                     </div>
                   </div>
+
+                  <!-- COL 2 (Nonprofit, Retirement, Seminars) -->
                   <div class="col">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="nonprof-chruch" id="nonprof-chruch">
                       <label class="form-check-label" for="nonprof-church">Non-Profit / Church</label>
                     </div>
-                    <div class="form-check">
+
+                    <!-- REMOVED RETIRMENT -->
+                    <!-- <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="retirement" id="retirement">
                       <label class="form-check-label" for="retirement">Retirement</label>
-                    </div>
+                    </div> -->
+
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="seminars" id="seminars">
                       <label class="form-check-label" for="seminars">Seminars</label>
@@ -89,6 +96,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Text Fields -->
               <div class="form-group">
                 <label for="exampleFormControlInput1">Name of Business</label>
                 <input type="text" class="form-control" name="bname" id="businessInput" placeholder="Name of Business" value="<?= $business ?>">
