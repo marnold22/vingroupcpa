@@ -66,14 +66,14 @@
       <div class="col-md-5">
         <div class="event-padding">
           <div class="card shadow">
-            <img class="img-fluid" src="assets/events/event-1.jpg" alt="Bavarian-styled village image of Leavenworth, Washington">
+            <img class="img-fluid" src="assets/events/event-1-postponed.png" alt="Bavarian-styled village image of Leavenworth, Washington">
           </div>
         </div>
       </div>
       <div class="col-md-7">
         <h2 class="featurette-heading">Refreshing Tax Seminar for Churches, Pastors & Ministries. <span class="text-muted"></span></h2>
-        <p class="lead">Thu, June 17, 2021 8:30-4:30</p>
-        <p class="lead">Fri, June 18, 2021 8:30-12:00</p>
+        <p class="lead"><strike>Thu, June 17, 2021 8:30-4:30</strike> - Postponed until further notice.</p>
+        <p class="lead"><strike>Fri, June 18, 2021 8:30-12:00</strike> - Postponed until further notice.</p>
         <div class="row">
           <div class="col event-btn">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
@@ -150,13 +150,14 @@
       <div class="col-12">
         <div class="event-padding">
           <div class="card shadow">
-            <img class="img-fluid" src="assets/events/event-1.jpg" alt="Bavarian-styled village image of Leavenworth, Washington">
+            <img class="img-fluid" src="assets/events/event-1-postponed.png" alt="Bavarian-styled village image of Leavenworth, Washington">
           </div>
         </div>
       </div>
       <div class="col-12">
         <h2 class="featurette-heading text-center">Refreshing Tax Seminar for Churches, Pastors & Ministries. <span class="text-muted"></span></h2>
-        <p class="lead text-center">Thu, June 17, 2021 8:30-4:30 & Fri, June 18, 2021 8:30-12:00</p>
+        <p class="lead text-center"><strike>Thu, June 17, 2021 8:30-4:30 & Fri, June 18, 2021 8:30-12:00</strike></p>
+        <p class="lead text-center">Postponed until further notice.</p>
         <div class="row">
           <div class="col text-center event-btn">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
@@ -233,14 +234,14 @@
       <div class="col-md-5">
         <div class="event-padding">
           <div class="card shadow">
-            <img class="img-fluid" src="assets/events/event-1.jpg" alt="Bavarian-styled village image of Leavenworth, Washington">
+            <img class="img-fluid" src="assets/events/event-1-postponed.png" alt="Bavarian-styled village image of Leavenworth, Washington">
           </div>
         </div>
       </div>
       <div class="col-md-7">
         <h2 class="featurette-heading text-center">Refreshing Tax Seminar for Churches, Pastors & Ministries. <span class="text-muted"></span></h2>
-        <p class="lead text-center">Thu, June 17, 2021 8:30-4:30</p>
-        <p class="lead text-center">Fri, June 18, 2021 8:30-12:00</p>
+        <p class="lead text-center"><strike>Thu, June 17, 2021 8:30-4:30</strike> Postponed until further notice.</p>
+        <p class="lead text-center"><strike>Fri, June 18, 2021 8:30-12:00</strike> Postponed until further notice.</p>
         <div class="row">
           <div class="col event-btn text-center">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
