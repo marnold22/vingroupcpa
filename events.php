@@ -240,8 +240,10 @@
       </div>
       <div class="col-md-7">
         <h2 class="featurette-heading text-center">Refreshing Tax Seminar for Churches, Pastors & Ministries. <span class="text-muted"></span></h2>
-        <p class="lead text-center"><strike>Thu, June 17, 2021 8:30-4:30</strike> Postponed until further notice.</p>
-        <p class="lead text-center"><strike>Fri, June 18, 2021 8:30-12:00</strike> Postponed until further notice.</p>
+        <p class="lead text-center"><strike>Thu, June 17, 2021 8:30-4:30</strike></p>
+        <p class="lead text-center">Postponed until further notice.</p>
+        <p class="lead text-center"><strike>Fri, June 18, 2021 8:30-12:00</strike></p>
+        <p class="lead text-center">Postponed until further notice.</p>
         <div class="row">
           <div class="col event-btn text-center">
             <a class="btn-services" data-toggle="collapse" href="#collapseEvent-1" role="button" aria-expanded="false" aria-controls="collapseEvent-1">Learn More</a>
