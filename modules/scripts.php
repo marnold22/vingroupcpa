@@ -10,5 +10,6 @@
 <script src="js/main.js" charset="utf-8"></script>
 <script src="js/admin.js" charset="utf-8"></script>
 
-<script src="js/convert.js" charset="utf-8"></script>
-<script src="js/libheif.js" charset="utf-8"></script>
+<!-- Temporarily disabled these js files to call them only on the heic-cnvert page -->
+<!-- <script src="js/convert.js" charset="utf-8"></script>
+<script src="js/libheif.js" charset="utf-8"></script> -->

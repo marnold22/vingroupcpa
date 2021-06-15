@@ -109,6 +109,8 @@ require_once 'db_connect.php';
 
     <!-- Scripts -->
     <?php include("modules/scripts.php") ?>
+    <script src="js/convert.js" charset="utf-8"></script>
+    <script src="js/libheif.js" charset="utf-8"></script>
 </body>
 
 </html>
