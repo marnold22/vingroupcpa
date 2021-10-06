@@ -4,6 +4,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule (.*) $1.php [L]
 
+# Online Example
+#<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+#    Header set Cache-Control "max-age=84600, public"
+#</filesMatch>
+
 <IfModule mod_expires.c>
   ExpiresActive On
 

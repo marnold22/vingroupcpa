@@ -1,3 +1,6 @@
+<!-- Add a 24 Hour Cache-Control -->
+<?php header('Cache-Control: max-age=86400'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
