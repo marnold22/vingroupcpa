@@ -51,7 +51,7 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
-          <h1>The Vin Group</h1>
+          <h1>The Vingroup</h1>
           <p class="lead">Tax and finance advisory for the individual, small businesses, and non-profits</p>
           <button id="home-lm" class="btn btn-outline-light herobanner-btn" type="button" name="button">Learn More</button>
         </div>
