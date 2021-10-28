@@ -83,12 +83,6 @@
                       <label class="form-check-label" for="nonprof-church">Non-Profit / Church</label>
                     </div>
 
-                    <!-- REMOVED RETIRMENT -->
-                    <!-- <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="check_list[]" value="retirement" id="retirement">
-                      <label class="form-check-label" for="retirement">Retirement</label>
-                    </div> -->
-
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="check_list[]" value="seminars" id="seminars">
                       <label class="form-check-label" for="seminars">Seminars</label>
