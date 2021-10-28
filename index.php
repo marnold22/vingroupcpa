@@ -457,7 +457,7 @@
     </div>
   </div>
 
-  <!-- TESTIMONIAL-SECTION 1 -->
+  <!-- TESTIMONIAL-SECTION 2 -->
   <div class="fluid-container">
     <div class="blank">
       <div class="content">
