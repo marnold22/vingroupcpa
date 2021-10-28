@@ -142,23 +142,6 @@
                       </div>
                     </div>
                   </div>
-
-
-                  <!-- Removed Retirement Section -->
-                  <!-- <div class="col-md-4 mb-2">
-                    <div class="card h-100 service-card">
-                      <div class="card-body">
-                        <h4 class="card-title">Investment & Retirement</h4>
-                        <p class="card-text">Vin Group can assist you with your investment and retirement planning. We can provide you with information about a diverse set of investment options including life insurance. We excel at providing a
-                          comprehensive approach to financial planning because we can see our clients’ entire financial picture as we advise them about future planning.</p>
-                      </div>
-                      <div class="card-footer py-4 text-center">
-                        <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
-                      </div>
-                    </div>
-                  </div> -->
-
-
                 </div>
               </div>
               <div class="carousel-item">
@@ -309,23 +292,6 @@
                       </div>
                     </div>
                   </div>
-
-
-                  <!-- Removed Retirement Section -->
-                  <!-- <div class="col-md-6 mb-2">
-                    <div class="card h-100 service-card">
-                      <div class="card-body">
-                        <h4 class="card-title">Investment & Retirement</h4>
-                        <p class="card-text">Vin Group can assist you with your investment and retirement planning. We can provide you with information about a diverse set of investment options including life insurance. We excel at providing a
-                          comprehensive approach to financial planning because we can see our clients’ entire financial picture as we advise them about future planning.</p>
-                      </div>
-                      <div class="card-footer py-4 text-center">
-                        <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
-                      </div>
-                    </div>
-                  </div> -->
-
-
                 </div>
               </div>
               <div class="carousel-item">
@@ -456,23 +422,6 @@
             </div>
           </div>
         </div>
-
-
-        <!-- Removed Retirement Section -->
-        <!-- <div class="col-md-6 mb-2">
-          <div class="card h-100 service-card">
-            <div class="card-body">
-              <h4 class="card-title">Investment & Retirement</h4>
-              <p class="card-text">Vin Group can assist you with your investment and retirement planning. We can provide you with information about a diverse set of investment options including life insurance. We excel at providing a comprehensive
-                approach to financial planning because we can see our clients’ entire financial picture as we advise them about future planning.</p>
-            </div>
-            <div class="card-footer py-4 text-center">
-              <a href="services.php#invest-retire" class="btn-services-inverse">See investment & retirement &raquo;</a>
-            </div>
-          </div>
-        </div> -->
-
-        
         <div class="col-md-6 mb-2">
           <div class="card h-100 service-card">
             <div class="card-body">
