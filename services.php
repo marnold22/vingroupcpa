@@ -277,34 +277,6 @@
 
     <hr class="featurette-divider">
 
-    <!-- <div id="invest-retire" class="row featurette">
-      <div class="col-md-12">
-        <h2 class="featurette-heading">Investment & Retirement. <span class="text-muted"></span></h2>
-        <p class="lead">Vin Group can assist you with your investment and retirement planning. We can provide you with information about a diverse set of investment options including life insurance. We excel at providing a comprehensive approach to
-          financial planning because we can see our clients’ entire financial picture as we advise them about future planning.</p>
-      </div>
-      <div class="col-md-12">
-        <p class="lead">Services Include:</p>
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="top-row-mobile">
-              <li>Financial Coaching & Planning</li>
-              <li>Retirement Planning</li>
-              <li>Risk Analysis</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul>
-              <li>Cash Flow Analysis and Consultation</li>
-              <li>Estate Planning</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr class="featurette-divider"> -->
-
     <!-- SEMINARS -->
     <div id="seminars" class="row featurette">
       <div class="col-md-12">
