@@ -320,25 +320,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Moved "Payment Options" up to accomidate the removal of retirement section -->
-              <!-- <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-12 mb-2">
-                    <div class="card h-100 service-card">
-                      <div class="card-body">
-                        <h4 class="card-title">Payment Options</h4>
-                        <p class="card-text">The Vin Group provides various payment options for your convenience. These options range from online payments, automatic bank withdrawl, and credit card options.</p>
-                      </div>
-                      <div class="card-footer py-4 text-center">
-                        <a href="services.php#payment-options" class="btn-services-inverse">See payment options &raquo;</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-
-
             </div>
           </div>
         </div>
@@ -546,12 +527,6 @@
   <!-- Scripts -->
   <?php include("modules/scripts.php") ?>
 
-  <!-- Removed Covid-19 Modal -->
-  <!-- <script type="text/javascript">
-    $(window).on('load', function() {
-      $('#covid19Modal').modal('show');
-    });
-  </script> -->
 </body>
 
 </html>
