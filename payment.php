@@ -57,8 +57,8 @@
 
     <div id="payment-page" class="container my-5">
         <h1 class="text-center">Paypal Payments</h1>
-        <div class="paypal">
-            <?php include("USE_PAYPAL_HERE.php") ?>
+        <div class="paypal my-5">
+            <?php include("paypal.php") ?>
         </div>
     </div>
 
