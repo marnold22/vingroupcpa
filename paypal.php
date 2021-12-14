@@ -1,13 +1,29 @@
-<div id="smart-button-container">
-    <div style="text-align: center"><label for="description">Description </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
-    <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
-    <div style="text-align: center"><label for="amount">Amount Due </label><input name="amountInput" type="number" id="amount" value=""><span> USD</span></div>
-    <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
-    <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid">Invoice Number </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value=""></div>
-    <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+<!-- Paypal Variable Amount Method -->
+<div id="smart-button-container" class="text-center">
+    <!-- Description Field -->
+    <div class="paypal"><label for="description">Description </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+
+        <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+
+    <!-- Amount Field -->
+    <div class="paypal"><label for="amount">Amount Due </label><input name="amountInput" type="number" id="amount" value=""></div>
+
+        <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+
+    <!-- Inovice Number Field -->
+    <div id="invoiceidDiv" class="paypal"><label for="invoiceid">Invoice Number </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value=""></div>
+
+        <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+
+    <!-- List of buttons -->
     <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
 </div>
-<script src="https://www.paypal.com/sdk/js?client-id=AbogRmrQcHdn3MGBN80rotK1G3PT-bgzY9Pfa7rmBASn3NFYQu1waymXHyVMKuO1_r3krb9G2qry9bei&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+
+
+
+
+<!-- Script for Paypal Interaction -->
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
 <script>
     function initPayPalButton() {
         var description = document.querySelector('#smart-button-container #description');
@@ -34,10 +50,10 @@
 
         paypal.Buttons({
             style: {
-                color: 'black',
+                color: 'gold',
                 shape: 'pill',
                 label: 'paypal',
-                layout: 'horizontal',
+                layout: 'vertical',
 
             },
 
