@@ -352,7 +352,13 @@ a.pdf-style {
   color: #fff;
   height: 100vh;
 }
-
+.paypal label {
+  width: 20%;
+  text-align: center;
+}
+.paypal input {
+  width: 40%;
+}
 
 
 /* ---------------------------------------------------------------------- CURRENTLY DOWN PAGE ---------------------------------------------------------------------- */
