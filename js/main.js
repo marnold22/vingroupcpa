@@ -29,6 +29,11 @@ $("#about-lm").click(function() {
         scrollTop: $("#about-page").offset().top
     }, 1000);
 });
+$("#payment-lm").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#payment-page").offset().top
+    }, 1000);
+});
 
 // Admin Pages
 $("#adminnews-lm").click(function() {
