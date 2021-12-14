@@ -49,11 +49,18 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
                     <h1>Payment</h1>
-                    <button id="news-lm" class="btn btn-outline-light herobanner-btn" type="button" name="button">Learn More</button>
+                    <button id="payment-lm" class="btn btn-outline-light herobanner-btn" type="button" name="button">Learn More</button>
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="payment-page" class="container my-5">
+        <h1 class="text-center">Paypal Payments</h1>
+        <div class="paypal">
+            <?php include("USE_PAYPAL_HERE.php") ?>
+        </div>
+    </div>
 
 
 
