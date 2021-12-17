@@ -361,6 +361,15 @@ a.pdf-style {
 }
 
 
+/* ---------------------------------------------------------------------- THANK YOU PAGE ---------------------------------------------------------------------- */
+.herobanner-thankyou {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/ipayment-process.jpg");
+  color: #fff;
+  height: 100vh;
+}
+
+
+
 /* ---------------------------------------------------------------------- CURRENTLY DOWN PAGE ---------------------------------------------------------------------- */
 .herobanner-down {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/currently_down.jpg");
