@@ -52,7 +52,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
                     <h1>Payment</h1>
-                    <button id="payment-lm" class="btn btn-outline-light herobanner-btn" type="button" name="button">Learn More</button>
+                    <button id="payment-lm" class="btn btn-outline-light herobanner-btn" type="button" name="button">Pay Now</button>
                 </div>
             </div>
         </div>
