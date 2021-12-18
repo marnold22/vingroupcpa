@@ -36,6 +36,9 @@
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" href="payment.php">Payment</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="https://voffice.dillners.com/securelogin.asp?acct=23627" target="_blank">Client Login</a>
                     </li>
                 </ul>
