@@ -1,9 +1,9 @@
 <!-- Paypal Variable Amount Method -->
 <div id="smart-button-container" class="text-center">
     <!-- Description Field -->
-    <div class="paypal"><label for="description">Description </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+    <div class="paypal"><label for="description">Description or Invoice # </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
 
-        <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+        <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description or invoice number</p>
 
     <!-- Amount Field -->
     <div class="paypal"><label for="amount">Amount Due </label><input name="amountInput" type="number" id="amount" value=""></div>
@@ -11,7 +11,7 @@
         <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
 
     <!-- Inovice Number Field -->
-    <div id="invoiceidDiv" class="paypal"><label for="invoiceid">Invoice Number </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value=""></div>
+    <div id="invoiceidDiv" class="paypal" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value=""></div>
 
         <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
 
@@ -115,12 +115,7 @@
                     // Full available details
                     console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
 
-                    // Show a success message within this page, e.g.
-                    // const element = document.getElementById('paypal-button-container');
-                    // element.innerHTML = '';
-                    // element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-                    // Or go to another URL:  actions.redirect('thank_you.html');
+                    // Redirect to another URL: 
                     actions.redirect('http://localhost/thank_you.php');
 
                 });
