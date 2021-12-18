@@ -23,7 +23,7 @@
 
 
 <!-- Script for Paypal Interaction -->
-<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=&disable-funding=card,credit" data-sdk-integration-source="button-factory"></script>
 <script>
     function initPayPalButton() {
         var description = document.querySelector('#smart-button-container #description');
