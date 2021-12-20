@@ -116,7 +116,7 @@
                     console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
 
                     // Redirect to another URL: 
-                    actions.redirect('http://localhost/thank_you.php');
+                    actions.redirect('https://vingroup.cpa/thank_you.php');
 
                 });
             },
