@@ -23,7 +23,7 @@
 
 
 <!-- Script for Paypal Interaction -->
-<script src="https://www.paypal.com/sdk/js?client-id=sb&disable-funding=card,credit,venmo" data-sdk-integration-source="button-factory"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AbogRmrQcHdn3MGBN80rotK1G3PT-bgzY9Pfa7rmBASn3NFYQu1waymXHyVMKuO1_r3krb9G2qry9bei&disable-funding=card,credit,venmo" data-sdk-integration-source="button-factory"></script>
 <script>
     function initPayPalButton() {
         var description = document.querySelector('#smart-button-container #description');
