@@ -91,7 +91,7 @@
             // Create a new PHPMailer object
             $mail = new PHPMailer(true);
 
-            //Server settings
+            // Server settings
             $mail->SMTPDebug = SMTP::DEBUG_OFF;                              // Enable verbose debug output
             $mail->isSMTP();                                                 // Send using SMTP
             $mail->Host       = 'smtp.gmail.com';                            // Set the SMTP server to send through
@@ -101,6 +101,17 @@
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;              // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $mail->Port       = 587;                                         // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
+
+            // Test Settings
+            // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            // $mail->isSMTP();
+            // $mail->Host       = 'smtp.gmail.com';
+            // $mail->SMTPAuth   = true;
+            // $mail->Username   = $_ENV['FROM_EMAIL'];
+            // $mail->Password   = $_ENV['FROM_EMAIL_PASS'];
+            // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            // $mail->Port       = 465;
+            
             //Recipients
             $mail->setFrom('vingroupcpa@gmail.com', 'Vingroupcpa Website');  // Set default address that emails are sent from
             $mail->addAddress($_ENV['TO_EMAIL'], 'Vingroupcpa');             // Add a recipient
