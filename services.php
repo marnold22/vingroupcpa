@@ -885,14 +885,14 @@
         <div class="row">
           <div class="col-md-6">
             <ul class="top-row-mobile">
-              <li>CPA Hourly Rate - <b class="cpagreen">$175/hour</b></li>
+              <li>CPA Hourly Rate - <b class="cpagreen">$200/hour</b></li>
               <li>Financial Statements for Businesses - <b class="cpagreen">Hourly and bid</b></li>
               <li>Tax Prep - <b class="cpagreen">Amount by the form</b></li>
             </ul>
           </div>
           <div class="col-md-6">
             <ul>
-              <li>Consulting - <b class="cpagreen">Starting at $175/hour</b></li>
+              <li>Consulting - <b class="cpagreen">Starting at $200/hour</b></li>
               <li>Accounting - <b class="cpagreen">Starting at $75/hour</b></li>
               <li>Payroll - <b class="cpagreen">Get quote based on several items</b></li>
             </ul>
