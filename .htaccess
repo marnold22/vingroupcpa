@@ -10,7 +10,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 # Disable forms.php temporarily
-RewriteRule ^/forms.php$ - [F]
+RewriteRule ^vingroup.cpa/forms.php$ - [F]
 
 # Online Example
 #<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
