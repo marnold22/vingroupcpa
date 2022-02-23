@@ -20,26 +20,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.php">Services</a>
-                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="forms.php">Forms</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="events.php">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.php">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://voffice.dillners.com/securelogin.asp?acct=23627" target="_blank">Client Login</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +49,6 @@
             </div>
 
             <div class="row forms-padding">
-
                 <!-- Row 1 Col 1 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/2021-Tax-Organizer.PDF" target="_blank">
@@ -79,7 +60,6 @@
                         </div>
                     </a>
                 </div>
-
                 <!-- Row 1 Col 2 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/auto_bank_withdraw_consent.pdf" target="_blank">
@@ -91,7 +71,6 @@
                         </div>
                     </a>
                 </div>
-
                 <!-- Row 1 Col 3 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/visa_mc_charge_consent.pdf" target="_blank">
@@ -106,8 +85,7 @@
             </div>
 
             <div class="row forms-padding">
-
-                <!-- Row 1 Col 1 -->
+                <!-- Row 2 Col 1 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/2022-w4.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
@@ -118,8 +96,7 @@
                         </div>
                     </a>
                 </div>
-
-                <!-- Row 1 Col 2 -->
+                <!-- Row 2 Col 2 -->
                 <div class="col-sm-4">
                     <!-- <a class="pdf-style" href="#" target="_blank"> -->
                         <div class="card mx-auto pdf" style="width: 18rem;">
@@ -130,21 +107,8 @@
                         </div>
                     <!-- </a> -->
                 </div>
-
-                <!-- Row 1 Col 3 -->
-                <div class="col-sm-4">
-                    <!-- <a class="pdf-style" href="#" target="_blank"> -->
-                        <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
-                            <div class="card-body text-center">
-                                <h6>W-2 Form</h6>
-                            </div>
-                        </div>
-                    <!-- </a> -->
-                </div>
             </div>
-
-
+            
         </div>
     </div>
 
