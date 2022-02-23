@@ -9,6 +9,9 @@
 #    Header set Cache-Control "max-age=84600, public"
 #</filesMatch>
 
+**Deny Always**
+RewriteRule ^forms.php - [F]
+
 <IfModule mod_expires.c>
   ExpiresActive On
 
