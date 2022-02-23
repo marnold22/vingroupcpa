@@ -70,11 +70,11 @@
 
                 <!-- Row 1 Col 1 -->
                 <div class="col-sm-4">
-                    <a class="pdf-style" href="assets/pdf/#" target="_blank">
-                        <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
+                    <a class="pdf-style" href="assets/pdf/2021-Tax-Organizer.PDF" target="_blank">
+                            <div class="card mx-auto pdf" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/tax-organizer-img.jpg" style="width: 286px; height: 397.22px;" alt="2021 Blank Tag Organizer">
                             <div class="card-body text-center">
-                                <h6>W-4 Form</h6>
+                                <h6>2021 Blank Tax Organizer</h6>
                             </div>
                         </div>
                     </a>
@@ -82,37 +82,9 @@
 
                 <!-- Row 1 Col 2 -->
                 <div class="col-sm-4">
-                    <a class="pdf-style" href="assets/pdf/#" target="_blank">
-                        <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
-                            <div class="card-body text-center">
-                                <h6>I-9 Form</h6>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Row 1 Col 3 -->
-                <div class="col-sm-4">
-                    <a class="pdf-style" href="assets/pdf/#" target="_blank">
-                        <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
-                            <div class="card-body text-center">
-                                <h6>W-2 Form</h6>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="row forms-padding">
-
-                <!-- Row 2 Col 1 -->
-                <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/auto_bank_withdraw_consent.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/bank.jpg" alt="Automatic Bank Withdrawl Form">
+                            <img class="card-img-top" src="assets/bank-3.jpg" style="width: 286px; height: 397.22px;" alt="Automatic Bank Withdrawl Form">
                             <div class="card-body text-center">
                                 <h6>Automatic Bank Withdrawl</h6>
                             </div>
@@ -120,7 +92,7 @@
                     </a>
                 </div>
 
-                <!-- Row 2 Col 2 -->
+                <!-- Row 1 Col 3 -->
                 <div class="col-sm-4">
                     <a class="pdf-style" href="assets/pdf/visa_mc_charge_consent.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
@@ -132,6 +104,47 @@
                     </a>
                 </div>
             </div>
+
+            <div class="row forms-padding">
+
+                <!-- Row 1 Col 1 -->
+                <div class="col-sm-4">
+                    <a class="pdf-style" href="assets/pdf/2022-w4.pdf" target="_blank">
+                        <div class="card mx-auto pdf" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/2022-w4-img.jpg" style="width: 286px; height: 397.22px;" alt="FORM NAME HERE">
+                            <div class="card-body text-center">
+                                <h6>2022 W-4 Form</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Row 1 Col 2 -->
+                <div class="col-sm-4">
+                    <!-- <a class="pdf-style" href="#" target="_blank"> -->
+                        <div class="card mx-auto pdf" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
+                            <div class="card-body text-center">
+                                <h6>I-9 Form</h6>
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div>
+
+                <!-- Row 1 Col 3 -->
+                <div class="col-sm-4">
+                    <!-- <a class="pdf-style" href="#" target="_blank"> -->
+                        <div class="card mx-auto pdf" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
+                            <div class="card-body text-center">
+                                <h6>W-2 Form</h6>
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+
+
         </div>
     </div>
 
