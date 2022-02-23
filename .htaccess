@@ -4,6 +4,11 @@
 # RewriteCond %{REQUEST_FILENAME}.php -f
 # RewriteRule (.*) $1.php [L]
 
+# Remove .php extension
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
 # Online Example
 #<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
 #    Header set Cache-Control "max-age=84600, public"
