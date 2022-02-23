@@ -9,6 +9,9 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
+# Disable forms.php temporarily
+RewriteRule ^/forms.php$ - [F]
+
 # Online Example
 #<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
 #    Header set Cache-Control "max-age=84600, public"
