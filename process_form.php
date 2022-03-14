@@ -84,7 +84,7 @@
             $composed_email .= "First Name: ".$fname."<br>";
             $composed_email .= "Last Name: ".$lname."<br>";
             $composed_email .= "Email: ".$email."<br>";
-            $composed_email .= "Interestes: ".$checklist."<br>";
+            $composed_email .= "Interests: ".$checklist."<br>";
             $composed_email .= "Business Name: ".$business."<br>";
             $composed_email .= "Message: ".$message."<br>";
 
