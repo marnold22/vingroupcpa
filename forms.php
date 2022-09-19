@@ -17,12 +17,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="forms.php">Forms</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.php">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.php">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.php">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.php">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="forms.php">Forms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="payment.php">Payment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://voffice.dillners.com/securelogin.asp?acct=23627" target="_blank">Client Login</a>
+                </li>
                 </ul>
             </div>
         </div>
@@ -62,22 +83,22 @@
                 </div>
                 <!-- Row 1 Col 2 -->
                 <div class="col-sm-4">
-                    <a class="pdf-style" href="assets/pdf/auto_bank_withdraw_consent.pdf" target="_blank">
+                    <a class="pdf-style" href="https://www.irs.gov/pub/irs-pdf/fw4.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/bank-3.jpg" style="width: 286px; height: 397.22px;" alt="Automatic Bank Withdrawl Form">
+                            <img class="card-img-top" src="assets/w4-card-img.jpg" style="width: 286px; height: 397.22px;" alt="IRS W-4 Form">
                             <div class="card-body text-center">
-                                <h6>Automatic Bank Withdrawl</h6>
+                                <h6>W-4 Form, 2022</h6>
                             </div>
                         </div>
                     </a>
                 </div>
                 <!-- Row 1 Col 3 -->
                 <div class="col-sm-4">
-                    <a class="pdf-style" href="assets/pdf/visa_mc_charge_consent.pdf" target="_blank">
+                    <a class="pdf-style" href="https://www.uscis.gov/sites/default/files/document/forms/i-9-paper-version.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/cc.jpg" alt="Credit Card Authorization Form">
+                            <img class="card-img-top" src="assets/i9-card-img.jpg" style="width: 286px; height: 397.22px;" alt="IRS I-9 Form">
                             <div class="card-body text-center">
-                                <h6>Credit Card Authorization</h6>
+                                <h6>I-9 Form, 2022</h6>
                             </div>
                         </div>
                     </a>
@@ -87,25 +108,25 @@
             <div class="row forms-padding">
                 <!-- Row 2 Col 1 -->
                 <div class="col-sm-4">
-                    <a class="pdf-style" href="assets/pdf/2022-w4.pdf" target="_blank">
+                    <a class="pdf-style" href="assets/pdf/auto_bank_withdraw_consent.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/2022-w4-img.jpg" style="width: 286px; height: 397.22px;" alt="FORM NAME HERE">
+                            <img class="card-img-top" src="assets/bank-3.jpg" style="width: 286px; height: 397.22px;" alt="Automatic Bank Withdrawl Form">
                             <div class="card-body text-center">
-                                <h6>2022 W-4 Form</h6>
+                                <h6>Automatic Bank Withdrawl</h6>
                             </div>
                         </div>
                     </a>
                 </div>
-                <!-- Row 2 Col 2 -->
+                <!-- Row 2 Col 3 -->
                 <div class="col-sm-4">
-                    <!-- <a class="pdf-style" href="#" target="_blank"> -->
+                    <a class="pdf-style" href="assets/pdf/visa_mc_charge_consent.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/gen-form.jpg" alt="FORM NAME HERE">
+                            <img class="card-img-top" src="assets/cc.jpg" style="width: 286px; height: 397.22px;" alt="Credit Card Authorization Form">
                             <div class="card-body text-center">
-                                <h6>I-9 Form</h6>
+                                <h6>Credit Card Authorization</h6>
                             </div>
                         </div>
-                    <!-- </a> -->
+                    </a>
                 </div>
             </div>
             
