@@ -195,17 +195,6 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Victoria - Accounting">
-                  <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Victoria</h5>
-                    <div class="card-text text-black-50">Accounting</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="card border-0 shadow">
                   <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Rebecca - CPA">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Rebecca</h5>
@@ -214,6 +203,64 @@
                 </div>
               </div>
             </div>
+
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Dena - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Dena</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Kelley - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Kelley</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Dillon - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Dillon</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Seth - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Seth</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Cindi - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Cindi</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
