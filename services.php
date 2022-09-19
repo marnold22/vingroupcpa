@@ -33,6 +33,9 @@
                 <a class="nav-link" href="about.php">About</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="forms.php">Forms</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
             </li>
             <li class="nav-item">
