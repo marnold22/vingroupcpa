@@ -14,7 +14,7 @@
 
     // ------------------------------ START ADD NEWS POST ------------------------------ //
     // Define variables and initialize with empty values
-    $addTitle = $addImage = $addContent = $addLink= "";
+    $addTitle = $addImagePath = $addContent = $addLink= "";
     $addTitle_err = $addImage_err = $addContent_err = "";
     $target_dir = "assets/news/";
 
@@ -42,7 +42,7 @@
 
         // Validate Image
         if (empty($_FILES['aimage'])) {
-            $addImage = "assets/news/news-default.jpg";
+            $addImagePath = "/assets/news/news-default.jpg";
         } else {
             $file_name = $_FILES['aimage']['name'];
             $file_size = $_FILES['aimage']['size'];
@@ -64,7 +64,7 @@
             // Upload image if there are not any errors
             if (empty($addImage_err)) {
                 move_uploaded_file($file_tmp, "assets/news/" . $file_name);
-                $addImage = "assets/news/" . $file_name;
+                $addImagePath = "assets/news/" . $file_name;
             } else {
                 $addImage_err = "Image could not successfully be uploaded. ";
             }
@@ -74,7 +74,7 @@
         // Check there are no errors and run SQL statement
         if (empty($addTitle_err) && empty($addContent_err) && empty($addImage_err)) {
             //Prepair SQL Insert Statement
-            $sql = "INSERT INTO news (title, picture, content, link) VALUES ('$addTitle', '$addImage', '$addContent', '$addLink')";
+            $sql = "INSERT INTO news (title, picture, content, link) VALUES ('$addTitle', '$addImagePath', '$addContent', '$addLink')";
 
             // Run SQL Statement
             if (mysqli_query($connect, $sql)) {
@@ -114,8 +114,8 @@
                         <a class="nav-link" href="admin_users.php" aria-expanded="false">Users Table</a>
                         <a class="nav-link" href="admin_reset_password.php" aria-expanded="false">Password Resset</a>
                         <a class="nav-link" href="admin_register.php" aria-expanded="false">Register</a>
-
                         <a class="nav-link" href="admin_convert.php" aria-expanded="false">HEIC Convert</a>
+                        <a class="nav-link" href="admin_php_info.php" aria-expanded="false">PHP Info</a>
                         <a class="nav-link" href="admin_logout.php" aria-expanded="false">Logout</a>
                     </div>
                 </div>
