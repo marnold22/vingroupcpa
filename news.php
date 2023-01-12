@@ -86,7 +86,7 @@
                     <div class="col-md-4">
                         <div class="event-padding">
                             <div class="card shadow">
-                                <img class="img-fluid" src="<?=$row['picture']; ?>" alt="<?= $row['title']; ?>" onerror="this.onerror=null;this.src='/assets/news/news-default.jpg';">
+                                <img class="news-img" src="<?=$row['picture']; ?>" alt="<?= $row['title']; ?>" onerror="this.onerror=null;this.src='/assets/news/news-default.jpg';">
                             </div>
                         </div>
                     </div>

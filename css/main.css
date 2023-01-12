@@ -294,6 +294,9 @@ a.pdf-style {
   padding-top: 5rem;
   padding-left: 17px;
 }
+.news-img {
+  aspect-ratio: 16 / 11;
+}
 
 
 
