@@ -6,7 +6,7 @@ require_once 'db_connect.php';
 function InputCleaner($data) {
     $data = trim($data);
     $data = stripslashes($data);
-    $data = (filter_var($data, FILTER_SANITIZE_STRING));
+    $data = htmlspecialchars($data);
     return $data;
 }
 
