@@ -272,7 +272,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label>Picture</label>
-                                                <input name="eimage" type="file" class="form-control-file" required>
+                                                <input name="eimage" type="file" class="form-control-file" >
                                             </div>
                                             <div class="form-group">
                                                 <label>Content</label>
