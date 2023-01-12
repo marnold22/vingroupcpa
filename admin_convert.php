@@ -54,8 +54,8 @@ require_once 'db_connect.php';
                         <a class="nav-link" href="admin_users.php" aria-expanded="false">Users Table</a>
                         <a class="nav-link" href="admin_reset_password.php" aria-expanded="false">Password Resset</a>
                         <a class="nav-link" href="admin_register.php" aria-expanded="false">Register</a>
-
                         <a class="nav-link" href="admin_convert.php" aria-expanded="false">HEIC Convert</a>
+                        <a class="nav-link" href="admin_php_info.php" aria-expanded="false">PHP Info</a>
                         <a class="nav-link" href="admin_logout.php" aria-expanded="false">Logout</a>
                     </div>
                 </div>
