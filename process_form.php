@@ -128,7 +128,7 @@
             // $mail->Port       = 465;
             
             //Recipients
-            $mail->setFrom($_ENV['TO_EMAIL'], 'Vingroupcpa Website');  // Set default address that emails are sent from
+            $mail->setFrom($_ENV['FROM_EMAIL'], 'Vingroupcpa Website');  // Set default address that emails are sent from
             $mail->addAddress($_ENV['TO_EMAIL'], 'Vingroupcpa');             // Add a recipient
 
             // Content
