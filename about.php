@@ -240,17 +240,6 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Seth - Accounting">
-                  <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Seth</h5>
-                    <div class="card-text text-black-50">Accounting</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="card border-0 shadow">
                   <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Cindi - Accounting">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Cindi</h5>
