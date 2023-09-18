@@ -3,23 +3,21 @@
     <!-- Description Field -->
     <div class="paypal"><label for="description">Description or Invoice # </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
 
-        <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description or invoice number</p>
+    <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description or invoice number</p>
 
     <!-- Amount Field -->
     <div class="paypal"><label for="amount">Amount Due </label><input name="amountInput" type="number" id="amount" value=""></div>
 
-        <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+    <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
 
     <!-- Inovice Number Field -->
     <div id="invoiceidDiv" class="paypal" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value=""></div>
 
-        <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+    <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
 
     <!-- List of buttons -->
-    <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+    <div style="margin-left:15%;" id="paypal-button-container"></div>
 </div>
-
-
 
 
 <!-- Script for Paypal Interaction -->
