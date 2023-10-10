@@ -353,6 +353,7 @@ div.g-recaptcha {
 }
 
 
+
 /* ---------------------------------------------------------------------- PAYMENT PAGE ---------------------------------------------------------------------- */
 .herobanner-payment {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/ipayment.jpg");
@@ -368,7 +369,17 @@ div.g-recaptcha {
 }
 
 
-/* ---------------------------------------------------------------------- THANK YOU PAGE ---------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------- THANK YOU CONTACT PAGE ---------------------------------------------------------------------- */
+.herobanner-thankyou-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../assets/icontact.jpg");
+  color: #fff;
+  height: 100vh;
+}
+
+
+
+/* ---------------------------------------------------------------------- THANK YOU PAYMENT PAGE ---------------------------------------------------------------------- */
 .herobanner-thankyou {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/ipayment-process.jpg");
   color: #fff;
