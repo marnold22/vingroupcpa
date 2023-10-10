@@ -340,6 +340,10 @@ a.pdf-style {
   background-color: #346272;
   color: white;
 }
+div.g-recaptcha {
+  margin: 0 auto;
+  width: 320px;
+}
 .error {
   color: red;
 }

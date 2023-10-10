@@ -105,6 +105,9 @@
               <div class="text-center">
                 <button type="submit" name="submit" class="btn-services">Submit</button>
               </div>
+              <div class="row">
+              <div class="g-recaptcha brochure__form__captcha" data-sitekey="<?= $_ENV["SITE_KEY"]; ?>"></div>
+              </div>
             </form>
           </div>
           <div class="modal-footer modal-hf">
