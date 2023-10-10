@@ -33,7 +33,13 @@
                         <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="forms.php">Forms</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payment.php">Payment</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://voffice.dillners.com/App/security/login/23627" target="_blank">Client Login</a>
