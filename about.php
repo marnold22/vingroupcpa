@@ -120,8 +120,9 @@
     <!-- Team Carousel -->
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Our Team. <span class="text-muted"></span></h2>
-        <p class="lead">Here at Vin Group we work with an amazing staff that help us move towards our goals!</p>
+        <h2 class="featurette-heading">Our Awesome Team. <span class="text-muted"></span></h2>
+        <p class="lead">Here at Vingroup we work with an amazing staff that help us move towards our goals!</p>
+        <img src="assets/people/staff.jpg" class="img-fluid" alt="Staff Image">
       </div>
       <div class="col-md-5">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -129,7 +130,7 @@
             <div class="carousel-item active">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Wayne E. Vinson - CPA & PS">
+                  <img src="assets/people/wayne.jpg" class="card-img-top about-card" alt="Wayne E. Vinson - CPA & PS">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Wayne E. Vinson</h5>
                     <div class="card-text text-black-50">CPA & PS</div>
@@ -140,7 +141,7 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Krista Bennett - Office Manager & Accounting">
+                  <img src="assets/people/krista.jpg" class="card-img-top" alt="Krista Bennett - Office Manager & Accounting">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Krista</h5>
                     <div class="card-text text-black-50">Office Manager</div>
@@ -151,7 +152,7 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Carrie Liptac - Office Admin">
+                  <img src="assets/people/carrie.jpg" class="card-img-top" alt="Carrie Liptac - Office Admin">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Carrie</h5>
                     <div class="card-text text-black-50">Office Admin</div>
@@ -160,6 +161,61 @@
               </div>
             </div>
             <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/noah.jpg" class="card-img-top" alt="Noah - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Noah</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/dena.jpg" class="card-img-top" alt="Dena - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Dena</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/kelley.jpg" class="card-img-top" alt="Kelley - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Kelley</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/dillon.jpg" class="card-img-top" alt="Dillon - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Dillon</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card border-0 shadow">
+                  <img src="assets/people/cindi.jpg" class="card-img-top" alt="Cindi - Accounting">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Cindi</h5>
+                    <div class="card-text text-black-50">Accounting</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
                   <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Donna - Accounting">
@@ -184,17 +240,6 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Noah - Accounting">
-                  <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Noah</h5>
-                    <div class="card-text text-black-50">Accounting</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="card border-0 shadow">
                   <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Rebecca - CPA">
                   <div class="card-body text-center">
                     <h5 class="card-title mb-0">Rebecca</h5>
@@ -202,52 +247,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="container">
-                <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Dena - Accounting">
-                  <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Dena</h5>
-                    <div class="card-text text-black-50">Accounting</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Kelley - Accounting">
-                  <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Kelley</h5>
-                    <div class="card-text text-black-50">Accounting</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Dillon - Accounting">
-                  <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Dillon</h5>
-                    <div class="card-text text-black-50">Accounting</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="card border-0 shadow">
-                  <img src="assets/people/temp-500x350.png" class="card-img-top" alt="Cindi - Accounting">
-                  <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Cindi</h5>
-                    <div class="card-text text-black-50">Accounting</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div> -->
 
 
           </div>
