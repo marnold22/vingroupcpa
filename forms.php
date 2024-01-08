@@ -87,7 +87,7 @@
                         <div class="card mx-auto pdf" style="width: 18rem;">
                             <img class="card-img-top" src="assets/w4-card-img.jpg" style="width: 286px; height: 397.22px;" alt="IRS W-4 Form">
                             <div class="card-body text-center">
-                                <h6>W-4 Form, 2022</h6>
+                                <h6>W-4 Form, 2024</h6>
                             </div>
                         </div>
                     </a>
@@ -98,7 +98,7 @@
                         <div class="card mx-auto pdf" style="width: 18rem;">
                             <img class="card-img-top" src="assets/i9-card-img.jpg" style="width: 286px; height: 397.22px;" alt="IRS I-9 Form">
                             <div class="card-body text-center">
-                                <h6>I-9 Form, 2022</h6>
+                                <h6>I-9 Form, 2024</h6>
                             </div>
                         </div>
                     </a>
