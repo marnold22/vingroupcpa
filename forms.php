@@ -108,7 +108,7 @@
             <div class="row forms-padding">
                 <!-- Row 2 Col 1 -->
                 <div class="col-sm-4">
-                    <a class="pdf-style" href="assets/pdf/990-Manual.pdf" target="_blank">
+                    <a class="pdf-style" href="assets/pdf/990-Updated.pdf" target="_blank">
                         <div class="card mx-auto pdf" style="width: 18rem;">
                             <img class="card-img-top" src="assets/WAATP-TITLE.jpg" style="width: 286px; height: 397.22px;" alt="Automatic Bank Withdrawl Form">
                             <div class="card-body text-center">
