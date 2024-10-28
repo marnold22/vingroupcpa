@@ -75,7 +75,7 @@
         <!-- START LOOP -->
         <?php
         // Select all news articles and output each article with its own section
-        $sql = "SELECT * FROM news ORDERBY ID DESC;";
+        $sql = "SELECT * FROM news ORDER BY ID DESC;";
         if ($result = mysqli_query($connect, $sql)) {
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_array($result)) { 
