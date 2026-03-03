@@ -106,7 +106,7 @@
                 <button type="submit" name="submit" class="btn-services">Submit</button>
               </div>
               <div class="row">
-              <div class="g-recaptcha brochure__form__captcha" data-sitekey="<?= $_ENV["SITE_KEY"]; ?>"></div>
+                <div class="g-recaptcha brochure__form__captcha" data-sitekey="<?= $_ENV["NEW_SITE_KEY"]; ?>"></div>
               </div>
             </form>
           </div>
