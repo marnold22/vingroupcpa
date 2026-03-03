@@ -6,6 +6,7 @@ composer.lock
 .env
 info.php
 assets/news/
+mailgun_test.php
 
 # Any .backup files
 *.backup
