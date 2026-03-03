@@ -162,7 +162,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 function reCaptcha($recaptcha)
 {
-    $secret = $_ENV['NEW_SECRET_KEY'];
+    $secret = $_ENV['SECRET_KEY'];
     $ip = $_SERVER['REMOTE_ADDR'];
 
     $postvars = array("secret" => $secret, "response" => $recaptcha, "remoteip" => $ip);
