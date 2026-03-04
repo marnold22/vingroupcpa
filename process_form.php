@@ -73,12 +73,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = clean_input($_POST["message"]);
     }
 
-    // SET RECAPTCHA
-    $recaptcha = $_POST['g-recaptcha-response'];
-    $res = reCaptcha($recaptcha);
+    // SET RECAPTCHA (OLD)
+    // $recaptcha = $_POST['g-recaptcha-response'];
+    // $res = reCaptcha($recaptcha);
+
+
+    // DO RECAPTCHA STUFF HERE:
+    $secretKey = $_ENV['SECRET_KEY'];
+    $responseKey = $_POST['g-recaptcha-response'];
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$ip";
+    $res = file_get_contents($url);
+    $res = json_decode($res);
+
 
     // CHECK RECAPTCHA
-    if ($res['success']) {
+    if ($res->success) {
         //Check if all errors are empty then send construct email
         if ($fname_error == '' && $lname_error == '' && $email_error == '' && $checklist_error == '') {
 
@@ -160,22 +170,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-function reCaptcha($recaptcha)
-{
-    $secret = $_ENV['SECRET_KEY'];
-    $ip = $_SERVER['REMOTE_ADDR'];
+// function reCaptcha($recaptcha)
+// {
+//     $secret = $_ENV['SECRET_KEY'];
+//     $ip = $_SERVER['REMOTE_ADDR'];
 
-    $postvars = array("secret" => $secret, "response" => $recaptcha, "remoteip" => $ip);
-    $url = "https://www.google.com/recaptcha/api/siteverify";
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
-    $data = curl_exec($ch);
-    curl_close($ch);
-    return json_decode($data, true);
-}
+//     $postvars = array("secret" => $secret, "response" => $recaptcha, "remoteip" => $ip);
+//     $url = "https://www.google.com/recaptcha/api/siteverify";
+//     $ch = curl_init();
+//     curl_setopt($ch, CURLOPT_URL, $url);
+//     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//     curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+//     curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
+//     $data = curl_exec($ch);
+//     curl_close($ch);
+//     return json_decode($data, true);
+// }
 
 function clean_input($data)
 {
