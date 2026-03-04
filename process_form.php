@@ -125,23 +125,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Username   = $_ENV["USERNAME"];
             $mail->Password   = $_ENV["PASS"];
             $mail->Port       = 587;
-            $mail->SMTPOptions = array(
-                'ssl' => array(
-                    'verify_peer' => false,
-                    'verify_peer_name' => false,
-                    'allow_self_signed' => true
-                )
-            );
-
-            // Test Settings
-            // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-            // $mail->isSMTP();
-            // $mail->Host       = 'smtp.gmail.com';
-            // $mail->SMTPAuth   = true;
-            // $mail->Username   = $_ENV['FROM_EMAIL'];
-            // $mail->Password   = $_ENV['FROM_EMAIL_PASS'];
-            // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-            // $mail->Port       = 465;
+            $mail->SMTPSecure = 'tls';   // Enable encryption, 'ssl'
+            // $mail->SMTPOptions = array(
+            //     'ssl' => array(
+            //         'verify_peer' => false,
+            //         'verify_peer_name' => false,
+            //         'allow_self_signed' => true
+            //     )
+            // );
 
             //Recipients
             $mail->setFrom($_ENV['FROM_EMAIL'], 'Vingroupcpa Website');  // Set default address that emails are sent from
@@ -170,6 +161,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+// OLD RECAPTCHA FUNCTION
 // function reCaptcha($recaptcha)
 // {
 //     $secret = $_ENV['SECRET_KEY'];
