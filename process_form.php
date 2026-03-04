@@ -137,7 +137,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             //Recipients
             $mail->setFrom($_ENV['FROM_EMAIL'], 'Vingroupcpa Website');  // Set default address that emails are sent from
             $mail->addAddress($_ENV['TO_EMAIL'], 'Vingroupcpa');             // Add a recipient
-            $mail->addCC($_ENV['CC_EMAIL'], 'CC Recipient 1');
+            $mail->addCC($_ENV['CC1_EMAIL'], 'CC Recipient 1');
+            $mail->addCC($_ENV['CC2_EMAIL'], 'CC Recipient 2');
 
             // Content
             $mail->isHTML(true);                                             // Set email format to HTML
