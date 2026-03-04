@@ -102,11 +102,11 @@
                 <textarea class="form-control" name="message" id="messageInput" rows="3" value="<?= $message ?>"></textarea>
                 <span class="error"><?= $message_error ?></span>
               </div>
+              <div class="g-recaptcha brochure__form__captcha" data-sitekey="<?= $_ENV["SITE_KEY"]; ?>"></div>
               <div class="text-center">
                 <button type="submit" name="submit" class="btn-services">Submit</button>
               </div>
               <div class="row">
-              <div class="g-recaptcha brochure__form__captcha" data-sitekey="<?= $_ENV["SITE_KEY"]; ?>"></div>
               </div>
             </form>
           </div>
