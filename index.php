@@ -70,8 +70,6 @@
   <div class="container home">
     
     <!-- DESKTOP VERSION -->
-
-    <script id="CookieDeclaration" src="https://consent.cookiebot.com/6772f976-26e1-4bf1-bdbf-938278656725/cd.js" type="text/javascript" async></script>
     <div id="index-desktop" class="row featurette">
       <div class="col-md-12">
         <h2 class="featurette-heading text-center">Services<span class="text-muted"></span></h2>
