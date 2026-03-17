@@ -4,8 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- CookieBot Script -->
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6772f976-26e1-4bf1-bdbf-938278656725" data-blockingmode="auto" type="text/javascript"></script>
-
+  <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6772f976-26e1-4bf1-bdbf-938278656725" data-blockingmode="auto" type="text/javascript"></script> -->
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6772f976-26e1-4bf1-bdbf-938278656725"  type="text/javascript"></script>
+  
   <!-- Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
